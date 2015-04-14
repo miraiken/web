@@ -6,19 +6,21 @@
 	<link rel="stylesheet" href="../common/css/normalize.css">
 	<link rel="stylesheet" href="../common/css/style.css">
     <link type="text/css" href="../common/css/camera.css" rel="stylesheet" media="all" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
     <!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
-    <script src="./resource/camera.js"></script>
+    <!--<script src="./resource/camera.js"></script>-->
     <script src="../common/script/GoogleAnalytics_common.js"></script>
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
     jQuery(function () {
         jQuery('#slide').camera({
+            height: '120%',
             hover: false,
-            fx: 'simpleFade'
+            fx: 'simpleFade',
+            time: 6000 
         });//任意のセレクタですが、今回は#slideにしています
     });
-    </script>
+    </script>-->
 </head>
 <body>
 
@@ -78,7 +80,12 @@
         <section>
             <h2 class="pagetitle">過去の作品</h2>
             <p>広報班が過去に作った物の一部を紹介します。</p>
-            <div class="camera_wrap camera_lime_skin" id="slide">
+            <a href="./resource/201406配布ビラ表.pdf"><img alt="201406配布ビラ。" src="./resource/201406配布ビラ表（webに貼る用）.png"></a>
+            <a href="./resource/2014年度　6月期表紙　.pdf"><img alt="201406配布ビラ。" src="./resource/2014年度　6月期表紙（webに貼る用））　.png"></a>
+            <a href="./resource/2014年度3月期　アンケート　見やすくした.pdf"><img alt="201406配布ビラ。" src="./resource/201503 アンケート.png"></a>
+            <a href="./resource/学内周知用ポスター 2014.pdf"><img alt="201406配布ビラ。" src="./resource/学内周知用ポスター-2014-(webに貼る用).png"></a>
+            <a href="./resource/当日用ビラ　2014年度3月期.pdf"><img alt="201406配布ビラ。" src="./resource/当日用ビラ　2014年度3月期（webに貼る用）.png"></a>
+            <!--<div class="camera_wrap camera_lime_skin" id="slide" style="width:561px;">
                 <div data-src="./resource/201406配布ビラ表（webに貼る用）.png">
                     <div class="camera_caption fadeFromBottom">
                         201406配布ビラ。<a href="./resource/201406配布ビラ表.pdf">pdf版</a>
@@ -104,7 +111,7 @@
                         当日用ビラ　2014年度3月期。<a href="./resource/当日用ビラ　2014年度3月期.pdf">pdf版</a>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </section>
 	</div>
 
