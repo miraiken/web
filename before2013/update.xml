@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+<CircleTop label="企画出展者向けのページ" url="CircleTop1.html" season="June">
+	<items category="総合情報" color="red">
+		<item title="第1回出展団体代表者会議">
+			<update>13.3.11</update>
+			<url>Circle02002.html</url>
+		</item>
+		<item title="第2回出展団体代表者会議">
+			<update>13.4.15</update>
+			<url>Circle_june_4.html</url>
+		</item>
+		<item title="第3回出展団体代表者会議">
+			<update>13.5.12</update>
+			<url>Circle_june_meeting_3rd.html</url>
+		</item>
+		<item title="第4回出展団体代表者会議">
+			<update>13.7.1</update>
+			<url>Circle_june_meeting_4th.html</url>
+		</item>
+		<item title="未来館下見">
+			<update>13.4.11</update>
+			<url>Circle_june_7.html</url>
+		</item>
+		<item title="慰労会のお知らせ">
+			<update>13.7.11</update>
+			<url>Circle_june_party.html</url>
+		</item>
+	</items>
+	<items category="手続きについて" color="#ffff00">
+		<item title="試合・合宿届">
+			<update>13.5.12</update>
+			<url>Circle_june_6.html</url>
+		</item>
+		<item title="参加者名簿">
+			<update>13.5.5</update>
+			<url>Circle_june_5_roster.html</url>
+		</item>
+		<item title="危険物使用申請書">
+			<update>13.5.3</update>
+			<url>Circle_june_5.html</url>
+		</item>
+		<item title="第二次企画書">
+			<update>13.4.16</update>
+			<url>Circle_june_3.html</url>
+		</item>
+		<item title="第一次企画書">
+			<update>13.3.11</update>
+			<url>Circle_june_2.html</url>
+		</item>
+	</items>
+	<items category="グループの情報" color="aqua"></items>
+	<items category="会計情報" color="lime">
+		<item title="振込先の口座に関して">
+			<update>13.4.25</update>
+			<url>Circle_june_9.html</url>
+		</item>
+		<item title="領収書に関して">
+			<update>13.4.25</update>
+			<url>Circle_june_8.html</url>
+		</item>
+	</items>
+	<items category="イベント直前・当日の情報" color="blue"></items>
+	<items category="事後処理関係" color="#FFC000"></items>
+</CircleTop>
+<Circle_march1 label="企画出展者向けのページ" url="CircleTop1.html" season="March">
+	<items category="総合情報" color="red">
+		<item title="第1回出展団体代表者会議のお知らせ">
+			<update>13.12.10</update>
+			<url>Circle_2013_march_1.html</url>
+		</item>
+		<item title="第2回出展団体代表者会議のお知らせ">
+			<update>13.3.3</update>
+			<url>Circle_march_4.html</url>
+		</item>
+		<item title="第3回出展団体代表者会議のお知らせ">
+			<update>13.4.2</update>
+			<url>Circle_march_8.html</url>
+		</item>
+		<item title="危険物申請書">
+			<update>13.3.2</update>
+			<url>Circle_march_5.html</url>
+		</item>
+		<item title="団体マニュアル">
+			<update>13.3.14</update>
+			<url>Circle_march_7.html</url>
+		</item>
+	</items>
+	<items category="手続きについて" color="#ffff00">
+		<item title="第1次企画書">
+			<update>13.1.2</update>
+			<url>Circle_march_2.html</url>
+		</item>
+		<item title="第2次企画書">
+			<update>13.2.17</update>
+			<url>Circle_march_3.html</url>
+		</item>
+		<item title="試合・合宿届">
+			<update>13.3.2</update>
+			<url>Circle_march_6.html</url>
+		</item>
+	</items>
+	<items category="グループの情報" color="aqua"></items>
+	<items category="会計情報" color="lime"></items>
+	<items category="イベント直前・当日の情報" color="blue"></items>
+	<items category="事後処理関係" color="#FFC000"></items>
+</Circle_march1>
+<item title="みらい研について">
+	<update>13.4.1</update>
+	<url>concept.html</url>
+</item>
+<item title="会場アクセス">
+	<update>13.4.1</update>
+	<url>access.html</url>
+</item>
+<item title="リンク">
+	<update>13.4.1</update>
+	<url>link.html</url>
+</item>
+<item title="実行委員会の紹介">
+	<update>13.4.4</update>
+	<url>staff.html</url>
+</item>
+<item title="新入生の方へ">
+	<update>13.4.12</update>
+	<url>sinkan.html</url>
+</item>
+<item title="実行委員募集のページ">
+	<update>13.5.2</update>
+	<url>announce_g001.html</url>
+</item>
+</data>
