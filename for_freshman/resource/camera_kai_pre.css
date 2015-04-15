@@ -1,0 +1,68 @@
+﻿/**************************
+*
+*	GENERAL
+*
+**************************/
+.camera_prevThumbs div {
+	background: url(../public_relations_department_images/camera_skins.png) no-repeat -160px 0;
+}
+.camera_loader {
+    background: #fff url(../public_relations_department_images/camera-loader.gif) no-repeat center;
+	background: rgba(255, 255, 255, 0.9) url(../public_relations_department_images/camera-loader.gif) no-repeat center;
+}
+.camera_prevThumbs div {
+	background: url(../public_relations_department_images/camera_skins.png) no-repeat -160px 0;
+}
+.camera_nextThumbs div {
+	background: url(../public_relations_department_images/camera_skins.png) no-repeat -190px 0;
+}
+.camera_prev > span {
+	background: url(../public_relations_department_images/camera_skins.png) no-repeat 0 0;
+}
+.camera_next > span {
+	background: url(../public_relations_department_images/camera_skins.png) no-repeat -40px 0;
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+.camera_commands > .camera_play {
+	background: url(../public_relations_department_images/camera_skins.png) no-repeat -80px 0;
+}
+.camera_commands > .camera_stop {
+	background: url(../public_relations_department_images/camera_skins.png) no-repeat -120px 0;
+}
+/**************************
+*
+*	COLORS & SKINS
+*
+**************************/
+.pattern_1 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay1.png) repeat;
+}
+.pattern_2 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay2.png) repeat;
+}
+.pattern_3 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay3.png) repeat;
+}
+.pattern_4 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay4.png) repeat;
+}
+.pattern_5 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay5.png) repeat;
+}
+.pattern_6 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay6.png) repeat;
+}
+.pattern_7 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay7.png) repeat;
+}
+.pattern_8 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay8.png) repeat;
+}
+.pattern_9 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay9.png) repeat;
+}
+.pattern_10 .camera_overlayer {
+	background: url(../public_relations_department_images/patterns/overlay10.png) repeat;
+}
