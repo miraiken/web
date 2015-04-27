@@ -71,11 +71,12 @@ div.progect_titile_list div.progect_titile p{
 }
 /*
 化学生命：#f4b3c2
-Ⅰ部化学研究部/神楽坂
-Ⅱ部化学研究部/神楽坂
+1部化学研究部/神楽坂
+2部化学研究部/神楽坂
 理工学部化学研究会/野田
 理系女子開発プロジェクト リケチェン！
-Ⅱ部生物研究部/神楽坂野老(トコロ)実験クラブ＋竹村研究室/神楽坂
+2部生物研究部/神楽坂
+野老(トコロ)実験クラブ＋秋津研究室or竹村研究室/神楽坂
 ちびラボ
 */
 .org_color_chemistry{
@@ -84,7 +85,7 @@ div.progect_titile_list div.progect_titile p{
 /*
 数学：#cca6b
 一部数学研究部/神楽坂
-Ⅱ部数学研究部/神楽坂
+2部数学研究部/神楽坂
 近代科学資料館/神楽坂
 */
 .org_color_math{
@@ -92,8 +93,8 @@ div.progect_titile_list div.progect_titile p{
 }
 /*
 物理宇宙地球かんきょう：#fef263
-Ⅰ部Ⅱ部天文研究部/神楽坂
-Ⅰ部物理研究会/神楽坂
+1部2部天文研究部/神楽坂
+1部物理研究会/神楽坂
 基礎工学部飯田研究室
 地球科学研究部/神楽坂
 文具研究同好会
@@ -106,7 +107,7 @@ div.progect_titile_list div.progect_titile p{
 機械工学研究会/野田
 ものづくりサークルCreate/野田
 AircraftMakers/野田
-Ⅰ部無線研究部有志/神楽坂
+1部無線研究部有志/神楽坂
 */
 .org_color_industrial{
 	background-color: #89c3eb;
