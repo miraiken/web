@@ -5,35 +5,23 @@
     <title>サイエンスショー|科学へのトビラ|東京理科大学みらい研究室</title>
     <link rel="stylesheet" href="../../../common/css/normalize.css">
     <link rel="stylesheet" href="../../../common/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./resource/science_show.css">
     <link rel="stylesheet" type="text/css" href="./resource/lightbox.css" media="screen,tv">
+    <link rel="prefetch" href="./resource/西村　クイズ（コーラ）.jpg">
+    <link rel="prefetch" href="./resource/西村　クイズ（ブロワー）.jpg">
+    <link rel="prefetch" href="./resource/西村　クイズ（人間椅子）.jpg">
+    <link rel="prefetch" href="./resource/西村　クイズ（説明）.jpg">
+    <link rel="prefetch" href="./resource/西村　ブーメラン.jpg">
+    <link rel="prefetch" href="./resource/西村　ブーメラン2.jpg">
+    <link rel="prefetch" href="./resource/西村　巨大空気砲.jpg">
+    <link rel="prefetch" href="./resource/西村　渦巻き.JPG">
+    <link rel="prefetch" href="./resource/西村　百人おどし.jpg">
+    <link rel="prefetch" href="./resource/西村　空気砲（的）.jpg">
+    <link rel="prefetch" href="./resource/西村　遠心力.JPG">
     <script type="text/javascript" charset="UTF-8" src="./resource/lightbox_plus.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./resource/simple_slideshow.js"></script>
     <script src="../../../common/script/GoogleAnalytics_common.js"></script>
-    <style type="text/css">
-        ol.listed_cell_horizontally{
-            display: block;
-            width: 780px;
-            margin: 0px auto;
-            padding: 0px;
-        }
-        ol.listed_cell_horizontally li{
-            display: table-cell;
-            margin: 0px;
-            text-align: left;
-            padding: 5px 10px;
-            vertical-align: middle;
-        }
-        ol.listed_cell_horizontally li:first-child{
-            width: 35%;
-            text-align: center1;
-        }
-        ol.listed_cell_horizontally li:first-child img{
-            width: 95%;
-        }
-        ol.listed_cell_horizontally li:last-child{
-            width: 64%;
-            text-align: left;
-        }
-    </style>
 </head>
 <body>
 
@@ -117,14 +105,14 @@
                     </section>
                     <section class="lecture">
                         <h2 class="pagetitle">講師プロフィール</h2>
-                        <p>今回は、講師としてチャーリー西村さんをお招きして、特別企画、サイエンスショーを行います。</p>
-                        <!--<img src="">-->
+                        <p>今回は、講師として本学卒業生のチャーリー西村さんをお招きして、特別企画、サイエンスショーを行います。</p>
                         <ol class="listed_cell_horizontally">
                             <li>
-                                <p>講師名 : チャーリー西村</p>
                                 <img src="./resource/西村Profile.jpg" alt="profile_picture">
+                                <p>講師名 : チャーリー西村</p>
                             </li>
                             <li>
+                                <img src="resource/西村with_balloon.jpg" alt="西村with_balloon.jpg">
                                 <p>
                                     東京理科大学理学部第二部化学科卒業。<br>
                                     米村でんじろう氏の一番弟子として活躍し<br>
@@ -133,6 +121,76 @@
                                 </p>
                             </li>
                         </ol>
+                        <div id="slide">
+                            <img src="./resource/西村　クイズ（コーラ）.jpg">
+                            <img src="./resource/西村　クイズ（ブロワー）.jpg">
+                            <img src="./resource/西村　クイズ（人間椅子）.jpg">
+                            <img src="./resource/西村　クイズ（説明）.jpg">
+                            <img src="./resource/西村　ブーメラン.jpg">
+                            <img src="./resource/西村　ブーメラン2.jpg">
+                            <img src="./resource/西村　巨大空気砲.jpg">
+                            <img src="./resource/西村　渦巻き.JPG">
+                            <img src="./resource/西村　百人おどし.jpg">
+                            <img src="./resource/西村　空気砲（的）.jpg">
+                            <img src="./resource/西村　遠心力.JPG">
+                        </div>
+                        <!--<div class="camera_wrap camera_lime_skin camera_width" id="slide">
+                            <div data-src="./resource/西村　クイズ（コーラ）.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    クイズ（コーラ）
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　クイズ（ブロワー）.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    クイズ（ブロワー）
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　クイズ（人間椅子）.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    クイズ（人間椅子）
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　クイズ（説明）.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    クイズ（説明）
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　ブーメラン.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    ブーメラン
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　ブーメラン2.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    ブーメラン2
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　巨大空気砲.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    巨大空気砲
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　渦巻き.JPG">
+                                <div class="camera_caption fadeFromBottom">
+                                    渦巻き
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　百人おどし.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    百人おどし
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　空気砲（的）.jpg">
+                                <div class="camera_caption fadeFromBottom">
+                                    空気砲（的）
+                                </div>
+                            </div>
+                            <div data-src="./resource/西村　遠心力.JPG">
+                                <div class="camera_caption fadeFromBottom">
+                                    遠心力
+                                </div>
+                            </div>
+                        </div>-->
                     </section>
                 </section>
             </div>
