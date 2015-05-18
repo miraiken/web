@@ -26,8 +26,11 @@ ol.listed_cell_horizontally li:last-child{
     width: 64%;
     text-align: left;
 }
+.boli{
+	border: 1px solid #009000;
+}
 #slide {
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 600px;
 	height: 600px;
 	border: 1px solid #009000;
