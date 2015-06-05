@@ -1,0 +1,23 @@
+@charset "UTF-8";
+div.progect_info_main div.progect_titile {
+    width: 23em;
+}
+
+div.progect_titile_list div.progect_titile {
+    width: 23em;
+}
+div.progect_info_detail th{
+	border: 1px solid #000;
+}
+.企画名-cell {
+	width: 190px;
+}
+.企画形態-cell {
+	width: 36px;
+}
+.対象年齢-cell {
+	width: 54px;
+}
+td.所要時間-cell{
+	text-align: center;
+}
