@@ -49,7 +49,7 @@
 		}else{
 			return i;
 		}
-	}
+	};
 
 	//グローバル変数begin
 	var ORGANIZATIONS_NUM = 9;
@@ -77,16 +77,16 @@
 		"ichikaken",
 		"rikoukaken"
 	];
-	var floor = new Array();
-	var title_list = new Array();
-	var map_link = new Array();
-	var description = new Array();
+	var floor = [];
+	var title_list = [];
+	var map_link = [];
+	var description = [];
 	//グローバル変数end
 	var echo_image = function(doc, pic_plase, pic_alt){
 		log("function 'echo_image' are called.");
 		doc.src = pic_plase;
 		doc.alt = pic_alt;
-	}
+	};
 	var description_is_hidden = function(doc){
 		log("function 'description_is_hidden' are called.");
 		if("none" == doc.style.display){
@@ -94,16 +94,16 @@
 		}else{
 			return false;
 		}
-	}
+	};
 	var hide_all_description = function(){
 		log("function 'hide_all_description' are called.");
 		var i;
 		for(i = 0; i < organizations_name_table.length; i++){
-			if(false == description_is_hidden(description[i])){
+			if(false === description_is_hidden(description[i])){
 				description[i].style.display = "none";
 			}
 		}
-	}
+	};
 	var show_organizations_description = function(organizations_name){
 		log("function 'show_organizations_description' are called.");		
 		//入力したidは存在するか判定
@@ -115,33 +115,33 @@
 				description[temp2].style.display = "block";
 			}
 		}
-	}
+	};
 	var floor_is_hidden = function(doc){
 		log("function 'floor_is_hidden' are called.");
 		var reg = /hidden/g;
 		return reg.test(doc.alt);
-	}
+	};
 	var create_file_name = function(name){
 		log("function 'create_file_name' are called.");
 		return "./map/" + name + ".png";
-	}
+	};
 	var hide_floor_map = function(doc, base_name){
 		log("function 'hide_floor_map' are called.");
 		var name = base_name + "_hidden";
 		echo_image(doc, create_file_name(name), name);
 		doc.usemap = "";
-	}
-	var hide_all_floor = function(){	
+	};
+	var hide_all_floor = function(){
 		log("function 'hide_all_floor' are called.");
 		for(var i = 0; i < floor.length; i++){
 			hide_floor_map(floor[i], Xfloor[i]);
 		}
-	}
+	};
 	var echo_floor_map = function(floor_id, doc, pic_plase, pic_alt){
 		log("function 'echo_floor_map' are called.");
 		echo_image(doc, pic_plase, pic_alt);
 		doc.usemap = "#map-" + floor_id;
-	}
+	};
 	var show_organizations_floor = function(organizations_name){
 		log("function 'show_organizations_floor' are called.");
 		if(-1 != is_exist_in_array(organizations_name_table, organizations_name)){
@@ -153,7 +153,7 @@
 			echo_floor_map(Xfloor[int_floor], floor[int_floor], create_file_name(name), name);
 
 		}
-	}
+	};
 	var show_plain_floor = function(int_floor_num){
 		log("function 'show_plain_floor' are called.int_floor_num = " + int_floor_num);
 		if(0 < int_floor_num && int_floor_num <= FLOOR_NUM){
@@ -161,13 +161,13 @@
 			var name = Xfloor[int_floor_num - 1] + "_plain";
 			echo_floor_map(Xfloor[int_floor_num - 1], floor[int_floor_num - 1], create_file_name(name), name);
 		}
-	}
+	};
 	var show_plain_floor_eve = function(int_floor_num){
 		log("function 'show_plain_floor_eve' are called.");
 		return function(eve){
 			show_plain_floor(int_floor_num);
-		}
-	}
+		};
+	};
 	var show_organizations = function(organizations_name){
 		log("function 'show_organizations' are called.");
 		return function(eve){
@@ -175,8 +175,8 @@
 			show_organizations_floor(organizations_name);
 			show_organizations_description(organizations_name);
 			eve.stopPropagation();
-		}
-	}
+		};
+	};
 
 	function Init(){
 		log("function 'Init' are called.");
@@ -217,7 +217,7 @@
 	            document.detachEvent( 'onreadystatechange', CheckReadyState );
 	            Init();
 	        }
-	    }
+	    };
 	    document.attachEvent( 'onreadystatechange', CheckReadyState );
 	    (function(){
 	        try{

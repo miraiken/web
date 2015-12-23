@@ -67,12 +67,34 @@ maplayer_c = function(id){
         width: 200, height: 100
     };
     //addLayer関数に渡す引数をつくる
-    var layer_arg = new Array();
-    var i;
-    for(i = 0; i < CONSTANT.organizations_name_table.length; i++){
-        layer_arg.push($.extend(true, {}, layer_base));//copy
-        layer_arg[i]['name'] = CONSTANT.organizations_name_table[i];
-        layer_arg[i]['fillStyle'] = organizations_color[organizations_name_table[i]];
+    var layer_args = [
+        { name:"nikaken",         x:161, y:244, width: 43, height: 44 },
+        { name:"ichikaken",       x:161, y:289, width: 43, height: 45 },
+        { name:"rikoukaken",      x:161, y:335, width: 43, height: 51 },
+        { name:"seibutuken",      x:161, y:387, width: 43, height: 52 },
+        { name:"chibilab",        x:161, y:440, width: 43, height: 45 },
+        { name:"akituken_tokoro", x:161, y:485, width: 43, height: 36 },
+        { name:"iidaken",         x:161, y:523, width: 43, height: 44 },
+        { name:"ichisuuken",      x:161, y:568, width: 43, height: 38 },
+        { name:"tenmonken",       x:229, y:225, width: 19, height: 30 },
+        { name:"tenmonken",       x:248, y:225, width: 43, height: 38 },
+        { name:"nisuuken",        x:248, y:264, width: 43, height: 32 },
+        { name:"icibukken",       x:248, y:297, width: 43, height: 38 },
+        { name:"ACM",             x:244, y:338, width: 4,  height: 36 },
+        { name:"ACM",             x:258, y:336, width: 43, height: 48 },
+        { name:"bunngukenn",      x:249, y:437, width: 42, height: 67 },
+        { name:"chikaken",        x:248, y:515, width: 43, height: 31 },
+        { name:"kikoukaken",      x:248, y:547, width: 43, height: 32 },
+        { name:"kikoukaken",      x:262, y:579, width: 30, height: 13 },
+        { name:"kindai",          x:361, y:399, width: 86, height: 75 }
+   ];
+    for(var layer_arg in layer_args){
+        layer_arg.type = "rectangle";
+        layer_arg.fillStyle = CONSTANT.organizations_color[layer_arg.name];
+        layer_arg.click = function(layer){
+            layer.visible = !layer.visible;
+            
+        };
     }
     //レイヤーに追加その1
     $(this.id_).drawImage({
@@ -81,15 +103,16 @@ maplayer_c = function(id){
         layer:true,
         name:"backimg",
         fromCenter: false
+    }).addLayer({
+        type:"rectangle",
+        name:""
     });
     //レイヤーに追加その2 addLayer
-    var l_a;
-    for(l_a in layer_arg){
+    for(var l_a in layer_args){
         $(this.id_).addLayer(l_a);
     }
     //LayerGroup作成
-    var o_name;
-    for(o_name in CONSTANT.organizations_name_table){
+    for(var o_name in CONSTANT.organizations_name_table){
         $(this.id_).addLayerToGroup(o_name, CONSTANT.layer_group_name);
     }
     this.layer_group_ = $(this.id_).getLayerGroup(CONSTANT.layer_group_name);
@@ -116,19 +139,20 @@ var hide_all_description = function(){
         var t_id = "#" + CONSTANT.description_id_prefix + organizations_name_table;
         $(t_id).style.display = "none";
     }
-}
+};
 var show_all_description = function(){
     var o_name;
     for(o_name in CONSTANT.organizations_name_table){
         var t_id = "#" + CONSTANT.description_id_prefix + organizations_name_table;
         $(t_id).style.display = "block";
     }
-}
+};
 var exclusive_show_description = function(name){
     hide_all_description();
     $("#" + CONSTANT.description_id_prefix + name).style.display = "block";
-}
+};
 $(function(){
+    var map_1f = new maplayer_c("map1");
 	$("#map1").drawImage(CONSTANT.backimg).drawArc({         // 1. 赤い円を描画する
         fillStyle: "#ff0000",      // 塗りつぶしの色（赤）
         strokeStyle: "#000000",    // 枠線の色（黒）

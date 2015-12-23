@@ -21,3 +21,6 @@ div.progect_info_detail th{
 td.所要時間-cell{
 	text-align: center;
 }
+#map1{
+	border: 1px solid gray;
+}
