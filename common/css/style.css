@@ -362,6 +362,10 @@ ul.content_list{
 	margin-left: 100px;
 }
 
+footer p small{
+	margin-left: 0;
+}
+
 #pageBodyMain div img{
 	margin-left: 100px;
 }

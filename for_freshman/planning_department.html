@@ -5,6 +5,13 @@
 	<title>新入生向けページ|東京理科大学みらい研究室</title>
 	<link rel="stylesheet" href="../common/css/normalize.css">
 	<link rel="stylesheet" href="../common/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="../common/script/load.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            load_parts("../", [["pageBodySub", "pageBodySub", false]]);
+        });
+    </script>
     <script src="../common/script/GoogleAnalytics_common.js"></script>
 </head>
 <body>
@@ -53,9 +60,9 @@
                 <li>イベントが完成する様子を1から経験したい！</li>
                 <li>みらい研委員以外の団体とも交流したい！</li>
             </ol>
-            <img width="150" src="https://openclipart.org/image/300px/svg_to_png/161449/mail-marketing.png" />
-            <img width="150" src="https://openclipart.org/image/300px/svg_to_png/22366/nicubunu-Peer-to-peer.png" />
-            <img width="150" src="https://openclipart.org/image/300px/svg_to_png/192389/manwithbread.png" />
+            <img width="150" alt="mail-marketing" src="https://openclipart.org/image/300px/svg_to_png/161449/mail-marketing.png" />
+            <img width="150" alt="nicubunu-Peer-to-peer" src="https://openclipart.org/image/300px/svg_to_png/22366/nicubunu-Peer-to-peer.png" />
+            <img width="150" alt="manwithbread" src="https://openclipart.org/image/300px/svg_to_png/192389/manwithbread.png" />
         </section>
 	</div>
 
@@ -68,19 +75,11 @@
             <li><a href="public_relations_department.html">広報班</a></li>
 		</ul>
 		</nav>
-        <nav class="sideNavi_event">
-            <ul>
-                <li class="color_june"><a href="../event/2015/event_june/index.html">2015年<br>6月6,7日開催<br>-科学へのトビラ-</a></li>
-                <!--<li class="color_march"><a href="../event/2016/event_march/index.html">2016年<br>3月14日開催<br>-オドロキ科学箱-</a></li>-->
-                <li><a href="../event/index.html">過去のイベント情報はこちら</a></li>
-            </ul>
-        </nav>
 	</div>
-	
 </div>
 
 <footer id="pageFoot">
-	<p id="copyright"><small>Copyright&copy; 2015 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.</small></p>
+    <p id="copyright"><small>Copyright&copy; </small><small id="copyright_year">year</small><small> 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved. </small><small id="last_modified">last_modified</small></p>
 </footer>
 </div>
 

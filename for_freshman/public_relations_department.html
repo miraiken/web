@@ -9,12 +9,14 @@
     <link type="text/css" href="./resource/camera_kai_pre.css" rel="stylesheet" media="all" />
     <link type="text/css" href="../common/css/camera_kai.css" rel="stylesheet" media="all" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="../common/script/load.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="../common/script/camera.min.js"></script>
     <!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
     <script src="../common/script/GoogleAnalytics_common.js"></script>
     <script type="text/javascript">
     jQuery(function () {
+        load_parts("../", [["pageBodySub", "pageBodySub", false]]);
         jQuery('#slide').camera({
             height: '400px',
             hover: false,
@@ -65,7 +67,7 @@
                 <p>この他にもメルマガ配信やラジオ出演などの活動も！</p>
             </div>
             <div style="display:inline-block;">
-                <img style="margin-left:0px;" width="290" src="./resource/2014年度　6月期表紙（webに貼る用））　.png">
+                <img style="margin-left:0px;" alt="2014年度　6月期表紙（webに貼る用））" width="290" src="./resource/2014年度　6月期表紙（webに貼る用））　.png">
             </div>
         </section>
         <section>
@@ -75,9 +77,9 @@
                 初心者でもやる気があれば大丈夫です！一から教えます。<br>
                 いろいろな技術を身につけることができます！
             </p>
-            <img width="150" src="https://openclipart.org/image/300px/svg_to_png/69331/HTML-Icon-Final.png" />
-            <img width="150" src="https://openclipart.org/image/300px/svg_to_png/174173/simplePc.png" />
-            <img width="150" src="https://openclipart.org/image/300px/svg_to_png/192640/1397134150.png" />
+            <img width="150" alt="HTML-Icon-Final" src="https://openclipart.org/image/300px/svg_to_png/69331/HTML-Icon-Final.png" />
+            <img width="150" alt="simplePc" src="https://openclipart.org/image/300px/svg_to_png/174173/simplePc.png" />
+            <img width="150" alt="1397134150" src="https://openclipart.org/image/300px/svg_to_png/192640/1397134150.png" />
         </section>
         <section>
             <h2 class="pagetitle">過去の作品</h2>
@@ -121,19 +123,11 @@
             <li><a href="public_relations_department.html">広報班</a></li>
 		</ul>
 		</nav>
-        <nav class="sideNavi_event">
-            <ul>
-                <li class="color_june"><a href="../event/2015/event_june/index.html">2015年<br>6月6,7日開催<br>-科学へのトビラ-</a></li>
-                <!--<li class="color_march"><a href="../event/2016/event_march/index.html">2016年<br>3月14日開催<br>-オドロキ科学箱-</a></li>-->
-                <li><a href="../event/index.html">過去のイベント情報はこちら</a></li>
-            </ul>
-        </nav>
 	</div>
-	
 </div>
 
 <footer id="pageFoot">
-	<p id="copyright"><small>Copyright&copy; 2015 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.</small></p>
+    <p id="copyright"><small>Copyright&copy; </small><small id="copyright_year">year</small><small> 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved. </small><small id="last_modified">last_modified</small></p>
 </footer>
 </div>
 
