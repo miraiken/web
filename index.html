@@ -5,7 +5,13 @@
 	<title>東京理科大学みらい研究室</title>
 	<link rel="stylesheet" href="common/css/normalize.css">
 	<link rel="stylesheet" href="common/css/style.css">
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="./common/script/load.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            load_parts("./");
+        });
+    </script>
 	<script type="text/javascript" src="common/script/slideshow.js"></script>
     <script src="./common/script/GoogleAnalytics_common.js"></script>
 </head>
@@ -209,20 +215,11 @@
 	</article>
 	</div>
 
-	<div id="pageBodySub">
-		<nav class="sideNavi_event">
-			<ul>
-				<li class="color_june"><a href="./event/2015/event_june/index.html">2015年<br>6月6,7日開催<br>-科学へのトビラ-</a></li>
-				<!--<li class="color_march"><a href="./event/2016/event_march/index.html">2016年<br>3月14日開催<br>-オドロキ科学箱-</a></li>-->
-                <li><a href="./event/index.html">過去のイベント情報はこちら</a></li>
-			</ul>
-		</nav>
-	</div>
-	
+    <div id="pageBodySub">pageBodySub</div>
 </div>
 
 <footer id="pageFoot">
-	<p id="copyright"><small>Copyright&copy; 2015 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.</small></p>
+    <p id="copyright"><small>Copyright&copy; </small><small id="copyright_year">year</small><small> 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved. </small><small id="last_modified">last_modified</small></p>
 </footer>
 </div>
 
