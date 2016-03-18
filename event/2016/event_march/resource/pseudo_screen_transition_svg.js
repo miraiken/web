@@ -29,10 +29,26 @@ var constexpr = {
 			"id209" : "tenmonken",
 			"id210" : "tenmonken"
 		}
-	}
+	},
+	'itos' : ["first", "second", "third"]
 };Object.freeze(constexpr);
 svg_manager = function(){
-	this.first  = document.getElementById("fitst_floor_svg").contentDocument;
-	this.second = document.getElementById("second_floor_svg").contentDocument;
-	this.third  = document.getElementById("third_floor_svg").contentDocument;
+	this.svg = {
+		"first" : document.getElementById("fitst_floor_svg").contentDocument,
+		"second" : document.getElementById("second_floor_svg").contentDocument,
+		"third" : document.getElementById("third_floor_svg").contentDocument
+	};
+	this.svg_detail = {};
+	for(var floor in constexpr.svgid_name_cvt){
+		for(var id in constexpr.svgid_name_cvt[floor]){
+			this.svg_detail[floor][id] = this.svg[floor].getElementById(id);
+		}
+	}
+	this.current_floor = "first";
+};
+svg_manager.prototype.show = function(floor, id){
+	this.svg_detail[floor].setAttribute('fill', '');
+};
+svg_manager.prototype.clear = function(){
+	this.svg[this.current_floor]
 };
