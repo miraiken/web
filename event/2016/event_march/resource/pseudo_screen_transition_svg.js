@@ -74,3 +74,19 @@ svg_manager.prototype.on_click = function(floor, id){
 	this.hide_all();
 	this.show(floor, id);
 }
+/**
+ * @brief register on click event
+ * 
+ * @param func function(floor, id)
+ */
+svg_manager.prototype.register_on_click_event = function(func){
+	var that = this;//bind this
+	for(var floor in svg_detail){
+		for(var id in svg_detail[floor]){
+			svg_detail[floor][id].addEventListener("click", function(e){
+				that.on_click(floor, id);
+				if(undefined !== func) func(floor, id);
+			}, false);
+		}
+	}
+}
