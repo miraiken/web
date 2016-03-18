@@ -91,3 +91,9 @@ svg_manager.prototype.register_on_click_event = function(func){
 		}
 	}
 }
+document.getElementsByTagName("body")[0].addEventListener("load", function(){
+	setInterval(function(){
+		var svg = new svg_manager();
+		svg.register_on_click_event();
+	}, 100);
+}, false);

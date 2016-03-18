@@ -1,0 +1,17 @@
+http://www.yunabe.jp/docs/javascript_class_in_google.html#google-closure-
+http://wp.tech-style.info/archives/545
+http://www.h2.dion.ne.jp/~defghi/svgMemo/svgMemo_03.htm
+https://developer.mozilla.org/ja/docs/Web/SVG/Tutorial/Paths
+https://www.google.co.jp/search?q=svg+addeventlistener&ie=utf-8&oe=utf-8&hl=ja#hl=ja&q=svg+addeventlistener+object
+http://stackoverflow.com/questions/12451855/how-to-add-event-listeners-to-objects-in-a-svg
+http://stackoverflow.com/questions/32571374/mozilla-firefox-doent-load-svg-objects-in-addeventlistenerload
+http://qiita.com/ka215/items/f9834dca40bb3d7e9c8b
+http://ka2.org/controll-svg-files-by-html5/
+https://www.google.co.jp/search?q=svg+inline&ie=utf-8&oe=utf-8&hl=ja#hl=ja&q=svg+inline+event
+http://www.atmarkit.co.jp/ait/articles/1207/02/news142_5.html
+http://stackoverflow.com/questions/13214522/iframe-button-click-event
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11146070181
+http://stackoverflow.com/questions/7072423/why-does-childnodes-return-a-number-larger-than-i-expect
+https://developer.mozilla.org/ja/docs/Web/API/Element/getAttribute
+http://www.w3schools.com/jsref/event_onload.asp
+http://stackoverflow.com/questions/5082165/add-event-handler-for-body-onload-by-javascript-within-body-part
