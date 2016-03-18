@@ -47,8 +47,30 @@ svg_manager = function(){
 	this.current_floor = "first";
 };
 svg_manager.prototype.show = function(floor, id){
-	this.svg_detail[floor].setAttribute('fill', '');
+	var line_i = undefined;var box_i = undefined;
+	var nodes = this.svg_detail[floor][id].childNodes;
+	for(var i = 0; i < nodes.length; ++i){
+		if(nodes[i].getAttribute("fill")!= "none" && nodes[i].getAttribute("stroke") == "none") box_i = i;
+		else if(nodes[i].getAttribute("fill")== "none" && nodes[i].getAttribute("stroke") != "none") line_i = i;
+	}
+	nodes[box_i].setAttribute('fill', nodes[line_i].getAttribute("stroke"));
 };
-svg_manager.prototype.clear = function(){
-	this.svg[this.current_floor]
+svg_manager.prototype.hide = function(floor, id){
+	var nodes = this.svg_detail[floor][id].childNodes;
+	for(var i = 0; i < nodes.length; ++i){
+		if(nodes[i].getAttribute("fill")!= "rgb(255,255,255)" && nodes[i].getAttribute("stroke") == "none"){
+			nodes[i].setAttribute("fill", "rgb(255,255,255)");
+		}
+	}
+}
+svg_manager.prototype.hide_all = function(){
+	for(var floor in svgid_name_cvt){
+		for(var id in svgid_name_cvt[floor]){
+			this.hide(floor, id);
+		}
+	}
 };
+svg_manager.prototype.on_click = function(floor, id){
+	this.hide_all();
+	this.show(floor, id);
+}
