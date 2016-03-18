@@ -1892,8 +1892,6 @@
        <rect class="BoundingBox" stroke="none" fill="none" x="17746" y="6836" width="2587" height="3518"/>
        <path fill="rgb(255,255,255)" stroke="none" d="M 15557,6837 L 19039,6837 C 19685,6837 20331,7483 20331,8129 L 20331,10699 L 15557,10699 Z"/>
        <path fill="none" stroke="rgb(244,179,194)" d="M 15557,6837 L 19039,6837 C 19685,6837 20331,7483 20331,8129 L 20331,10699 L 15557,10699 Z"/>
-       <path fill="none" stroke="rgb(244,179,194)" d="M 17747,6837 L 17747,6837 Z"/>
-       <path fill="none" stroke="rgb(244,179,194)" d="M 20331,10352 L 20331,10352 Z"/>
       </g>
      </g>
      <g class="com.sun.star.drawing.CustomShape">
