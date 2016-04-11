@@ -9,7 +9,7 @@
 var load_html_and_insert = function (html_url, insert_info_arr, lelative_path_to_root){
     $.ajax(html_url, {
         timeout : 1500,
-        datatype: 'html'
+        datatype: "html"
     }).then(function(data){
         var data_t = data.replace(/\.\//g, lelative_path_to_root);
         var out_html = $($.parseHTML(data_t));//parse1
@@ -41,7 +41,7 @@ var load_html_and_insert = function (html_url, insert_info_arr, lelative_path_to
  * @param  {Date} date
  */
 var to_date_string = function(date){
-    return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + ' ' + date.getHours() + "時" + date.getMinutes() + "分";
+    return date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate() + " " + date.getHours() + "時" + date.getMinutes() + "分";
 };
 /**
  * @param  {string} lelative_path_to_root
@@ -49,11 +49,11 @@ var to_date_string = function(date){
  */
 var load_parts = function(lelative_path_to_root, insert_info_arr){
     load_html_and_insert(
-        lelative_path_to_root + 'common/html/parts.html', 
+        lelative_path_to_root + "common/html/parts.html", 
         (insert_info_arr === undefined) ? [["pageBodySub", "pageBodySub"]] : insert_info_arr, 
         lelative_path_to_root
     );
     var last_update_Date = new Date(document.lastModified);
-    $('#copyright_year').empty().append(last_update_Date.getFullYear());
-    $('#last_modified').empty().append("更新日:" + to_date_string(last_update_Date));
+    $("#copyright_year").empty().append(last_update_Date.getFullYear());
+    $("#last_modified").empty().append("更新日:" + to_date_string(last_update_Date));
 };
