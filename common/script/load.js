@@ -1,9 +1,9 @@
 /**
  * @brief use Ajax(jQuey) to get external html and extract by id and insert by id.
  *
- * @param html_url url or lelative path or...
- * @param insert_info_arr 2d-array like std::vector<std::array<std::string, 2>>.
- *
+ * @param  {string} html_url url or lelative path or...
+ * @param  {Object} insert_info_arr 2d-array like std::vector<std::array<std::string, 2>>.
+ * @param  {string} lelative_path_to_root
  * @return none.
  */
 var load_html_and_insert = function (html_url, insert_info_arr, lelative_path_to_root){
@@ -37,9 +37,16 @@ var load_html_and_insert = function (html_url, insert_info_arr, lelative_path_to
         }
     });
 };
+/**
+ * @param  {Date} date
+ */
 var to_date_string = function(date){
     return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + ' ' + date.getHours() + "時" + date.getMinutes() + "分";
 };
+/**
+ * @param  {string} lelative_path_to_root
+ * @param  {Object} insert_info_arr 2d-array like std::vector<std::array<std::string, 2>>.
+ */
 var load_parts = function(lelative_path_to_root, insert_info_arr){
     load_html_and_insert(
         lelative_path_to_root + 'common/html/parts.html', 
