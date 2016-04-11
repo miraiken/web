@@ -64,8 +64,7 @@ table.normal_table th{
 	vertical-align: middle;
 	text-align: center;
 }
-/* --normal*/
-/*-----  ?X???C?h?V???[  -----*/
+/*-----  TOPページのスライドショー  -----*/
 #slideshow {
 	position: relative;
 	width:  800px;
@@ -89,9 +88,7 @@ table.normal_table th{
 #slideshow img.last-active {
 	z-index: 9;
 }
-/*-----  ?X???C?h?V???[?±?±?U?A  -----*/
-
-/*----- ?O???[?o???i?r  -----*/
+/*----- タイトル＋SlideShow＋Menu  -----*/
 #pageHead .globalNavi {
 	padding-top: 0;
 	width: 100%;
@@ -141,7 +138,7 @@ table.normal_table th{
 
 #pageHead .globalNavi ul {
 	background-image: -webkit-linear-gradient(top, #aaffaa, #57b82b);
-	background-image: -moz-linear-gradient(top, #aaffaaf, #57b82b);
+	background-image: -moz-linear-gradient(top, #aaffaa, #57b82b);
 	background-image: -ms-linear-gradient(top, #aaffaa, #57b82b);
 	background-image: -o-linear-gradient(top, #aaffaa, #57b82b);
 	background-image: linear-gradient(to bottom, #aaffaa, #57b82b);
@@ -157,7 +154,7 @@ table.normal_table th{
 	clear: both;
 	display: block;
 }
-/*-----  ?O???[?o???i?r?±?±?U?A  -----*/
+/*-----  本体部分  -----*/
 
 #pageBody {
 	width: 1108px;
@@ -214,7 +211,7 @@ table.normal_table th{
 }
 
 #pageBodyMain .news {
-	padding-left: 0px;
+	padding-left: 0;
 }
 
 #pageBodyMain .news table {
@@ -369,8 +366,8 @@ footer p small{
 #pageBodyMain div img{
 	margin-left: 100px;
 }
-/*---- ?T?u???j???[ ----*/
 
+/*---- event情報などのためのside bar ----*/
 #pageBodySub {
 	width: 280px;
 	float: right;
@@ -387,7 +384,7 @@ footer p small{
 	list-style: none;
 	padding-top: 10px;
 	padding-bottom: 5px;
-	padding-left: 0px;/* ブラウザの標準cssでpaddingされるのを防ぐ*/
+	padding-left: 0;/* ブラウザの標準cssでpaddingされるのを防ぐ*/
 	width: 240px;
 }
 #pageBodySub .sideNavi li.top {
@@ -471,7 +468,7 @@ footer p small{
 	width: 240px;
 	height: 50px;
 }
-#pageBodySub .color_june p.title {/* color_june?Ihtml?E?U???￠?A?? */
+#pageBodySub .color_june p.title {
 	border: solid 1px #000000;
 	background-color: #fa6603;
 	color: #ffffff;
@@ -610,7 +607,7 @@ div.link_box a{
 	text-decoration: none;
 	font-size: 17px;
 	font-weight: bold;
-	padding: 15px 0px;
+	padding: 15px 0;
 	text-align: center;
 	color: inherit;
 }
