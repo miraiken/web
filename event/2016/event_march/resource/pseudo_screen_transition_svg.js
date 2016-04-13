@@ -1,4 +1,19 @@
+'use strict'
+/**
+ * @const {object}
+ */
 var constexpr = {
+	'organizations_name_table' : [
+		"chikaken",
+		"tenmonken",
+		"seibutuken",
+		"bunngukenn",
+		"chibilab",
+		"ACM",
+		"nikaken",
+		"ichikaken",
+		"rikoukaken"
+	],
 	'name_svgid_cvt' : {
 		"chikaken"  : {"second" : ["id305"]},
 		"tenmonken" : {"first" : ["id266"], "third" : ["id209", "id210"]},
@@ -70,14 +85,27 @@ svg_manager.prototype.hide_all = function(){
 		}
 	}
 };
+/**
+ * @type svg_manager_click_event_callback
+ * @param  {string} floor
+ * @param  {string} id
+ * @return none
+ */
 svg_manager.prototype.on_click = function(floor, id){
 	this.hide_all();
 	this.show(floor, id);
 };
 /**
+ * This callback type is called `svg_manager_click_event_callback` and is displayed as a global symbol.
+ *
+ * @callback svg_manager_click_event_callback
+ * @param {string} floor
+ * @param {string} id
+ */
+
+/**
  * @brief register on click event
- * 
- * @param func function(floor, id)
+ * @param  {svg_manager_click_event_callback} func
  */
 svg_manager.prototype.register_on_click_event = function(func){
 	for(var floor in svg_detail){
@@ -91,10 +119,45 @@ svg_manager.prototype.register_on_click_event = function(func){
 		}
 	}
 };
+description_manager = function(){
+	/** @type {Element{}}*/
+	this.description = {};
+	for(var i = 0; i < constexpr.organizations_name_table.length; ++i){
+		this.description[constexpr.organizations_name_table[i]] = document.getElementById("description_" + constexpr.organizations_name_table[i]);
+	}
+	this.shown = [];
+	this.hide_detail_all();
+}
+description_manager.prototype.hide_detail = function (organizations_name) {
+	var detail = Array.prototype.filter.call(organizations_name, function(e){
+		return e.nodeType === 1;
+	});
+	detail[0].style.display = "none";
+}
+description_manager.prototype.hide_detail_all = function () { 
+	for(var i = 0; i < constexpr.organizations_name_table.length; ++i){
+		this.hide_detail(constexpr.organizations_name_table[i]);
+	}
+	this.shown = [];
+}
+description_manager.prototype.hide_detail_all_fast = function (){
+	for(var i = 0; i < this.shown.length; ++i){
+		this.hide_detail(constexpr.organizations_name_table[i]);
+	}
+	this.shown = [];
+}
+/**
+ * @param  {string} organizations_name
+ */
+description_manager.prototype.show_detail = function (organizations_name) {
+	this.hide_detail_all_fast();
+	this.description[organizations_name].style.display = "block";
+	this.shown.push(organizations_name);
+}
 console.log(document.getElementsByTagName("body")[0]);
 document.getElementsByTagName("body")[0].addEventListener("load", function(){
 	setInterval(function(){
 		var svg = new svg_manager();
-		svg.register_on_click_event();
+		svg.register_on_click_event(svg.on_click);
 	}, 100);
 }, false);
