@@ -47,16 +47,22 @@ var constexpr = {
 	},
 	'itos' : ["first", "second", "third"]
 };Object.freeze(constexpr);
+floor_manager = function () {
+	this.doc = {};
+	for(var i = 0; i < constexpr.itos.length; ++i){
+		this.doc[constexpr.itos[i]] = document.getElementById(constexpr.itos[i] + "_floor_svg");
+	}
+}
 svg_manager = function(){
-	this.svg = {
-		"first" : document.getElementById("fitst_floor_svg").contentDocument,
-		"second" : document.getElementById("second_floor_svg").contentDocument,
-		"third" : document.getElementById("third_floor_svg").contentDocument
-	};
+	this.floor_ = new floor_manager();
+	this.svg_ = {};
+	for(var i = 0; i < constexpr.itos.length; ++i){
+		this.svg_[constexpr.itos[i]] = this.floor_.doc[constexpr.itos[i]];
+	}
 	this.svg_detail = {};
 	for(var floor in constexpr.svgid_name_cvt){
 		for(var id in constexpr.svgid_name_cvt[floor]){
-			this.svg_detail[floor][id] = this.svg[floor].getElementById(id);
+			this.svg_detail[floor][id] = this.svg_[floor].getElementById(id);
 		}
 	}
 	this.current_floor = "first";
