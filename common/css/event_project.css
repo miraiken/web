@@ -112,3 +112,44 @@ AircraftMakers/野田
 .org_color_industrial{
 	background-color: #89c3eb;
 }
+/*
+自然の不思議:#fef263
+1部物理研究会/神楽坂
+地球科学研究部/神楽坂
+2部生物研究部/神楽坂
+文具研究同好会
+*/
+.org_color_geoscience2{
+	background-color: #fef263;
+}
+/*
+身の回りの科学:#f4b3c2
+理工学部化学研究会/野田
+1部化学研究部/神楽坂
+2部化学研究部/神楽坂
+野老(トコロ)実験クラブ/神楽坂
+サイエンスコミュニケ―ションサークルchibi lab./神楽坂
+*/
+.org_color_chemistry2{
+	background-color: #f4b3c2;
+}
+/*
+算数と宇宙:#cca6bf
+一部数学研究部/神楽坂
+2部数学研究部/神楽坂
+1部2部天文研究部/神楽坂
+野田天文研/野田
+*/
+.org_color_math2{
+	background-color: #cca6bf;
+}
+/*
+乗り物と技術:#89c3eb
+AircraftMakers/野田
+機械工学研究会/野田
+1部無線研究部有志/神楽坂
+1部無線研究部有志/神楽坂
+*/
+.org_color_industrial2{
+	background-color: #89c3eb;
+}
