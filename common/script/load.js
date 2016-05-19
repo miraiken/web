@@ -48,11 +48,13 @@ var to_date_string = function(date){
  * @param  {Object} insert_info_arr 2d-array like std::vector<std::array<std::string, 2>>.
  */
 var load_parts = function(lelative_path_to_root, insert_info_arr){
-    load_html_and_insert(
-        lelative_path_to_root + "common/html/parts.html", 
-        (insert_info_arr === undefined) ? [["pageBodySub", "pageBodySub"]] : insert_info_arr, 
-        lelative_path_to_root
-    );
+    if(lelative_path_to_root !== undefined){
+        load_html_and_insert(
+            lelative_path_to_root + "common/html/parts.html", 
+            (insert_info_arr === undefined) ? [["pageBodySub", "pageBodySub"]] : insert_info_arr, 
+            lelative_path_to_root
+        );
+    }
     var last_update_Date = new Date(document.lastModified);
     $("#copyright_year").empty().append(last_update_Date.getFullYear());
     $("#last_modified").empty().append("更新日:" + to_date_string(last_update_Date));
