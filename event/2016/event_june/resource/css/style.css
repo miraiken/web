@@ -2,7 +2,6 @@
 
 body {
     margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
 }
 
 canvas {
@@ -64,4 +63,92 @@ canvas {
 
 .count-particles {
     border-radius: 0 0 3px 3px;
+}
+
+/*other*/
+.progect_titile > h2 {
+    margin: 0;
+    padding: 0;
+}
+.progect_titile > p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+.progect_info{
+    margin: 4px;
+}
+.progect_info_introduce {
+    margin: 0 1em;
+}
+.progect_info_detail {
+    margin: 0 1em;
+}
+.progect_info_detail > section {
+    padding: 4px 1em;
+}
+.progect_info_detail > section > h3 {
+    margin: 0;
+    padding: 0;
+}
+.progect_info_detail > section > p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+.progect_info_detail > section > table {
+    margin: 4px 0;
+    border: 1px solid black;
+    font-size: 12px
+}
+.progect_info_detail > section > table th, td {
+    font-weight: normal;
+    padding: 2px;
+    border: 1px solid black;
+}
+#aria_chemistory .progect_titile {
+    background-color: #f4b3c2;
+}
+#aria_geoscience .progect_titile {
+    background-color: #fef263;
+}
+#aria_math .progect_titile {
+    background-color: #cca6bf;
+}
+#aria_industrial .progect_titile {
+    background-color: #89c3eb;
+}
+#description_musenken .progect_titile {
+    background-color: #89c3eb;
+}
+#aria_chemistory > article {
+    border: 1px solid #f4b3c2;
+}
+#aria_geoscience > article {
+    border: 1px solid #fef263;
+}
+#aria_math > article {
+    border: 1px solid #cca6bf;
+}
+#aria_industrial > article {
+    border: 1px solid #89c3eb;
+}
+#description_musenken {
+    border: 1px solid #89c3eb;
+}
+
+#aria_chemistory .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #f4b3c2;
+}
+#aria_geoscience .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #fef263;
+}
+#aria_math .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #cca6bf;
+}
+#aria_industrial .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #89c3eb;
+}
+#description_musenken .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #89c3eb;
 }

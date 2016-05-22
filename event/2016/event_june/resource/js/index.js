@@ -1,7 +1,7 @@
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 6,
+      "value": 7,
       "density": {
         "enable": false,
         "value_area": 800
@@ -21,8 +21,8 @@ particlesJS("particles-js", {
       },
       "image": {
         "src": "./resource/img/puzzle.png",
-        "width": 400,
-        "height": 400
+        "width": 500,
+        "height": 500
       }
     },
     "opacity": {
