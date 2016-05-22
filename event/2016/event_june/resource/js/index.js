@@ -1,4 +1,4 @@
-particlesJS("pageBody", {
+particlesJS("particles-js", {
   "particles": {
     "number": {
       "value": 6,
