@@ -1,7 +1,8 @@
+$(function(){
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 7,
+      "value": 9,
       "density": {
         "enable": false,
         "value_area": 800
@@ -107,6 +108,7 @@ particlesJS("particles-js", {
     }
   },
   "retina_detect": false
+});
 });
 // var /*count_particles, stats,*/ update;
 // // stats = new Stats;

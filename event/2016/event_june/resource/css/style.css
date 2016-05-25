@@ -21,11 +21,17 @@ canvas {
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 1;
 }
 #pageBodyMain > section {
     background-color: white;
 }
 
+/*for particle-js*/
+.topicPathback, #pageBodyMain, #pageBodySub {
+    position: relative;
+    z-index: 2;
+}
 
 /* ---- stats.js ---- */
 
