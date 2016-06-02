@@ -9,7 +9,14 @@ canvas {
     vertical-align: bottom;
 }
 
-
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container > div, .container > section{
+    padding: 5px;
+}
 /* ---- particles.js container ---- */
 
 #pageBody {
