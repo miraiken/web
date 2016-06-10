@@ -17,6 +17,9 @@ canvas {
 .container > div, .container > section{
     padding: 5px;
 }
+section > dl, section > table.normal_table{
+    margin: 18px 50px;
+}
 /* ---- particles.js container ---- */
 
 #pageBody {
