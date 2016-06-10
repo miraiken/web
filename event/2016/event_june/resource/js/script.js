@@ -1,15 +1,14 @@
 (function () {
-  if ( typeof window.CustomEvent === "function" ) return false;
-  function CustomEvent ( event, params ) {
-    params = params || { bubbles: false, cancelable: false, detail: undefined };
-    var evt = document.createEvent( 'CustomEvent' );
-    evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
-    return evt;
-   }
-  CustomEvent.prototype = window.Event.prototype;
-  window.CustomEvent = CustomEvent;
+	if ( typeof window.CustomEvent === "function" ) return false;
+	function CustomEvent ( event, params ) {
+		params = params || { bubbles: false, cancelable: false, detail: undefined };
+		var evt = document.createEvent( 'CustomEvent' );
+		evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+		return evt;
+	}
+	CustomEvent.prototype = window.Event.prototype;
+	window.CustomEvent = CustomEvent;
 })();
-CustomEvent = window.CustomEvent;
 $(function() {
 	var $canvas = $("#particles-js > canvas");
 	// init
@@ -21,8 +20,6 @@ $(function() {
 	    var attr = $(this).attr('class').split(' ');
 	    $('#aria_' + attr[1]).show();
 	    if(is_first_click){
-		    // removeChild(document.getElementById("paticular-js"));
-		    // load_pazzle();
 		    if(CustomEvent != null){
 			    var event = new CustomEvent("resize");
 				window.dispatchEvent(event);
