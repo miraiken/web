@@ -165,3 +165,26 @@ canvas {
 #description_musenken .progect_info_detail > section > h3 {
     border-bottom: 1px solid #89c3eb;
 }
+
+/* take add */
+.btn {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+}
+
+.geoscience {
+    background-color: #fef263;
+}
+
+.math {
+    background-color: #cca6bf;
+}
+
+.industrial {
+    background-color: #89c3eb;
+}
+
+.chemistory {
+    background-color: #f4b3c2;
+}
