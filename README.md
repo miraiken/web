@@ -12,7 +12,7 @@ https://miraiken.github.io/web/index.html
 
 ローカルサーバー構築には、kokoが手軽で便利です。
 
-[開発用・簡易Webサーバー/プロクシサーバーkokoをつくった - Qiita](http://qiita.com/fnobi/items/cf8ffae04e6c530958c7)
+[開発用・簡易Webサーバー/プロクシサーバーkokoをつくった - Qiita](http://qiita.com/fnobi/items/cf8ffae04e6c530958c7)  
 [fnobi/koko: instant file server (proxy server).](https://github.com/fnobi/koko)
 
 まずインストールします。``npm``がない場合は、``nvm``や``nodist``などで``node.js``を導入してください。
