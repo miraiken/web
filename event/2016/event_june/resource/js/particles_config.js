@@ -1,5 +1,5 @@
 var load_pazzle = function(){
-  particlesJS("particles-js", {
+  particlesJS("particles_js", {
     "particles": {
       "number": {
         "value": 9,

@@ -51,7 +51,7 @@ var load_parts = function(lelative_path_to_root, insert_info_arr){
     if(lelative_path_to_root !== undefined){
         load_html_and_insert(
             lelative_path_to_root + "common/html/parts.html", 
-            (insert_info_arr === undefined) ? [["pageBodySub", "pageBodySub"]] : insert_info_arr, 
+            (insert_info_arr === undefined) ? [["page_body_sub", "page_body_sub"]] : insert_info_arr, 
             lelative_path_to_root
         );
     }
