@@ -1,6 +1,6 @@
 (function(){
 	// デバッグモード切替
-	var debugMode = true;//Release時にはfalseに
+	var debugMode = false;//Release時にはfalseに
 
 	// 置換対象のメソッドを配列として保持する
 	var methods = [
@@ -60,7 +60,7 @@
 		"tenmonken" : 1,
 		"chikaken" : 1,
 		"chibilab" : 3,
-		"ACM" : 3,
+		"acm" : 3,
 		"seibutuken" : 2,
 		"ichikaken" : 3,
 		"nikaken" : 3,
@@ -72,7 +72,7 @@
 		"seibutuken",
 		"bunngukenn",
 		"chibilab",
-		"ACM",
+		"acm",
 		"nikaken",
 		"ichikaken",
 		"rikoukaken"
@@ -140,7 +140,7 @@
 	var echo_floor_map = function(floor_id, doc, pic_plase, pic_alt){
 		log("function 'echo_floor_map' are called.");
 		echo_image(doc, pic_plase, pic_alt);
-		doc.usemap = "#map-" + floor_id;
+		doc.usemap = "#map_" + floor_id;
 	};
 	var show_organizations_floor = function(organizations_name){
 		log("function 'show_organizations_floor' are called.");

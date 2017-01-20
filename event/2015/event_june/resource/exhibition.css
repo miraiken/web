@@ -9,16 +9,16 @@ div.progect_titile_list div.progect_titile {
 div.progect_info_detail th{
 	border: 1px solid #000;
 }
-.企画名-cell {
+.project_name_cell {
 	width: 190px;
 }
-.企画形態-cell {
+.project_form_cell {
 	width: 36px;
 }
-.対象年齢-cell {
+.target_age_cell {
 	width: 54px;
 }
-td.所要時間-cell{
+td.time_required_cell{
 	text-align: center;
 }
 #map1{

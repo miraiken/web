@@ -10,7 +10,7 @@
 	window.CustomEvent = CustomEvent;
 })();
 $(function() {
-	var $canvas = $("#particles-js > canvas");
+	var $canvas = $("#particles_js > canvas");
 	// init
 	hideAll();
 	var is_first_click = true;
