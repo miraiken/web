@@ -1,6 +1,6 @@
 (function(){
 	// デバッグモード切替
-	var debugMode = true;//Release時にはfalseに
+	var debugMode = false;//Release時にはfalseに
 
 	// 置換対象のメソッドを配列として保持する
 	var methods = [
