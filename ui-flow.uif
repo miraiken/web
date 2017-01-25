@@ -10,8 +10,8 @@
 =={/link/index}==> リンク
 新入生向けページ
 =={/for_freshman/index}==> 新入生向けページ
-2016年6月11,12日開催科学へのトビラ
-=={/event/2016/event_june/index}==> 1606科学へのトビラ
+2017年3月4日開催オドロキ科学箱
+=={/event/2017/event_march/index}==> 1703オドロキ科学箱
 過去のイベント情報はこちら
 =={/event/index}==> イベント情報
 
@@ -38,6 +38,8 @@ commit log
 common UI
 ==> common UI
 
+1703オドロキ科学箱
+=={/event/2017/event_march/index}==> 1703オドロキ科学箱
 1606科学へのトビラ
 =={/event/2016/event_june/index}==> 1606科学へのトビラ
 1603オドロキ科学箱
@@ -48,6 +50,36 @@ common UI
 =={/event/2015/event_march/index}==> 1503オドロキ科学箱
 1406科学へのトビラ
 =={/event/2014/event_june/index}==> 1406科学へのトビラ
+
+[1703オドロキ科学箱common UI]
+---
+common UI
+==> common UI
+
+イベント概要
+=={/web/event/2016/event_march/index}==> 1703オドロキ科学箱
+企画案内
+=={/web/event/2016/event_march/exhibition}==> 1703オドロキ科学箱/企画案内
+会場アクセス
+=={/web/event/2016/event_march/access}==> 1703オドロキ科学箱/会場アクセス
+
+[1703オドロキ科学箱]
++３月開催　みらい研究室 ～オドロキ科学箱～
++イベント当日の諸注意
+---
+1703オドロキ科学箱common UI
+==> 1703オドロキ科学箱common UI
+
+[1703オドロキ科学箱/企画案内]
+---
+1703オドロキ科学箱common UI
+==> 1703オドロキ科学箱common UI
+
+[1703オドロキ科学箱/会場アクセス]
++会場アクセス
+---
+1703オドロキ科学箱common UI
+==> 1703オドロキ科学箱common UI
 
 [1606科学へのトビラcommon UI]
 ---
