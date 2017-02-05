@@ -8,14 +8,9 @@ function redirect_when_no_support(redirect_to){
 	){
 		/*redirect to announs page when not supported.*/
 		var ua = window.navigator.userAgent.toLowerCase();
-		if (ua.indexOf('msie') >= 0) {
-			var arr = /Mozilla\/([0-9.]+)/.exec(ua);
-			if (arr || parseFloat(arr[1]) < 5.0) {
-				/* Before IE8, goto Shift-JIS page */
-				location.href = redirect_to.slice(0, -5) + "-sjis.html";
-			} else {
-				location.href = redirect_to;
-			}
+		if (ua.indexOf('msie') >= 0 && parseFloat(ua.replace(/mozilla\/([0-9.]+).*/g, "$1")) < 5.0) {
+			/* Before IE8, goto Shift-JIS page */
+			location.href = redirect_to.slice(0, -5) + "-sjis.html";
 		} else {
 			location.href = redirect_to;
 		}
