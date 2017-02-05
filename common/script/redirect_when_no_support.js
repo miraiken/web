@@ -7,7 +7,18 @@ function redirect_when_no_support(redirect_to){
 		|| (document.uniqueID && window.matchMedia && document.documentMode === 10)/*IE10*/
 	){
 		/*redirect to announs page when not supported.*/
-		location.href = redirect_to;
+		var ua = window.navigator.userAgent.toLowerCase();
+		if (ua.indexOf('msie') >= 0) {
+			var arr = /Mozilla\/([0-9.]+)/.exec(ua);
+			if (arr || parseFloat(arr[1]) < 5.0) {
+				/* Before IE8, goto Shift-JIS page */
+				location.href = redirect_to.slice(0, -5) + "-sjis.html";
+			} else {
+				location.href = redirect_to;
+			}
+		} else {
+			location.href = redirect_to;
+		}
 	}
 	var is_android_default_browser = function() {
 		/* http://qiita.com/narikei/items/ada44891cb0902efc165 */
