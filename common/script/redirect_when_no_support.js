@@ -11,7 +11,6 @@ function redirect_when_no_support(redirect_to){
 	}
 	var is_android_default_browser = function() {
 		/* http://qiita.com/narikei/items/ada44891cb0902efc165 */
-		var isAndroidBrowser = false
 		var ua = window.navigator.userAgent
 		if (/Android/.test(ua) && /Linux; U;/.test(ua) && !/Chrome/.test(ua)) {
 			return true;
