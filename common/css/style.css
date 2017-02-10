@@ -12,6 +12,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+td {
+	padding: 4px 2px;
+}
 
 #page_head_back {
 	background-color: #ffffff;
@@ -65,7 +68,6 @@ table.normal_table td{
 	border: solid 1px #000000;
 	vertical-align: middle;
 	text-align: left;
-	padding: 2px;
 }
 table.normal_table th{
 	border: solid 1px #000000;
