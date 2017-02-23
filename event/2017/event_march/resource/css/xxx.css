@@ -1,0 +1,74 @@
+
+
+.project_info{
+    margin: 60px 0 0 50px ;
+    padding: 50px 30px  0 20px;
+    border: 1px solid #82ae46;
+    border-radius: 30px;
+    position: relative;
+}
+
+.project_info_introduce p{
+    margin: 0;
+}
+
+/*背景いじるCSS*/
+/*.haikei{
+    background-image: url("hibiki_motoe.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 300px
+}*/
+
+.project_title{
+    background-color: #82ae46;
+    width: 450px;
+    position: absolute;
+    left: -40px;
+    top: -30px;
+}
+
+.project_title h2{
+    margin: 10px;
+}
+
+.project_title p{
+    margin: 5px;
+    text-align:right;
+    font-size: 15px
+}
+
+table, td, th {
+    border: 2px #111111 solid;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.project_info_detail{
+    padding: 0 30px 30px 30px;
+}
+
+#project_info_detail_mini{
+    margin: 15px 0 0 0;
+    border: 1px solid #82ae46;
+    padding: 0px;
+}
+
+#project_info_detail_mini h3{
+    margin: 0px;
+    padding: 5px;
+    width: 50%;
+    background-color: #82ae46;
+}
+
+#project_info_detail_mini p{
+    margin: 10px;
+}
+
+#project_info_detail_mini table{
+    margin: 0 0 5px 50px;
+}
