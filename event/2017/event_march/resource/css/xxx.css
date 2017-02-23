@@ -1,78 +1,37 @@
 
 
 .project_info{
-    width: 700px;
+    margin: 60px 0 0 50px ;
+    padding: 30px 30px  0 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: #00552e;
+    border-radius: 30px;
     position: relative;
-    top: 0;
-    left: 0;
-    margin-bottom: 100px;
 }
 
 /*背景いじるCSS*/
-.haikei{
-    width: 600px;
-    height: 250px;
-    opacity: 0.7;
-    position: absolute;
-    margin: 50px 0 0 30px;
-    border: 2px solid  #00552e;
-    border-radius: 30px;        /* CSS3草案 */  
-    -webkit-border-radius: 30px;    /* Safari,Google Chrome用 */  
-    -moz-border-radius: 30px;   /* Firefox用 */  
+/*.haikei{
     background-image: url("hibiki_motoe.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-size: 300px 
-}
-/*ちびラボ背景*/
-div #description_chibilab .haikei{
-    width: 600px;
-    height: 400px;
-    opacity: 0.7;
-    position: absolute;
-    margin: 50px 0 0 30px;
-    border: 2px solid  #00552e;
-    border-radius: 30px;        /* CSS3草案 */  
-    -webkit-border-radius: 30px;    /* Safari,Google Chrome用 */  
-    -moz-border-radius: 30px;   /* Firefox用 */  
-    background-image: url("hibiki_motoe.jpg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: 300px 
-}
-/*地球科学背景*/
-div #description_tikyuukagaku .haikei{
-    width: 600px;
-    height: 300px;
-    opacity: 0.7;
-    position: absolute;
-    margin: 50px 0 0 30px;
-    border: 2px solid  #00552e;
-    border-radius: 30px;        /* CSS3草案 */  
-    -webkit-border-radius: 30px;    /* Safari,Google Chrome用 */  
-    -moz-border-radius: 30px;   /* Firefox用 */  
-    background-image: url("hibiki_motoe.jpg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: 300px 
-}
-
-/*背景いじるCSS*/
-img{
-    position: relative;
-    width: 40%;
-    left: 30%;
-    opacity: 0.5;
-}
+    background-size: 300px
+}*/
 
 .project_title{
     background-color: #82ae46;
     width: 450px;
-    height: 90px;
-    position: relative;
+    position: absolute;
+    left: -40px;
+    top: -30px;
 }
 
-div.project_title p{
+.project_title h2{
+    margin: 10px;
+}
+
+.project_title p{
+    margin: 5px;
     text-align:right;
     font-size: 15px
 }
@@ -86,16 +45,13 @@ table {
     border-spacing: 0;
 }
 
-div.project_info_introduce{
-    position: relative;
-    left: 50px
-}
-
-.project_info_main{
-    width: 500px
-}
 
 .project_info_detail{
-    position: relative;
-    left: 100px;
+    padding: 0 30px 30px 30px;
 }
+
+#project_info_detail_mini{
+    border: 1px solid #82ae46;
+}
+
+#pro
