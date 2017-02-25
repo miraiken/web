@@ -2,12 +2,14 @@
 
 .project_info{
     margin: 60px 0 0 50px ;
-    padding: 30px 30px  0 20px;
-    border: 1px;
-    border-style: solid;
-    border-color: #00552e;
+    padding: 50px 30px  0 20px;
+    border: 1px solid #82ae46;
     border-radius: 30px;
     position: relative;
+}
+
+.project_info_introduce p{
+    margin: 0;
 }
 
 /*背景いじるCSS*/
@@ -51,7 +53,22 @@ table {
 }
 
 #project_info_detail_mini{
+    margin: 15px 0 0 0;
     border: 1px solid #82ae46;
+    padding: 0px;
 }
 
-#pro
+#project_info_detail_mini h3{
+    margin: 0px;
+    padding: 5px;
+    width: 50%;
+    background-color: #82ae46;
+}
+
+#project_info_detail_mini p{
+    margin: 10px;
+}
+
+#project_info_detail_mini table{
+    margin: 0 0 5px 50px;
+}
