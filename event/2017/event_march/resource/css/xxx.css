@@ -52,23 +52,23 @@ table {
     padding: 0 30px 30px 30px;
 }
 
-#project_info_detail_mini{
+.project_info_detail section{
     margin: 15px 0 0 0;
     border: 1px solid #82ae46;
     padding: 0px;
 }
 
-#project_info_detail_mini h3{
+.project_info_detail section h3{
     margin: 0px;
     padding: 5px;
     width: 50%;
     background-color: #82ae46;
 }
 
-#project_info_detail_mini p{
+.project_info_detail section p{
     margin: 10px;
 }
 
-#project_info_detail_mini table{
+.project_info_detail section table{
     margin: 0 0 5px 50px;
 }
