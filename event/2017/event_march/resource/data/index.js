@@ -1,5 +1,16 @@
 ﻿const cheerio = require("cheerio");
 const fsp = require("fs-promise");
+//http://qiita.com/hosomichi/items/84b05c1b0c09d26cd11e
+//https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
+const deepFreeze = (o) => {
+    const oFrz = Object.assign({}, o);
+    Object.keys(oFrz).forEach((key) => {
+        if (oFrz.hasOwnProperty(key) && (typeof oFrz[key] === "object") && !Object.isFrozen(oFrz[key])) {
+        oFrz[key] = deepFreeze(oFrz[key]);
+        }
+    });
+    return Object.freeze(oFrz);
+}
 
 /**
  *
@@ -18,11 +29,11 @@ const parseHTML = (contents) => {
         event_list.introduce = $(project_info_main).find(".project_info_introduce > p").text();
         const table = $(this).find(".project_info_detail")[0];
         let table_header = [];
-        const table_header_mapper = {
+        const table_header_mapper = deepFreeze({
             "企画名": "name",
             "企画形態": "type",
             "対象年齢": "target_age"
-        };
+        });
         event_list.projects = [];
         $(table).find("tr").each(function(i, row){
             $(row).find("td").each(function(j, col){
@@ -64,7 +75,7 @@ fsp.readFile("exhibition.html").then((contents) => {
         for(const p of e.projects) if(info.hasOwnProperty(p.name)){
             const i = info[p.name];
             if(i.hasOwnProperty("description")) p.description = i.description;
-            if(i.hasOwnProperty("required_time")) p.required_time = i.required_time;
+            p.required_time = (i.hasOwnProperty("required_time")) ? i.required_time : "-";
         }
     }
     console.log("JSON化するよー");
