@@ -14,7 +14,7 @@ $(function(){
         "math": [],
         "industrial": []
       };
-      const org_id_to_area_id_table = {
+      const org_id_to_area_id_table = Object.freeze({
         "rikoukaken": "chemistory",
         "ichikaken" : "chemistory",
         "nikaken"   : "chemistory",
@@ -22,7 +22,7 @@ $(function(){
         "chikaken"  : "geoscience",
         "seibutuken": "geoscience",
         "icibukken" : "geoscience",
-        "bunguken": "geoscience",
+        "bunguken"  : "geoscience",
         "ichisuuken": "math",
         "nisuuken"  : "math",
         "tenmonken" : "math",
@@ -30,7 +30,7 @@ $(function(){
         "kikoukaken": "industrial",
         "acm"       : "industrial",
         "musenken"  : "industrial"
-      };
+      });
       const order = ["chemistory", "geoscience", "math", "industrial"];
       c.list.forEach(function(e){
         const org_id = e.id.replace(/description_/, "");
