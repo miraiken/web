@@ -22,7 +22,7 @@
 		]
 	},
 	{
-		"id": "description_tikyuukagaku",
+		"id": "description_chikaken",
 		"title": "地球をENJOY!",
 		"org_name": "地球科学研究部",
 		"introduce": "鉱物、竜巻発生装置、霧箱装置の展示の他にエネルギーを感じられる手回し発電機も登場！皆んなで地球をENJOY!",
@@ -122,7 +122,7 @@
 		]
 	},
 	{
-		"id": "description_airclaft",
+		"id": "description_acm",
 		"title": "模型飛行機を作ろう",
 		"org_name": "Aircraft Maker",
 		"introduce": "自分の力で模型飛行機を作ってみませんか？うまくいけば紙飛行機よりずっと遠くまで飛ぶ模型飛行機が作れます！！",
@@ -144,7 +144,7 @@
 		]
 	},
 	{
-		"id": "description_2buseibutu",
+		"id": "description_seibutuken",
 		"title": "見て、作って体験！〜生き物の不思議〜",
 		"org_name": "Ⅱ部研究会生物研究部",
 		"introduce": "化石のレプリカを作ろう！昆虫、微生物もいるよ！ぜひ遊びに来てね！！",
@@ -173,7 +173,7 @@
 		]
 	},
 	{
-		"id": "description_1bukagaku",
+		"id": "description_ichikaken",
 		"title": "見て、さわって楽しむ化学",
 		"org_name": "Ⅰ部化学研究部",
 		"introduce": "化学反応を自分の目で見て、何が起こっているのかを実際に体感してみましょう！！",
@@ -200,7 +200,7 @@
 		]
 	},
 	{
-		"id": "description_2bukagaku",
+		"id": "description_nikaken",
 		"title": "かんたん実験教室",
 		"org_name": "Ⅱ部化学研究部",
 		"introduce": "身近なもので実験をして化学の面白さを体感してみましょう！！",
@@ -227,7 +227,7 @@
 		]
 	},
 	{
-		"id": "description_rikoukagaku",
+		"id": "description_rikoukaken",
 		"title": "身近な化学体験",
 		"org_name": "理工学部科学研究会",
 		"introduce": "私達の身の回りにあるものを使って、化学の不思議を感じてみよう！",
@@ -250,7 +250,7 @@
 		]
 	},
 	{
-		"id": "description_tenmon",
+		"id": "description_tenmonken",
 		"title": "未知との遭遇〜星との出逢い〜",
 		"org_name": "Ⅰ部Ⅱ部天文研究部",
 		"introduce": "普段よく目にする星の輝き。本日はそんな星たちをちょっと違う視点から観察してみましょう。",
@@ -279,7 +279,7 @@
 		]
 	},
 	{
-		"id": "description_nodatenmon",
+		"id": "description_nodaten",
 		"title": "目指せ宇宙博士！",
 		"org_name": "野田天文研究部",
 		"introduce": "プラネタリウムや惑星・探査機の模型を通じて、宇宙への興味や理解を深めていただける展示を行っております。",
