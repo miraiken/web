@@ -1,14 +1,18 @@
 ﻿const cheerio = require("cheerio");
 const fsp = require("fs-promise");
-console.log("exhibition.htmlを読み込むよー");
-fsp.readFile("exhibition.html").then((contents) => {
-    console.log("パースを始めるよー");
+
+/**
+ *
+ * @param contents{string} HTML full text
+ */
+const parseHTML = (contents) => {
     const $ = cheerio.load(contents);
     let event_lists = [];
     $("#page_body_main > article").each(function(index){
         const project_info_main = $(this).find(".project_info_main")[0];
         const project_title = $(project_info_main).find(".project_title")[0];
         let event_list = {};
+        event_list.id = $(this).attr("id");
         event_list.title = $(project_title).find("h2").text();
         event_list.org_name = $(project_title).find("p").text();
         event_list.introduce = $(project_info_main).find(".project_info_introduce > p").text();
@@ -36,6 +40,13 @@ fsp.readFile("exhibition.html").then((contents) => {
         });
         event_lists[index] = event_list;
     });
+    return event_lists;
+};
+
+console.log("exhibition.htmlを読み込むよー");
+fsp.readFile("exhibition.html").then((contents) => {
+    console.log("パースを始めるよー");
+    let event_lists = parseHTML(contents);
     console.log("JSON化するよー");
     const result_json = JSON.stringify(event_lists, null, '\t');
     fsp.writeFile("exhibition.json", "\ufeff" + result_json, { encoding: 'utf8' }).then(() => {
