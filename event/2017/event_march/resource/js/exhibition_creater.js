@@ -39,9 +39,12 @@ $(function(){
         d.push(m("article#" + e.id + ".project_info", [
           m("div.project_title", [
             m("h2", e.title),
-            m("p", e.description)
+            m("p", e.org_name)
           ]),
-          m("article", e.projects.map(function(p){
+          m("div.project_info_introduce", [
+            m("p", e.introduce)
+          ]),
+          m("article.project_info_detail", e.projects.map(function(p){
             return m("section", [
               m("h3", p.name),
               m("p", p.description),
