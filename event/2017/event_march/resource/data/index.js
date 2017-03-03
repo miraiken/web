@@ -47,6 +47,26 @@ console.log("exhibition.htmlを読み込むよー");
 fsp.readFile("exhibition.html").then((contents) => {
     console.log("パースを始めるよー");
     let event_lists = parseHTML(contents);
+    console.log("情報を追加するゾイ！");
+    const additional_information = {
+        "文具研究同好会": {
+            "もくねんさん": {
+                "description": "もくねんさんという粘土を使ってストラップを作ります。",
+                "required_time": "15分"
+            },
+            "消えるインク": {
+                "description": "フリクションという消えるインクを使って実験します。"
+            }
+        }
+    };
+    for(const e of event_lists) if(additional_information.hasOwnProperty(e.org_name)){
+        const info = additional_information[e.org_name];
+        for(const p of e.projects) if(info.hasOwnProperty(p.name)){
+            const i = info[p.name];
+            if(i.hasOwnProperty("description")) p.description = i.description;
+            if(i.hasOwnProperty("required_time")) p.required_time = i.required_time;
+        }
+    }
     console.log("JSON化するよー");
     const result_json = JSON.stringify(event_lists, null, '\t');
     fsp.writeFile("exhibition.json", "\ufeff" + result_json, { encoding: 'utf8' }).then(() => {
