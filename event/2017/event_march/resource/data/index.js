@@ -59,7 +59,7 @@ fsp.readFile("exhibition.html").then((contents) => {
     console.log("パースを始めるよー");
     let event_lists = parseHTML(contents);
     console.log("情報を追加するゾイ！");
-    const additional_information = {
+    const additional_information = deepFreeze({
         "文具研究同好会": {
             "もくねんさん": {
                 "description": "もくねんさんという粘土を使ってストラップを作ります。",
@@ -211,7 +211,7 @@ fsp.readFile("exhibition.html").then((contents) => {
                 "required_time": "5分"
             }
         }
-    };
+    });
     for(const e of event_lists) if(additional_information.hasOwnProperty(e.org_name)){
         const info = additional_information[e.org_name];
         for(const p of e.projects) if(info.hasOwnProperty(p.name)){
