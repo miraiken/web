@@ -34,8 +34,7 @@ $(function(){
       const order = ["chemistory", "geoscience", "math", "industrial"];
       c.list.forEach(function(e){
         const org_id = e.id.replace(/description_/, "");
-        const area_id = org_id_to_area_id_table[org_id];
-        let d = data[area_id];
+        let d = data[org_id_to_area_id_table[org_id]];
         d.push(m("article#" + e.id + ".project_info", [
           m("div.project_title", [
             m("h2", e.title),
