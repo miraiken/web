@@ -1,20 +1,20 @@
-$(function(){
+﻿$(function(){
   'use strict';
 
-  const description_block = document.getElementById("description");
-  const c = {
+  var description_block = document.getElementById("description");
+  var c = {
     list: [],
     oninit : function() {
       m.request({method: 'GET', url: './resource/data/exhibition.json'}).then(function(response){ c.list = response; });
     },
     view: function(ctrl){
-      const data = {
+      var data = {
         "chemistory": [],
         "geoscience": [],
         "math": [],
         "industrial": []
       };
-      const org_id_to_area_id_table = Object.freeze({
+      var org_id_to_area_id_table = Object.freeze({
         "rikoukaken": "chemistory",
         "ichikaken" : "chemistory",
         "nikaken"   : "chemistory",
@@ -31,10 +31,10 @@ $(function(){
         "acm"       : "industrial",
         "musenken"  : "industrial"
       });
-      const order = ["chemistory", "geoscience", "math", "industrial"];
+      var order = ["chemistory", "geoscience", "math", "industrial"];
       c.list.forEach(function(e){
-        const org_id = e.id.replace(/description_/, "");
-        let d = data[org_id_to_area_id_table[org_id]];
+        var org_id = e.id.replace(/description_/, "");
+        var d = data[org_id_to_area_id_table[org_id]];
         d.push(m("article#" + e.id + ".project_info", [
           m("div.project_title", [
             m("h2", e.title),
