@@ -1,0 +1,193 @@
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container > div, .container > section{
+    padding: 5px;
+}
+section > dl, section > table.normal_table{
+    margin: 18px 50px;
+}
+/* ---- particles.js container ---- */
+
+#page_body {
+    background-color: #57b82b;
+    background-position: 50% 50%;
+    position: relative;
+}
+#particles_js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+#page_body_main > section {
+    background-color: white;
+}
+
+/*for particle-js*/
+.topic_path_back, #page_body_main, #page_body_sub {
+    position: relative;
+    z-index: 2;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+/*other*/
+.progect_titile > h2 {
+    margin: 0;
+    padding: 0;
+}
+.progect_titile > p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+.progect_info{
+    margin: 4px;
+}
+.progect_info_introduce {
+    margin: 0 1em;
+}
+.progect_info_detail {
+    margin: 0 1em;
+}
+.progect_info_detail > section {
+    padding: 4px 1em;
+}
+.progect_info_detail > section > h3 {
+    margin: 0;
+    padding: 0;
+}
+.progect_info_detail > section > p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+.progect_info_detail > section > table {
+    margin: 4px 0;
+    border: 1px solid black;
+    font-size: 12px
+}
+.progect_info_detail > section > table th, td {
+    font-weight: normal;
+    padding: 2px;
+    border: 1px solid black;
+}
+#aria_chemistory .progect_titile {
+    background-color: #f4b3c2;
+}
+#aria_geoscience .progect_titile {
+    background-color: #fef263;
+}
+#aria_math .progect_titile {
+    background-color: #cca6bf;
+}
+#aria_industrial .progect_titile {
+    background-color: #89c3eb;
+}
+#description_musenken .progect_titile {
+    background-color: #89c3eb;
+}
+#aria_chemistory > article {
+    border: 1px solid #f4b3c2;
+}
+#aria_geoscience > article {
+    border: 1px solid #fef263;
+}
+#aria_math > article {
+    border: 1px solid #cca6bf;
+}
+#aria_industrial > article {
+    border: 1px solid #89c3eb;
+}
+#description_musenken {
+    border: 1px solid #89c3eb;
+}
+
+#aria_chemistory .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #f4b3c2;
+}
+#aria_geoscience .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #fef263;
+}
+#aria_math .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #cca6bf;
+}
+#aria_industrial .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #89c3eb;
+}
+#description_musenken .progect_info_detail > section > h3 {
+    border-bottom: 1px solid #89c3eb;
+}
+
+/* take add */
+.btn {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+}
+
+.geoscience {
+    background-color: #fef263;
+}
+
+.math {
+    background-color: #cca6bf;
+}
+
+.industrial {
+    background-color: #89c3eb;
+}
+
+.chemistory {
+    background-color: #f4b3c2;
+}
