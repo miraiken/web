@@ -5,10 +5,36 @@
   <title>We will never support your browser</title>
   <script type="text/javascript" src="https://storage.googleapis.com/outfox/dnt_min.js"></script>
   <script type="text/javascript" src="./common/script/GoogleAnalytics_common.js"></script>
+  <script>
+    (function(){
+      var GetQueryString = function() {
+        if (1 < document.location.search.length) {
+          var parameters = document.location.search.substring(1).split('&');
+          var result = {};
+          for (var i = 0; i < parameters.length; i++) {
+            var element = parameters[i].split('=');
+
+            var paramName = decodeURIComponent(element[0]);
+            var paramValue = decodeURIComponent(element[1]);
+            result[paramName] = decodeURIComponent(paramValue);
+          }
+          return result;
+        }
+        return null;
+      }
+      var query = GetQueryString();
+      if("cause" in query){
+        document.addEventListener('DOMContentLoaded', function(){
+          document.getElementById("cause").innerHTML = "Cause: " + query["cause"];
+        })
+      }
+    }());
+  </script>
 </head>
 <body>
   <h1>お使いのブラウザはサポートされません(We will never support your browser)</h1>
   <p>Caution: Shift-JIS version pages are available <a href="./no_supported_browser-sjis.html">here</a>.</p>
+  <p id="cause">Cause: unknown</p>
   <p>お使いのブラウザは古すぎます。新しいブラウザを利用してください</p>
   <p>推奨するブラウザの一例です。これ以外のブラウザも対応している場合はあります</p>
   <ul>
