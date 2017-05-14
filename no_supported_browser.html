@@ -23,11 +23,29 @@
         return null;
       }
       var query = GetQueryString();
-      if("cause" in query){
-        document.addEventListener('DOMContentLoaded', function(){
-          document.getElementById("cause").innerHTML = "Cause: " + query["cause"];
-        })
-      }
+      try{
+        if(Object.prototype.hasOwnProperty.call(query, "cause")) {
+          var replace_cause = function() {
+            document.getElementById("cause").innerHTML = "Cause: " + query["cause"];
+          };
+
+          try{
+            if(document.addEventListener) {
+              try{
+                document.addEventListener("DOMContentLoaded", replace_cause);
+              } catch(e) {
+                document.addEventListener("load", replace_cause);
+              }
+            } else if(window.attachEvent) {
+              window.attachEvent("onload", replace_cause);
+            } else {
+              window.onload = replace_cause;
+            }
+          } catch(e){
+            window.onload = replace_cause;
+          }
+        }
+      } catch(e){/* nothing to do. */}
     }());
   </script>
 </head>

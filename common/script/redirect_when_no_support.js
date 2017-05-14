@@ -1,3 +1,6 @@
+/**
+ * @param redirect_to {string} The URL to redirect
+ */
 function redirect_when_no_support(redirect_to){
 	/**
 	 * @param str {string} base URL
@@ -5,73 +8,96 @@ function redirect_when_no_support(redirect_to){
 	 */
 	var append_get_param = function(str, param){
 		return str + ((str.match(/\?/)) ? "&" : "?") + param;
-	}
-	if(
-		typeof window.addEventListener === "undefined"
-		|| typeof document.getElementsByClassName === "undefined"
-		|| typeof navigator.userAgent.indexOf === "undefined"
-		|| typeof document.querySelector === "undefined"
-		|| (document.uniqueID && window.matchMedia && document.documentMode === 10)/*IE10*/
-	){
-		/*redirect to announs page when not supported.*/
-		var ua = window.navigator.userAgent.toLowerCase();
-		if (ua.indexOf("msie") >= 0 && parseFloat(ua.replace(/mozilla\/([0-9.]+).*/g, "$1")) < 5.0) {
-			/* Before IE8, goto Shift-JIS page */
-			location.href = append_get_param(redirect_to.slice(0, -5) + "-sjis.html", "cause=" + encodeURIComponent("brefore IE8"));
-		} else {
-			var cause = "";
+	};
+
+	if(document.uniqueID && window.matchMedia && document.documentMode === 10){
+		location.href = append_get_param(redirect_to, "cause=" + encodeURIComponent("detect IE10"));
+	} else {
+		var basic_tests = function(){
 			var tests = [
-				[typeof window.addEventListener === "undefined", "missing: window.addEventListener"],
-				[typeof document.getElementsByClassName === "undefined", "missing: document.getElementsByClassName"],
-				[typeof navigator.userAgent.indexOf === "undefined", "missing: navigator.userAgent.indexOf"],
-				[typeof document.querySelector === "undefined", "missing: document.querySelector"],
-				[(document.uniqueID && window.matchMedia && document.documentMode === 10), "detect IE10"]
+				{ "testcase": typeof window.addEventListener === "undefined", "message": "missing: window.addEventListener" },
+				{ "testcase": typeof document.getElementsByClassName === "undefined", "message": "missing: document.getElementsByClassName" },
+				{ "testcase": typeof navigator.userAgent === "undefined", "message": "missing: navigator.userAgent" },
+				{ "testcase": typeof document.querySelector === "undefined", "message": "missing: document.querySelector" },
+				{ "testcase": typeof Array.prototype.forEach === "undefined", "message": "missing: Array.prototype.forEach" }
 			];
-			var t;
-			for(t in tests) if(t[0]){
-				if(cause.length === 0){
-					cause += "["
-				}
-				cause += t[1];
+			var i;
+			var cause = "";
+			for(i = 0; i < tests.length; ++i) if(tests[i].testcase) {
+				cause += (cause.length === 0) ? "[" : ",";
+				cause += "\"" + tests[i].message + "\"";
 			}
-			cause += "]"
-			location.href = append_get_param(redirect_to, "cause=" + encodeURIComponent(cause));
+			if(cause.length !== 0) {
+				var ua = window.navigator.userAgent.toLowerCase();
+				if (ua.indexOf("msie") >= 0 && parseFloat(ua.replace(/mozilla\/([0-9.]+).*/g, "$1")) < 5.0) {
+					/* Before IE8, goto Shift-JIS page */
+					return append_get_param(redirect_to.slice(0, -5) + "-sjis.html", "cause=" + encodeURIComponent(cause + ",\"brefore IE8\"]"));
+				} else {
+					return append_get_param(redirect_to, "cause=" + encodeURIComponent(cause + "]"));
+				}
+			}
+			return "";
+		};
+		var additional_tests = function(){
+			var tests = [
+				{ "testcase": typeof JSON === "object", "message": "missing: JSON" },
+				{ "testcase": parseInt("010") === 10, "message": "missing feature: parseInt ignores leading zeros" },
+				{
+					"testcase": { __proto__ : [] } instanceof Array && !({ __proto__ : null } instanceof Object),
+					"message": "missing feature: __proto__ in object literals(basic support)"
+				},
+				{
+					"testcase": function(){
+						var obj = {
+							2: true,
+							0: true,
+							1: true,
+							" ": true,
+							9: true,
+							D: true,
+							B: true,
+							"-1": true
+						};
+						obj.A = true;
+						obj[3] = true;
+						var tmp = "EFGHIJKLMNOPQRSTUVWXYZ".split("");
+						var i;
+						for(i = 0; i < tmp.length; ++i){
+							obj[tmp[i]] = true;
+						}
+						try{
+							Object.defineProperty(obj, "C", { value: true, enumerable: true });
+							Object.defineProperty(obj, "4", { value: true, enumerable: true });
+							delete obj[2];
+						} catch(e){
+							return false;
+						}
+						obj[2] = true;
+
+						return Object.getOwnPropertyNames(obj).join("") === "012349 DB-1AEFGHIJKLMNOPQRSTUVWXYZC";
+					}(),
+					"message": "missing: Object.getOwnPropertyNames"
+				}
+			];
+			var i;
+			var cause = "";
+			for(i = 0; i < tests.length; ++i) if(!tests[i].testcase) {
+				cause += (cause.length === 0) ? "[" : ",";
+				cause += tests[i].message;
+			}
+			if(cause.length !== 0) {
+				return append_get_param(redirect_to, "cause=" + encodeURIComponent(cause + "]"));
+			}
+			return "";
 		}
-	}
-	var is_android_default_browser = function() {
-		/* http://qiita.com/narikei/items/ada44891cb0902efc165 */
-		var ua = window.navigator.userAgent;
-		if (/Android/.test(ua) && /Linux; U;/.test(ua) && !/Chrome/.test(ua)) {
-			return true;
+		var redirect_to = basic_tests();
+		if(redirect_to.length !== 0) {
+			location.href = redirect_to;
+		} else {
+			redirect_to = additional_tests();
+			if(redirect_to.length !== 0) {
+				location.href = redirect_to;
+			}
 		}
-		return false;
-	};
-	if(is_android_default_browser()){
-		location.href = append_get_param(redirect_to, "cause=" + encodeURIComponent("is Android default browser"));
-	}
-	var is_deprecated_android_os = function() {
-		/* http://qiita.com/devdyaya/items/406072f6ecd69b0a785f */
-		var and_ua = navigator.userAgent;
-		if( and_ua.indexOf("Android") > 0 ) {
-			var version = parseFloat(and_ua.slice(and_ua.indexOf("Android")+8));
-			return (version < 4.1);/* reject before Android 4.0.x */
-		}
-		return false;
-	};
-	var is_deprecated_ios = function() {
-		/* http://qiita.com/devdyaya/items/406072f6ecd69b0a785f */
-		var ios_ua = navigator.userAgent;
-		if( ios_ua.indexOf("iPhone") > 0 ) {
-			ios_ua.match(/iPhone OS (\w+){1,3}/g);
-			var version = (RegExp.$1.replace(/_/g, "")+"00").slice(0,3);
-			return (version < 800);/* reject before iOS7 */
-		}
-		return false;
-	};
-	if(is_deprecated_android_os()){
-		location.href = append_get_param(redirect_to, "cause=" + encodeURIComponent("is deprecated Andorid browser"));
-	}
-	if(is_deprecated_ios()){
-		location.href = append_get_param(redirect_to, "cause=" + encodeURIComponent("is deprecated iOS browser"));
 	}
 };
