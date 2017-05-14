@@ -72,6 +72,6 @@ function redirect_when_no_support(redirect_to){
 		location.href = append_get_param(redirect_to, "cause=" + encodeURIComponent("is deprecated Andorid browser"));
 	}
 	if(is_deprecated_ios()){
-		location.href = append_get_param(redirect_to, "cause=" + encodeURIComponent("is deperecated iOS browser"));
+		location.href = append_get_param(redirect_to, "cause=" + encodeURIComponent("is deprecated iOS browser"));
 	}
 };
