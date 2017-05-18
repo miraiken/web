@@ -1,7 +1,7 @@
 
 [
   {
-    "id": "description_chikaken",
+    "id": "chikaken",
     "title": "地球をENJOY！",
     "org_name": "地球科学研究部",
     "introduce": "鉱物、竜巻発生装置、霧箱嘘うちの展示の他にエネルギーを感じられる手回し発電機も登場！皆で地球をENJOY！",
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "id": "description_bunguken",
+    "id": "bunguken",
     "title": "もくねんさんと手作りノート",
     "org_name": "文具研究同好会",
     "introduce": "文具好きが集まったメンバーで、優しく教えます。木くずの年度「もくねんさん」でストラップを作ったり、簡単に作れるノートを製作したり出来ます！インクブレンダーもあるよ。",
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "id": "description_seibutuken",
+    "id": "seibutuken",
     "title": "生き物の秘密を解き明かそう！",
     "org_name": "Ⅱ部研究会生物研究部",
     "introduce": "化石のレプリカを作ろう！昆虫、微生物も見られるよ！ぜひ遊びに来てね！！",
@@ -102,7 +102,7 @@
     ]
   },
   {
-    "id": "description_icibukken",
+    "id": "icibukken",
     "title": "物理のフシギにふれよう！",
     "org_name": "Ⅰ部物理研究部",
     "introduce": "身のまわりには物理がいっぱい！さあ、キミもフシギな物理の世界をのぞいてみよう！",
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "id": "description_acm",
+    "id": "acm",
     "title": "模型飛行機を作ろう",
     "org_name": "Aircraft Makers",
     "introduce": "人力飛行機はどうやって飛ぶの？模型飛行機作り、操縦体験、機体を実際に見て知ろう！",
@@ -174,7 +174,7 @@
     ]
   },
   {
-    "id": "description_musenken",
+    "id": "musenken",
     "title": "ロボットと触れ合おう！",
     "org_name": "Ⅰ部無線研究部",
     "introduce": "私たちが制作したロボットの操作体験ができます。二足歩行や多足歩行などたくさんのロボットがあります。",
@@ -203,7 +203,7 @@
     ]
   },
   {
-    "id": "description_kikoukaken",
+    "id": "kikoukaken",
     "title": "Formula Racing",
     "org_name": "機械工学研究会",
     "introduce": "自分の力で君だけのレーシングカーを作ってみよう！",
@@ -225,7 +225,7 @@
     ]
   },
   {
-    "id": "description_ichikaken",
+    "id": "ichikaken",
     "title": "見る！触る！化学実験！",
     "org_name": "Ⅰ部化学研究部",
     "introduce": "",
@@ -261,7 +261,7 @@
     ]
   },
   {
-    "id": "description_nikaken",
+    "id": "nikaken",
     "title": "Ⅱ部化学研究部＆野老実験教室",
     "org_name": "Ⅱ部化学研究部＆野老実験クラブ",
     "introduce": "身近にあるものでいろいろな実験をしてみよう。",
@@ -311,7 +311,7 @@
     ]
   },
   {
-    "id": "description_rikoukaken",
+    "id": "rikoukaken",
     "title": "身近な化学体験",
     "org_name": "理工学部化学研究会",
     "introduce": "私たちの身の回りにあるものを使っているものを使って、化学の不思議を体験してみよう！",
@@ -347,7 +347,7 @@
     ]
   },
   {
-    "id": "description_chibilab",
+    "id": "chibilab",
     "title": "ようこそカガクの世界へ",
     "org_name": "サイエンスコミュニケーションサークルchibi lab.",
     "introduce": "小さな子でも簡単にできる科学体験ができます。今年のテーマは光と大気圧！自然の力を見てみよう！",
@@ -376,7 +376,7 @@
     ]
   },
   {
-    "id": "description_ichisuuken",
+    "id": "ichisuuken",
     "title": "数学を楽しもう！",
     "org_name": "Ⅰ部数学研究部",
     "introduce": "ルービックキューブやハノイの塔など数学に関係した様々なゲーム、遊びをやってます。一緒に考えながら数学の世界を楽しみましょう!",
@@ -426,7 +426,7 @@
     ]
   },
   {
-    "id": "description_nisuuken",
+    "id": "nisuuken",
     "title": "さんすうをたのしもう！",
     "org_name": "Ⅱ部数学研究部",
     "introduce": "少しでも算数や数学を楽しんでもらおうと１００マス計算やパズルなどいろいろな体験を用意しました。これを通して、算数や数学の面白さ、奥深さを学んでみよう！",
