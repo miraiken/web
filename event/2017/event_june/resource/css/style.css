@@ -22,7 +22,7 @@ section > dl, section > table.normal_table{
 }
 /* ---- particles.js container ---- */
 
-#page_body {
+/*#page_body {
     background-color: #57b82b;
     background-position: 50% 50%;
     position: relative;
@@ -35,13 +35,8 @@ section > dl, section > table.normal_table{
 }
 #page_body_main > section {
     background-color: white;
-}
+}*/
 
-/*for particle-js*/
-.topic_path_back, #page_body_main, #page_body_sub {
-    position: relative;
-    z-index: 2;
-}
 
 /* ---- stats.js ---- */
 
