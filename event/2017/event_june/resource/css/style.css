@@ -77,90 +77,90 @@ section > dl, section > table.normal_table{
 }
 
 /*other*/
-.progect_titile > h2 {
+.project_title > h2 {
     margin: 0;
     padding: 0;
 }
-.progect_titile > p {
+.project_title > p {
     margin: 0;
     padding: 0;
     font-size: 13px;
 }
-.progect_info{
+.project_info{
     margin: 4px;
 }
-.progect_info_introduce {
+.project_info_introduce {
     margin: 0 1em;
 }
-.progect_info_detail {
+.project_info_detail {
     margin: 0 1em;
 }
-.progect_info_detail > section {
+.project_info_detail > section {
     padding: 4px 1em;
 }
-.progect_info_detail > section > h3 {
+.project_info_detail > section > h3 {
     margin: 0;
     padding: 0;
 }
-.progect_info_detail > section > p {
+.project_info_detail > section > p {
     margin: 0;
     padding: 0;
     font-size: 13px;
 }
-.progect_info_detail > section > table {
+.project_info_detail > section > table {
     margin: 4px 0;
     border: 1px solid black;
     font-size: 12px
 }
-.progect_info_detail > section > table th, td {
+.project_info_detail > section > table th, .project_info_detail > section > table td {
     font-weight: normal;
     padding: 2px;
     border: 1px solid black;
 }
-#aria_chemistory .progect_titile {
+#area_chemistory .project_title {
     background-color: #f4b3c2;
 }
-#aria_geoscience .progect_titile {
+#area_geoscience .project_title {
     background-color: #fef263;
 }
-#aria_math .progect_titile {
+#area_math .project_title {
     background-color: #cca6bf;
 }
-#aria_industrial .progect_titile {
+#area_industrial .project_title {
     background-color: #89c3eb;
 }
-#description_musenken .progect_titile {
+#description_musenken .project_title {
     background-color: #89c3eb;
 }
-#aria_chemistory > article {
+#area_chemistory > article {
     border: 1px solid #f4b3c2;
 }
-#aria_geoscience > article {
+#area_geoscience > article {
     border: 1px solid #fef263;
 }
-#aria_math > article {
+#area_math > article {
     border: 1px solid #cca6bf;
 }
-#aria_industrial > article {
+#area_industrial > article {
     border: 1px solid #89c3eb;
 }
 #description_musenken {
     border: 1px solid #89c3eb;
 }
 
-#aria_chemistory .progect_info_detail > section > h3 {
+#area_chemistory .project_info_detail > section > h3 {
     border-bottom: 1px solid #f4b3c2;
 }
-#aria_geoscience .progect_info_detail > section > h3 {
+#area_geoscience .project_info_detail > section > h3 {
     border-bottom: 1px solid #fef263;
 }
-#aria_math .progect_info_detail > section > h3 {
+#area_math .project_info_detail > section > h3 {
     border-bottom: 1px solid #cca6bf;
 }
-#aria_industrial .progect_info_detail > section > h3 {
+#area_industrial .project_info_detail > section > h3 {
     border-bottom: 1px solid #89c3eb;
 }
-#description_musenken .progect_info_detail > section > h3 {
+#description_musenken .project_info_detail > section > h3 {
     border-bottom: 1px solid #89c3eb;
 }
 
