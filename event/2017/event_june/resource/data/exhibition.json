@@ -1,4 +1,3 @@
-
 [
   {
     "id": "chikaken",
@@ -291,14 +290,14 @@
         "name": "めざせ！分子マスター！",
         "type": "製作",
         "target_age": "小学生以上",
-        "description": "モルタロウを使って簡単な分子モデルを組み立ててみよう！（分子モデルの持ち帰り）と化学計算に挑戦！", //改行あり
+        "description": "モルタロウを使って簡単な分子モデルを組み立ててみよう！（分子モデルの持ち帰り）と化学計算に挑戦！",
         "required_time": "10～15分"
       },
       {
         "name": "元素ネイル",
         "type": "製作",
         "target_age": "小学生以上",
-        "description": "爪用のシールに元素記号をかき、MY元素ネイルを作成一人二枚まで",//改行あり
+        "description": "爪用のシールに元素記号をかき、MY元素ネイルを作成一人二枚まで",
         "required_time": "10～15分"
       },
       {
@@ -462,19 +461,3 @@
     ]
   }
 ]
-
-// "chikaken"  : "geoscience",
-// "bunguken"  : "geoscience",
-// "seibutuken": "geoscience",
-// "icibukken" : "geoscience",
-// "acm"       : "industrial",
-// "musenken"  : "industrial"
-// "kikoukaken": "industrial",
-// "ichikaken" : "chemistory",
-// "nikaken"   : "chemistory",
-// "chibilab"  : "chemistory",
-// "rikoukaken": "chemistory",
-// "ichisuuken": "math",
-// "nisuuken"  : "math",
-// "tenmonken" : "math",
-// "nodaten"   : "math",
