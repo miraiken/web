@@ -50,14 +50,11 @@
                 });
             }, this)
           ),
-          m("section", order.map(function(area){
-            return m("section", {"id": "area_" + area}, data[area].map(function(e){
+          m("section", function(){
+            return (!this.active_area) ? null : m("section", {"id": "area_" + this.active_area}, data[this.active_area].map(function(e){
               return m(
                 "article", {
                   "class": "project_info", "id": "description_" + e.id,
-                  "style": {
-                    "display": (this.active_area === org_id_to_area_id_table_[e.id]) ? "block": "none",
-                  }
                 }, [
                   m("div.project_title", [
                     m("h2", e.title),
@@ -79,7 +76,7 @@
                 ]
               );
             }, this));
-          }, this)),
+          }.call(this)),
         ]);
 
       }
