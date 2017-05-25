@@ -51,14 +51,16 @@
             }, this)
           ),
           m("section", order.map(function(area){
-            return m("section", {"id": "area_" + area}, data[area].map(function(e){
-              return m(
-                "article", {
-                  "class": "project_info", "id": "description_" + e.id,
-                  "style": {
-                    "display": (this.active_area === org_id_to_area_id_table_[e.id]) ? "block": "none",
-                  }
-                }, [
+            return m(
+              "section",
+              {
+                "id": "area_" + area,
+                "style": {
+                  "display": (this.active_area === area) ? "block": "none",
+                }
+              },
+              data[area].map(function(e){
+                return m("article", { "class": "project_info", "id": "description_" + e.id }, [
                   m("div.project_title", [
                     m("h2", e.title),
                     m("p", e.org_name)
@@ -76,9 +78,9 @@
                       ])
                     ]);
                   }))
-                ]
-              );
-            }, this));
+                ]);
+              }, this)
+            );
           }, this)),
         ]);
 
