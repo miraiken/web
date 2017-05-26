@@ -11,15 +11,14 @@
   <link rel="stylesheet" href="../../../common/css/style.css">
   <link rel="stylesheet" href="./resource/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="./resource/js/particles_config.js"></script>
-  <script src="./resource/js/script.js"></script>
   <script src="../../../common/script/load.js"></script>
   <script type="text/javascript">
-        $(function () {
-          update_date();
-        });
-      </script>
+    $(function () {
+      update_date();
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mithril/1.1.1/mithril.min.js"></script>
+  <script src="./resource/js/exhibition_creater.js"></script>
   <script src="../../../common/script/GoogleAnalytics_common.js"></script>
 </head>
 <body>
@@ -45,16 +44,13 @@
     </div>
 
     <div id="page_body">
-      <div id="particles_js"></div>
       <div class="topic_path_back">
         <p class="topic_path">　ホーム &gt;&gt; イベント情報 &gt;&gt; みらい研究室 ～科学へのトビラ～ &gt;&gt; 企画案内</p>
       </div>
 
       <div id="page_body_main">
-        <section>
-          <h1 class="pagetitle">企画案内</h1>
-          <p>準備中</p>
-        </section>
+        <h1 class="pagetitle">企画案内</h1>
+        <section id="description"></section>
       </div>
 
       <div id="page_body_sub">
