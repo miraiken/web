@@ -39,10 +39,10 @@
           m("section",
             order.map(function(l){
                 var description = Object.freeze({
-                  "chemistory": "初めての化学",
-                  "geoscience":"自然の不思議",
-                  "math":"未知の世界",
-                  "industrial":"乗り物とロボット"
+                  "chemistory": "みじかな化学の実験室",
+                  "geoscience":"自然のふしぎラボ",
+                  "math":"未知のせかいドーム",
+                  "industrial":"機会のしくみ工場"
                 });
                 return m("input", {
                   "type": "button", "class": "btn "+ l, "value": description[l],
