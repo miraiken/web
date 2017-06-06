@@ -42,7 +42,7 @@
                   "chemistory": "みじかな化学の実験室",
                   "geoscience":"自然のふしぎラボ",
                   "math":"未知のせかいドーム",
-                  "industrial":"機会のしくみ工場"
+                  "industrial":"機械のしくみ工場"
                 });
                 return m("input", {
                   "type": "button", "class": "btn "+ l, "value": description[l],
