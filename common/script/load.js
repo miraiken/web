@@ -52,7 +52,7 @@ var update_date = function(){
  * @param  {string} lelative_path_to_root
  * @param  {string[][]} insert_info_arr 2d-array like std::vector<std::array<std::string, 2>>.
  */
-var load_parts = function(lelative_path_to_root, insert_info_arr){
+load_parts = function(lelative_path_to_root, insert_info_arr){
     if(lelative_path_to_root !== undefined){
         load_html_and_insert(
             lelative_path_to_root + "common/html/parts.html", 
