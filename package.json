@@ -1,0 +1,34 @@
+{
+  "name": "miraiken.github.io",
+  "version": "0.0.0",
+  "description": "東京理科大学みらい研究室のWebページ",
+  "private": true,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miraiken/web.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "東京理科大学みらい研究室広報班",
+  "contributors": [
+    "神楽坂一丁目通信局Web部"
+  ],
+  "bugs": {
+    "url": "https://github.com/miraiken/web/issues"
+  },
+  "homepage": "https://github.com/miraiken/web#readme",
+  "dependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "postcss-loader": "^2.0.6",
+    "pug": "^2.0.0-rc.3",
+    "pug-loader": "^2.3.0",
+    "webpack": "^3.5.4"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.7.1"
+  }
+}

@@ -1,7 +1,7 @@
 /**
  * @param redirect_to {string} The URL to redirect
  */
-function redirect_when_no_support(redirect_to){
+redirect_when_no_support = function(redirect_to) {
 	/**
 	 * @param str {string} base URL
 	 * @param param {string} A GET param

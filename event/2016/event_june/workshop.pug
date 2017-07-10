@@ -1,0 +1,171 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    |   
+    title ワークショップ|科学へのトビラ|東京理科大学みらい研究室
+    |   
+    script(src='../../../common.js')
+    |   
+    script(type='text/javascript').
+      redirect_when_no_support("../../../no_supported_browser.html");
+    |   
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    |   
+    link(rel='stylesheet', href='../../../common/css/style.css')
+    |   
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    // jQuery UI
+    link(type='text/css', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.min.css', rel='stylesheet')
+    |   
+    script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js')
+    |   
+    script(type='text/javascript').
+      $(function () {
+      load_parts();
+      // ダイアログを作成
+      var $dialog = $("#dialog_confirm");
+      $dialog.dialog({
+      autoOpen: false,
+      modal: true,
+      width: 600,
+      buttons: {
+      "進む": function () {
+      $(this).dialog("close");
+      window.location.href = "https://www.tus.ac.jp/news/sciencefair_2016/index.html#a1";
+      },
+      "キャンセル": function () {
+      $(this).dialog("close");
+      }
+      }
+      });
+      $("#submit").on("click", function () {
+      $dialog.dialog('open');
+      });
+      });
+  body
+    #page
+      #page_head_back_1
+        header#page_head
+          .toptitle
+            h1.toptitle1
+              | 東京理科大学サイエンスフェア学生企画
+              br
+            |           
+            h1.toptitle2 みらい研究室実行委員会
+          |         
+          nav.global_navi
+            ul
+              li
+                a(href='../../../index.html')
+                  | ホーム
+                  br
+                  | HOME
+              |             
+              li
+                a(href='../../../event/index.html')
+                  | イベント情報
+                  br
+                  | EVENT
+              |             
+              li
+                a(href='../../../contact/index.html')
+                  | お問い合わせ
+                  br
+                  | CONTACT
+              |             
+              li
+                a(href='../../../link/index.html')
+                  | リンク
+                  br
+                  | LINK
+              |             
+              li
+                a(href='../../../for_freshman/index.html')
+                  | 新入生向けページ
+                  br
+                  | for Freshman
+      |     
+      #page_body
+        .topic_path_back
+          p.topic_path 　ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> ワークショップ
+        |       
+        #page_body_main
+          section.lecture
+            h1.pagetitle ワークショップ情報
+            |           
+            p.content_1
+              | ワークショップの開催決定！各回親子10組限定です。
+              //
+                インターネットでの予約申し込みの受付を終了しました。<br>
+                当日、会場で当日申込みを受け付けております。<br>
+                ※定員に達し次第、受付を終了させていただきますのでご了承ください。
+            |           
+            h2.pagetitle_sub 南極経由、極地行き。～極地の基地から生まれた、ネパール大震災のためのドーム～
+            |           
+            table
+              tr
+                th 日時
+                |               
+                td 6月11日　11:00～/14:00～
+              |             
+              tr
+                th 会場
+                |               
+                td 日本科学未来館７階　みらいCANホール
+              |             
+              tr
+                th 講師
+                |               
+                td 村上祐資
+            |           
+            p 申し込みの受け受けは終了しました
+            // <div class="link_box" id="submit"><a>ワークショップ抽選申し込み</a></div>
+            #dialog_confirm(title='注意')
+              p
+                | 申込完了後、自動返信メールをお送りします。
+                br
+                |  (迷惑メール等の設定にご注意ください。@admin.tus.ac.jpからのメールを受信許可にしてください)
+              |             
+              p
+                | 本お申し込みで収集する個人情報は、本イベントに関する事項にのみ使用いたします。
+                br
+                |  学校法人東京理科大学プライバシーポリシーは
+                |               
+                a(href='http://www.tus.ac.jp/privacy/', target='_blank') こちら
+                | をご覧ください。
+        |       
+        #page_body_sub
+          nav.side_navi_event.color_june
+            ul
+              li
+                a(href='index.html') イベント概要
+              |             
+              li
+                a(href='exhibition.html') 企画案内
+              |             
+              li
+                a(href='nisokon.html') ニソコン in みらい研究室
+              |             
+              li
+                a(href='lecture.html') 講演会
+              |             
+              li
+                a(href='workshop.html') ワークショップ
+              |             
+              li
+                a(href='access.html') 会場アクセス
+          //
+            <nav class="sideNavi">
+            <ul>
+            <li><a href="../members/index.html">企画出展者向け<br>情報提供ページ</a></li>
+            <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
+            </ul>
+            </nav>
+      |     
+      footer#page_foot
+        p#copyright
+          small Copyright© 
+          small#copyright_year year
+          small  東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
+          small#last_modified last_modified
