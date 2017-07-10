@@ -1,0 +1,94 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    |   
+    title 新入生向けページ|東京理科大学みらい研究室
+    |   
+    script(src='../common.js')
+    |   
+    script(type='text/javascript').
+      redirect_when_no_support("../no_supported_browser.html");
+    |   
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    |   
+    link(rel='stylesheet', href='../common/css/style.css')
+    |   
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    |   
+    script(type='text/javascript').
+      $(function () {
+      load_parts("../", [["page_body_sub", "page_body_sub", false]]);
+      });
+    script(src='https://storage.googleapis.com/outfox/dnt_min.js')
+  body
+    #page
+      #page_head_back_1
+        header#page_head
+          .toptitle
+            h1.toptitle1
+              | 東京理科大学サイエンスフェア学生企画
+              br
+            |           
+            h1.toptitle2 みらい研究室実行委員会
+          |         
+          nav.global_navi
+            ul
+              li
+                a(href='../index.html')
+                  | ホーム
+                  br
+                  | HOME
+              |             
+              li
+                a(href='../event/index.html')
+                  | イベント情報
+                  br
+                  | EVENT
+              |             
+              li
+                a(href='../contact/index.html')
+                  | お問い合わせ
+                  br
+                  | CONTACT
+              |             
+              li
+                a(href='../link/index.html')
+                  | リンク
+                  br
+                  | LINK
+              |             
+              li
+                a(href='../for_freshman/index.html')
+                  | 新入生向けページ
+                  br
+                  | for Freshman
+      |     
+      #page_body
+        .topic_path_back
+          p.topic_path 　ホーム >> 新入生向けページ >> 総務班
+        |       
+        #page_body_main
+          p.content_1 準備中です。
+        |       
+        #page_body_sub
+          nav.side_navi
+            ul
+              li.top
+                a(href='index.html') 新歓TOP
+              |             
+              li
+                a(href='general_affairs_department.html') 総務版
+              |             
+              li
+                a(href='planning_department.html') 企画班
+              |             
+              li
+                a(href='public_relations_department.html') 広報班
+      |     
+      footer#page_foot
+        p#copyright
+          small Copyright© 
+          small#copyright_year year
+          small  東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
+          small#last_modified last_modified

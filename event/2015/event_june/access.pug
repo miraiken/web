@@ -1,0 +1,127 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    |   
+    title 会場アクセス|科学へのトビラ|東京理科大学みらい研究室
+    |   
+    script(src='../../../common/common.js')
+    |   
+    script(type='text/javascript').
+      redirect_when_no_support("../../../no_supported_browser.html");
+    |   
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    |   
+    link(rel='stylesheet', href='../../../common/css/style.css')
+    |   
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    |   
+    script(type='text/javascript').
+      $(function () {
+      update_date();
+      });
+  body
+    #page
+      #page_head_back_1
+        header#page_head
+          .toptitle
+            h1.toptitle1
+              | 東京理科大学サイエンスフェア学生企画
+              br
+            |           
+            h1.toptitle2 みらい研究室実行委員会
+          |         
+          nav.global_navi
+            ul
+              li
+                a(href='../../../index.html')
+                  | ホーム
+                  br
+                  | HOME
+              |             
+              li
+                a(href='../../../event/index.html')
+                  | イベント情報
+                  br
+                  | EVENT
+              |             
+              li
+                a(href='../../../contact/index.html')
+                  | お問い合わせ
+                  br
+                  | CONTACT
+              |             
+              li
+                a(href='../../../link/index.html')
+                  | リンク
+                  br
+                  | LINK
+              |             
+              li
+                a(href='../../../for_freshman/index.html')
+                  | 新入生向けページ
+                  br
+                  | for Freshman
+      |     
+      #page_body
+        .topic_path_back
+          p.topic_path 　ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> 会場アクセス
+        |       
+        #page_body_main
+          section
+            h1.pagetitle 会場アクセス
+            |           
+            p.content_1
+              | 会場：日本科学未来館
+              br
+              |  所在地：東京都江東区青海2-3-6
+            |           
+            p.content_1
+              | 詳しい交通案内は日本科学未来館HPを御覧ください。
+              br
+              |             
+              a(href='http://www.miraikan.jst.go.jp/guide/route/') http://www.miraikan.jst.go.jp/guide/route/
+            |           
+            iframe(width='600', height='400', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.co.jp/maps?f=q&source=s_q&hl=ja&geocode=&q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%9D%B1%E5%8C%BA%E9%9D%92%E6%B5%B7%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%96&aq=&brcurrent=3,0x601889fef37135c5:0xe42620bbdc7b8831,1,0x601889fe842ea297:0x2310b83b6e2a6ee4&brv=27.1-cfcb28d3_7d169ccb_7b913f65_cd3b751f_fa22d089&sll=35.618976,139.776646&sspn=0.011547,0.026157&ie=UTF8&hq=&hnear=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%9D%B1%E5%8C%BA%E9%9D%92%E6%B5%B7%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%96&ll=35.618983,139.776649&spn=0.011547,0.026157&t=m&z=14&output=embed')
+            br
+            small
+              a(href='https://maps.google.co.jp/maps?f=q&source=embed&hl=ja&geocode=&q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%9D%B1%E5%8C%BA%E9%9D%92%E6%B5%B7%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%96&aq=&brcurrent=3,0x601889fef37135c5:0xe42620bbdc7b8831,1,0x601889fe842ea297:0x2310b83b6e2a6ee4&brv=27.1-cfcb28d3_7d169ccb_7b913f65_cd3b751f_fa22d089&sll=35.618976,139.776646&sspn=0.011547,0.026157&ie=UTF8&hq=&hnear=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%9D%B1%E5%8C%BA%E9%9D%92%E6%B5%B7%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%96&ll=35.618983,139.776649&spn=0.011547,0.026157&t=m&z=14', style='color:#0000FF;text-align:left') 大きな地図で見る
+            br
+            br
+            |           
+            p.content_1 会場にお越しの際は、公共交通機関をご利用ください。
+        |       
+        #page_body_sub
+          nav.side_navi_event.color_june
+            ul
+              li
+                a(href='index.html') イベント概要
+              |             
+              li
+                a(href='about_june.html') ～科学へのトビラ～について
+              |             
+              li
+                a(href='exhibition.html') 企画案内
+              |             
+              li
+                a(href='science_show.html') 特別企画:サイエンスショー
+              |             
+              li
+                a(href='pinhole_camera.html') 特別企画:針穴写真実験
+              |             
+              li
+                a(href='access.html') 会場アクセス
+          //
+            <nav class="side_navi">
+            <ul>
+            <li><a href="../members/index.html">企画出展者向け<br>情報提供ページ</a></li>
+            <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
+            </ul>
+            </nav>
+      |     
+      footer#page_foot
+        p#copyright
+          small Copyright© 
+          small#copyright_year year
+          small  東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
+          small#last_modified last_modified

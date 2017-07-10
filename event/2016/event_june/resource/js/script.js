@@ -1,3 +1,5 @@
+require("./particles_config");
+
 (function () {
 	if ( typeof window.CustomEvent === "function" ) return false;
 	function CustomEvent ( event, params ) {
