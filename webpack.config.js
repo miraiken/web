@@ -147,7 +147,7 @@ module.exports = {
   output:  {
     filename: "[name]",
     path: path.join(__dirname, "build"),
-    publicPath: "/web"
+    publicPath: "/web/"
   },
   plugins: [omitDummy, new ExtractTextPlugin("[name]")],
 };
