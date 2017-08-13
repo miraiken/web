@@ -1,35 +1,35 @@
-﻿/**************************
+/**************************
 *
 *	GENERAL
 *
 **************************/
 .camera_prevThumbs div {
-	background: url(../public_relations_department_images/camera_skins.png) no-repeat -160px 0;
+	background: url(/web44234b21bebe6b318aab47d9e9bbbee9.png) no-repeat -160px 0;
 }
 .camera_loader {
-    background: #fff url(../public_relations_department_images/camera-loader.gif) no-repeat center;
-	background: rgba(255, 255, 255, 0.9) url(../public_relations_department_images/camera-loader.gif) no-repeat center;
+    background: #fff url(/webcd2e13291ecdcac7f575beea6d84b099.gif) no-repeat center;
+	background: rgba(255, 255, 255, 0.9) url(/webcd2e13291ecdcac7f575beea6d84b099.gif) no-repeat center;
 }
 .camera_prevThumbs div {
-	background: url(../public_relations_department_images/camera_skins.png) no-repeat -160px 0;
+	background: url(/web44234b21bebe6b318aab47d9e9bbbee9.png) no-repeat -160px 0;
 }
 .camera_nextThumbs div {
-	background: url(../public_relations_department_images/camera_skins.png) no-repeat -190px 0;
+	background: url(/web44234b21bebe6b318aab47d9e9bbbee9.png) no-repeat -190px 0;
 }
 .camera_prev > span {
-	background: url(../public_relations_department_images/camera_skins.png) no-repeat 0 0;
+	background: url(/web44234b21bebe6b318aab47d9e9bbbee9.png) no-repeat 0 0;
 }
 .camera_next > span {
-	background: url(../public_relations_department_images/camera_skins.png) no-repeat -40px 0;
+	background: url(/web44234b21bebe6b318aab47d9e9bbbee9.png) no-repeat -40px 0;
 	display: block;
 	height: 40px;
 	width: 40px;
 }
 .camera_commands > .camera_play {
-	background: url(../public_relations_department_images/camera_skins.png) no-repeat -80px 0;
+	background: url(/web44234b21bebe6b318aab47d9e9bbbee9.png) no-repeat -80px 0;
 }
 .camera_commands > .camera_stop {
-	background: url(../public_relations_department_images/camera_skins.png) no-repeat -120px 0;
+	background: url(/web44234b21bebe6b318aab47d9e9bbbee9.png) no-repeat -120px 0;
 }
 /**************************
 *
@@ -37,32 +37,32 @@
 *
 **************************/
 .pattern_1 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay1.png) repeat;
+	background: url(/web1f146c3ca45b7de58990fe35674f3c12.png) repeat;
 }
 .pattern_2 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay2.png) repeat;
+	background: url(/webddcf42fed3bf5234b7846a74bf17fc6d.png) repeat;
 }
 .pattern_3 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay3.png) repeat;
+	background: url(/webd3deed31d1eed4f17432ff93aefd9daf.png) repeat;
 }
 .pattern_4 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay4.png) repeat;
+	background: url(/web8df992721519d21ba39626a8615393c4.png) repeat;
 }
 .pattern_5 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay5.png) repeat;
+	background: url(/weba839858206fe25a686265e5868a00fbf.png) repeat;
 }
 .pattern_6 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay6.png) repeat;
+	background: url(/webde8c31ab33ca41114addad876a7d057b.png) repeat;
 }
 .pattern_7 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay7.png) repeat;
+	background: url(/web8475f8c4b675c531f5fca9d0f8266889.png) repeat;
 }
 .pattern_8 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay8.png) repeat;
+	background: url(/weba13c787a719e0619ce82ba73bacd9498.png) repeat;
 }
 .pattern_9 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay9.png) repeat;
+	background: url(/web06b734ded54bbe1761e3b67acd2575e5.png) repeat;
 }
 .pattern_10 .camera_overlayer {
-	background: url(../public_relations_department_images/overlay10.png) repeat;
+	background: url(/webe1eb49ee07e74a2c4fee9dad5f17a513.png) repeat;
 }

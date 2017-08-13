@@ -1,11 +1,11 @@
 @charset "UTF-8";
 body {
 	background-color:   #E0FFFF ;
-	font-family: "IPAexゴシック", "IPAゴシック", "Lucida Grande", YuGothic, '游ゴシック', "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+	font-family: "IPAex\30B4\30B7\30C3\30AF", "IPA\30B4\30B7\30C3\30AF", "Lucida Grande", YuGothic, '\6E38\30B4\30B7\30C3\30AF', "Hiragino Kaku Gothic ProN", "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", Meiryo, メイリオ, sans-serif;
 }
 
 input {
-	font-family: "IPAexゴシック", "IPAゴシック", "Lucida Grande", YuGothic, '游ゴシック', "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+	font-family: "IPAex\30B4\30B7\30C3\30AF", "IPA\30B4\30B7\30C3\30AF", "Lucida Grande", YuGothic, '\6E38\30B4\30B7\30C3\30AF', "Hiragino Kaku Gothic ProN", "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", Meiryo, メイリオ, sans-serif;
 }
 
 table {
@@ -20,7 +20,7 @@ td {
 	background-color: #ffffff;
 	height: 557px;
 	margin: 0 auto;
-	background-image: url("../images/global_navi_back.jpg");
+	background-image: url(/webfa081c7345e45a21064cc5cf4e5ee9cb.jpg);
 	background-repeat: repeat-x;
 	background-position: bottom;
 }
@@ -29,7 +29,7 @@ td {
 	background-color: #ffffff;
 	height: 157px;
 	margin: 0 auto;
-	background-image: url("../images/global_navi_back.jpg");
+	background-image: url(/webfa081c7345e45a21064cc5cf4e5ee9cb.jpg);
 	background-repeat: repeat-x;
 	background-position: bottom;
 }
@@ -58,7 +58,7 @@ td {
 #topimage {
 	width: 1110px;
 	height: 400px;
-	background-image: url("../images/top_back.jpg");
+	background-image: url(/web067df89c71cce01eab837e956528965e.jpg);
 }
 /* normal--*/
 table.normal_table{
@@ -114,7 +114,7 @@ table.normal_table th{
 	text-align: center;
 	font-size: 16px;
 	border-left: solid 1px #006000;;
-	background-image: url("../images/arrow_2.jpg");
+	background-image: url(/web63843861245bd76ff97d548d84db1100.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 100%;
 	font-weight: bold;
@@ -131,7 +131,7 @@ table.normal_table th{
 	background-image: none;
 	color: #009000;
 	background-color: #aaffaa;
-	background-image: url("../images/arrow_1.jpg");
+	background-image: url(/web5bf0cd3eacf14941be9a3ec4f51c4735.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 100%;
 	border-bottom: none;
@@ -202,7 +202,7 @@ table.normal_table th{
 }
 
 #page_body .pagetitle {
-	background-image: url("../images/icon_door.jpg");
+	background-image: url(/webf2de7fbc0190e8b524a36f4586fb79e2.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 50%;
 	padding-left: 25px;
