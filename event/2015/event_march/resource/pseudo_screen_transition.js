@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "/web/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 87);
+/******/ 	return __webpack_require__(__webpack_require__.s = 42);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 87:
+/***/ 42:
 /***/ (function(module, exports) {
 
 (function(){

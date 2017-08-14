@@ -60,15 +60,15 @@
 /******/ 	__webpack_require__.p = "/web/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 89);
+/******/ 	return __webpack_require__(__webpack_require__.s = 44);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 89:
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(90);
+__webpack_require__(45);
 
 (function () {
 	if ( typeof window.CustomEvent === "function" ) return false;
@@ -108,7 +108,7 @@ var hideAll = function() {
 
 /***/ }),
 
-/***/ 90:
+/***/ 45:
 /***/ (function(module, exports) {
 
 var load_pazzle = function(){
