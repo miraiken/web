@@ -1,0 +1,21 @@
+cache:
+ directories:
+  - node_modules
+
+deploy:
+ local_dir: build
+ provider: pages
+ github_token: $DEPLOY_GITHUB_TOKEN
+
+language: node_js
+
+node_js:
+ - lts/*
+
+sudo: false
+
+install:
+ - npm install
+
+script:
+ - ./node_modules/.bin/webpack -p
