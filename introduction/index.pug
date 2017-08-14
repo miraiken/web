@@ -16,10 +16,6 @@ html(lang='ja')
     |   
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     |   
-    script(type='text/javascript').
-      $(function () {
-      load_parts("../");
-      });
     script(src='https://storage.googleapis.com/outfox/dnt_min.js')
   body
     #page
@@ -71,7 +67,8 @@ html(lang='ja')
         #page_body_main
           p.content_1 準備中です。
         |       
-        #page_body_sub page_body_sub
+        #page_body_sub
+          include /parts.pug
       |     
       footer#page_foot
         p#copyright

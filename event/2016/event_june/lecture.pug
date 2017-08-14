@@ -24,7 +24,6 @@ html(lang='ja')
     |   
     script(type='text/javascript').
       $(function () {
-      load_parts();
       // ダイアログを作成
       var $dialog = $("#dialog_confirm");
       $dialog.dialog({
@@ -181,6 +180,7 @@ html(lang='ja')
             <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
             </ul>
             </nav>
+          include /parts.pug
       |     
       footer#page_foot
         p#copyright

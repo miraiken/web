@@ -28,7 +28,6 @@ html(lang='ja')
     |   
     script(type='text/javascript').
       jQuery(function () {
-      load_parts("../", [["page_body_sub", "page_body_sub", false]]);
       jQuery('#slide').camera({
       height: '400px',
       hover: false,
@@ -159,6 +158,7 @@ html(lang='ja')
               |       
               li
                 a(href='public_relations_department.html') 広報班
+          include /parts.pug
       footer#page_foot
         p#copyright
           small Copyright© 

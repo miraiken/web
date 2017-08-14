@@ -53,7 +53,6 @@ for (const name of [
   entry[name] = name;
 
 for (const name of [
-  "./common/html/parts",
   "./contact/index",
   "./event/2014/event_june/about_june",
   "./event/2014/event_june/access",
@@ -124,7 +123,7 @@ module.exports = {
           "./call-loader",
           {
             loader: "pug-loader",
-            options: {root: __dirname},
+            options: {root: path.join(__dirname, "include")},
           },
         ]),
       }, {

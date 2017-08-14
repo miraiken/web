@@ -16,10 +16,6 @@ html(lang='ja')
     |   
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     |   
-    script(type='text/javascript').
-      $(function () {
-      load_parts("../");
-      });
     script(src='https://storage.googleapis.com/outfox/dnt_min.js')
   body
     #page
@@ -110,7 +106,8 @@ html(lang='ja')
             li
               a(href='http://bunguken.blog.fc2.com/') 文具研究同好会
         |       
-        #page_body_sub page_body_sub
+        #page_body_sub
+          include /parts.pug
       |     
       footer#page_foot
         p#copyright
