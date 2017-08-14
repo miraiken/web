@@ -3,9 +3,10 @@ cache:
   - node_modules
 
 deploy:
+ github_token: $DEPLOY_GITHUB_TOKEN
  local_dir: build
  provider: pages
- github_token: $DEPLOY_GITHUB_TOKEN
+ skip_cleanup: true
 
 language: node_js
 
@@ -18,4 +19,4 @@ install:
  - npm install
 
 script:
- - ./node_modules/.bin/webpack -p
+ - webpack -p
