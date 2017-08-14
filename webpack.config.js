@@ -107,6 +107,7 @@ for (const name of [
   entry[name + ".html"] = name + ".pug";
 
 module.exports = {
+  devServer: {contentBase: path.join(__dirname, "build")},
   entry,
   module: {
     rules: [
