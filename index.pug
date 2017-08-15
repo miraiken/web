@@ -12,7 +12,7 @@ html(lang='ja')
     |   
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
     |   
-    link(rel='stylesheet', href='common/css/style.css')
+    link(rel='stylesheet', href='common/layout.css')
     |   
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     |   
@@ -32,11 +32,11 @@ html(lang='ja')
           |         
           #topimage
             p#slideshow
-              img.active(src=require('./common/images/top_3.jpg'), alt='画像１')
+              img.active(src=require('./common/top/slide/3.jpg'), alt='画像１')
               |             
-              img(src=require('./common/images/top_2.jpg'), alt='画像２')
+              img(src=require('./common/top/slide/2.jpg'), alt='画像２')
               |             
-              img(src=require('./common/images/top_1.jpg'), alt='画像３')
+              img(src=require('./common/top/slide/1.jpg'), alt='画像３')
           |         
           nav.global_navi
             ul

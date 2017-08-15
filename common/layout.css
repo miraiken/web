@@ -20,7 +20,7 @@ td {
 	background-color: #ffffff;
 	height: 557px;
 	margin: 0 auto;
-	background-image: url("../images/global_navi_back.jpg");
+	background-image: url("./page_head_back.jpg");
 	background-repeat: repeat-x;
 	background-position: bottom;
 }
@@ -29,7 +29,7 @@ td {
 	background-color: #ffffff;
 	height: 157px;
 	margin: 0 auto;
-	background-image: url("../images/global_navi_back.jpg");
+	background-image: url("./page_head_back.jpg");
 	background-repeat: repeat-x;
 	background-position: bottom;
 }
@@ -58,7 +58,7 @@ td {
 #topimage {
 	width: 1110px;
 	height: 400px;
-	background-image: url("../images/top_back.jpg");
+	background-image: url("./top/back.jpg");
 }
 /* normal--*/
 table.normal_table{
@@ -114,7 +114,7 @@ table.normal_table th{
 	text-align: center;
 	font-size: 16px;
 	border-left: solid 1px #006000;;
-	background-image: url("../images/arrow_2.jpg");
+	background-image: url("./arrow/default.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 100%;
 	font-weight: bold;
@@ -131,7 +131,7 @@ table.normal_table th{
 	background-image: none;
 	color: #009000;
 	background-color: #aaffaa;
-	background-image: url("../images/arrow_1.jpg");
+	background-image: url("./arrow/hover.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 100%;
 	border-bottom: none;
@@ -202,7 +202,7 @@ table.normal_table th{
 }
 
 #page_body .pagetitle {
-	background-image: url("../images/icon_door.jpg");
+	background-image: url("./door.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 50%;
 	padding-left: 25px;

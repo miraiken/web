@@ -25,7 +25,7 @@ function omitDummy() {
 }
 
 const entry = {
-  "common.js": "./common/script",
+  "common.js": "./common",
   "slideshow.js": "./slideshow",
 };
 
@@ -33,9 +33,9 @@ for (const name of listFilesRecursively("./raw"))
   entry["dummy" + name] = "./raw/" + name;
 
 for (const name of [
-  "./common/css/camera_kai.css",
-  "./common/css/event_project.css",
-  "./common/css/style.css",
+  "./common/camera_kai.css",
+  "./common/event_project.css",
+  "./common/layout.css",
   "./event/2014/event_june/resource/lightbox.css",
   "./event/2014/event_june/resource/lightbox_plus.js",
   "./event/2015/event_june/resource/exhibition.css",
