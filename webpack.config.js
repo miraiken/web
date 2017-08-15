@@ -24,15 +24,13 @@ function omitDummy() {
   });
 }
 
-const entry = {
-  "common.js": "./common",
-  "slideshow.js": "./slideshow",
-};
+const entry = {"slideshow.js": "./slideshow"};
 
 for (const name of listFilesRecursively("./raw"))
   entry["dummy" + name] = "./raw/" + name;
 
 for (const name of [
+  "common/google_analytics.js",
   "./common/camera_kai.css",
   "./common/event_project.css",
   "./common/layout.css",
@@ -100,7 +98,6 @@ for (const name of [
   "./introduction/index",
   "./link/index",
   "./members/index",
-  "./no_supported_browser",
   "./privacy",
   "./web_update_log",
 ])
