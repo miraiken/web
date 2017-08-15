@@ -1,5 +1,6 @@
 cache:
  directories:
+  - icu4c-59_1
   - node_modules
 
 deploy:
@@ -8,6 +9,9 @@ deploy:
  provider: pages
  skip_cleanup: true
 
+env:
+ - LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/icu4c-59_1/lib
+
 language: node_js
 
 node_js:
@@ -15,7 +19,16 @@ node_js:
 
 sudo: false
 
+before_install:
+ - '[ -d icu4c-59_1/lib ] ||
+     (curl -L https://sourceforge.net/projects/icu/files/ICU4C/59.1/icu4c-59_1-src.tgz/download | tar xz &&
+      pushd icu/source &&
+      ./configure --prefix=$TRAVIS_BUILD_DIR/icu4c-59_1 &&
+      make -j4)'
+ - cd $TRAVIS_BUILD_DIR
+
 install:
+ - '[ ! -d icu ] || make -j4 -C icu/source install'
  - npm install
 
 script:
