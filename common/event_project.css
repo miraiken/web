@@ -1,25 +1,25 @@
 ﻿@charset "UTF-8";
 
-article.progect_info{
+article.project_info{
 	margin: 18px 50px;
 	border: 1px solid #009000;
 }
-article.progect_info div{
+article.project_info div{
 	margin: 0px 0px 18px 0px;
 }
-div.progect_info_main div.progect_titile{
+div.project_info_main div.project_titile{
 	width: 22em;
 	margin: 0px 0px 18px 0px;
 }
-div.progect_info_main div.progect_titile h2{
+div.project_info_main div.project_titile h2{
 	margin: 5px;
 }
-div.progect_info_main div.progect_titile p{
+div.project_info_main div.project_titile p{
 	margin: 5px;
 	text-align: right;
 	font-size: 15px;
 }
-div.progect_info_main div.progect_info_introduce{
+div.project_info_main div.project_info_introduce{
 	max-width: 70em;
 	margin: 18px 2em;
 }
@@ -44,29 +44,29 @@ div.progect_info_main div.progect_info_introduce{
 	text-align: center;
 	padding: 6px;
 }
-div.progect_titile_list{
+div.project_titile_list{
 	display: inline-block;
 	width: 324px;
 }
-div.progect_titile_list div.progect_titile{
+div.project_titile_list div.project_titile{
 	width: 22em;
 	margin: 0px 0px 5px 0px;
 }
-div.progect_titile_list div.progect_titile h2{
+div.project_titile_list div.project_titile h2{
 	margin: 5px;
 	font-size: 21px
 }
-div.progect_titile_list div.progect_titile p{
+div.project_titile_list div.project_titile p{
 	margin: 5px;
 	text-align: right;
 	font-size: 15px;
 }
-.progect_info_detail td{
+.project_info_detail td{
 	border: solid 1px #000000;
 	vertical-align: middle;
 	text-align: left;
 }
-.progect_info_detail table{
+.project_info_detail table{
 	margin: 20px;
 }
 /*

@@ -1,12 +1,12 @@
 @charset "UTF-8";
-div.progect_info_main div.progect_titile {
+div.project_info_main div.project_titile {
     width: 23em;
 }
 
-div.progect_titile_list div.progect_titile {
+div.project_titile_list div.project_titile {
     width: 23em;
 }
-div.progect_info_detail th{
+div.project_info_detail th{
 	border: 1px solid #000;
 }
 .project_name_cell {
