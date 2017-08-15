@@ -111,7 +111,7 @@ html(lang='ja')
       |     
       footer#page_foot
         p#copyright
-          small Copyright© 
-          small#copyright_year year
-          small  東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
-          small#last_modified last_modified
+          small
+            | Copyright© #{lastModified.getFullYear()}
+            | 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
+            | #{lastModified.toLocaleString()}
