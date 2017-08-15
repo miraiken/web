@@ -15,11 +15,6 @@ html(lang='ja')
     link(rel='stylesheet', href='../../../common/css/style.css')
     |   
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    |   
-    script(type='text/javascript').
-      $(function () {
-      update_date();
-      });
   body
     #page
       #page_head_back_1
@@ -109,4 +104,6 @@ html(lang='ja')
             </nav>
       footer#page_foot
         p#copyright
-          small Copyright© 2015 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
+          small
+            | Copyright© #{lastModified.getFullYear()}
+            | 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.

@@ -120,7 +120,7 @@ module.exports = {
         test: /\.pug$/,
         exclude: path.join(__dirname, "include"),
         use: ExtractTextPlugin.extract([
-          "./call-loader",
+          "./pug-executing-loader",
           {
             loader: "pug-loader",
             options: {root: path.join(__dirname, "include")},
