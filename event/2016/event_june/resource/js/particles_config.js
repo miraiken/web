@@ -21,7 +21,7 @@ var load_pazzle = function(){
           "nb_sides": 7
         },
         "image": {
-          "src": "./resource/img/puzzle.png",
+          "src": require("../img/puzzle.png"),
           "width": 500,
           "height": 500
         }
