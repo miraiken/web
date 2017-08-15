@@ -46,6 +46,7 @@ for (const name of [
   "./event/2016/event_june/resource/js/script.js",
   "./event/2017/event_june/resource/css/style.css",
   "./event/2017/event_june/resource/css/table_style.css",
+  "./event/2017/event_june/resource/js/exhibition_creater.js",
   "./event/2017/event_march/resource/css/xxx.css",
   "./event/2017/event_march/resource/js/exhibition_creater.js",
   "./for_freshman/resource/camera_kai_pre.css",
