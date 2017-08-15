@@ -84,7 +84,6 @@ for (const name of [
   "./event/2017/event_june/access",
   "./event/2017/event_june/exhibition",
   "./event/2017/event_june/index",
-  "./event/2017/event_march/resource/data/exhibition",
   "./event/2017/event_march/access",
   "./event/2017/event_march/exhibition",
   "./event/2017/event_march/index",
