@@ -137,6 +137,9 @@ module.exports = {
         test: /\.(gif|jpg|pdf|png)$/,
         exclude: path.join(__dirname, "raw"),
         loader: "file-loader",
+      }, {
+        test: /\.json$/,
+        loader: "json-loader",
       },
     ],
   },

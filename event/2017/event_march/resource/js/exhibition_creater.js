@@ -2,11 +2,8 @@
   'use strict';
 
   var description_block = document.getElementById("description");
+  var list = require('../data/exhibition.json')
   var c = {
-    list: [],
-    oninit : function() {
-      m.request({method: 'GET', url: './resource/data/exhibition.json'}).then(function(response){ c.list = response; });
-    },
     view: function(ctrl){
       var data = {
         "chemistory": [],
@@ -32,7 +29,7 @@
         "musenken"  : "industrial"
       });
       var order = ["chemistory", "geoscience", "math", "industrial"];
-      c.list.forEach(function(e){
+      list.forEach(function(e){
         var org_id = e.id.replace(/description_/, "");
         var d = data[org_id_to_area_id_table[org_id]];
         d.push(m("article#" + e.id + ".project_info", [
