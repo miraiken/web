@@ -7,17 +7,17 @@ html(lang='ja')
     |   
     include /google_analytics.pug
     |   
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    include /normalize-5.0.0.pug
     |   
     link(rel='stylesheet', href='../../../common/layout.css')
     |   
     link(rel='stylesheet', href='./resource/css/style.css')
     |   
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    include /jquery-3.2.1.pug
     // jQuery UI
-    link(href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.min.css', rel='stylesheet')
+    include /jquery-ui-south-street-1.12.1.pug
     |   
-    script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js')
+    include /jquery-ui-1.12.1.pug
     |   
     script.
       $(function () {

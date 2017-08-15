@@ -7,7 +7,7 @@ html(lang='ja')
     |   
     include /google_analytics.pug
     |   
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    include /normalize-5.0.0.pug
     |   
     link(rel='stylesheet', href='../common/layout.css')
     |   
@@ -15,11 +15,15 @@ html(lang='ja')
     |   
     link(href='../common/camera_kai.css', rel='stylesheet')
     |   
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    include /jquery-3.2.1.pug
     |   
-    script(src='https://cdn.rawgit.com/gdsmith/jquery.easing/v1.4.0/jquery.easing.min.js')
+    script(crossorigin='anonoymous',
+           integrity='sha384-oYG5p+e7ieb4i6digFmRe6OIV1hEn/UGYLvo1+z/d16inF/JgVw/Ev7NTfgWPZ03'
+           src='https://cdn.rawgit.com/gdsmith/jquery.easing/v1.4.0/jquery.easing.min.js')
     |   
-    script(src='https://cdn.rawgit.com/pixedelic/Camera/6e76de15a86488e8d7a98aba041443e036e38e6b/scripts/camera.min.js')
+    script(crossorigin='anonymous'
+           integrity='sha384-a/1dGExmxiGR9U6uzPm4nxSFplr5GUQBfXJj2yHfDmrZ3zv8RKBbmA+IpndXv7qR'
+           src='https://cdn.rawgit.com/pixedelic/Camera/6e76de15a86488e8d7a98aba041443e036e38e6b/scripts/camera.min.js')
     |   
     script.
       jQuery(function () {

@@ -7,7 +7,7 @@ html(lang='ja')
     |   
     include /google_analytics.pug
     |   
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    include /normalize-5.0.0.pug
     |   
     link(rel='stylesheet', href='../../../common/layout.css')
     |   
@@ -15,9 +15,11 @@ html(lang='ja')
     |   
     link(rel='stylesheet', href='./resource/exhibition.css')
     |   
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    include /jquery-3.2.1.pug
     |   
-    script(src='https://raw.githubusercontent.com/caleb531/jcanvas/master/jcanvas.min.js')
+    script(crossorigin='anonymous',
+           integrity='sha384-FaAEqR0bk3e+f3xgky3Yfnwd6jMuBxr4zG9jmFx54QVFsZLqGEpSibbzFplcjQWO',
+           src='https://cdnjs.cloudflare.com/ajax/libs/jcanvas/20.1.2/min/jcanvas.min.js')
     |   
     script(src='./resource/pseudo_color_transition_jCanvas.js')
   body

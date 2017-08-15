@@ -7,15 +7,17 @@ html(lang='ja')
     |   
     include /google_analytics.pug
     |   
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    include /normalize-5.0.0.pug
     |   
     link(rel='stylesheet', href='../../../common/layout.css')
     |   
     link(rel='stylesheet', href='./resource/css/xxx.css')
     |   
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    include /jquery-3.2.1.pug
     |   
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/mithril/1.0.1/mithril.min.js')
+    script(crossorigin='anonymous',
+           integrity='sha384-0eJVCFsnr+DhU/kroNh1PFqEDXNgpAApLJRJFIPh2yStFWQyhRLZ/UqH37JoUWka',
+           src='https://cdnjs.cloudflare.com/ajax/libs/mithril/1.0.1/mithril.min.js')
     |   
     script(src='./resource/js/exhibition_creater.js')
   body

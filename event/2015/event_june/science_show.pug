@@ -7,7 +7,7 @@ html(lang='ja')
     |   
     include /google_analytics.pug
     |   
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    include /normalize-5.0.0.pug
     |   
     link(rel='stylesheet', href='../../../common/layout.css')
     |   
@@ -35,7 +35,7 @@ html(lang='ja')
     |   
     link(rel='prefetch', href=require('./resource/centrifugal.jpg'))
     |   
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    include /jquery-3.2.1.pug
     script(charset='UTF-8', src='./resource/simple_slideshow.js')
     style.
       .strike{
