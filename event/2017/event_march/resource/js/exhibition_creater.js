@@ -1,6 +1,4 @@
 ﻿$(function(){
-  'use strict';
-
   var description_block = document.getElementById("description");
   var list = require('../data/exhibition.json')
   var c = {
