@@ -1,4 +1,12 @@
 // lightbox_plus.js
+/*
+  Copyright (C) 2017 Kagucho <contact@kagucho.net>
+  Modified for CommonJS module syntax.
+
+  The modification is licensed under the Creative Commons Attribution 2.5
+  License.
+  http://creativecommons.org/licenses/by/2.5/
+*/
 // == written by Takuya Otani <takuya.otani@gmail.com> ===
 // == Copyright (C) 2006 SimpleBoxes/SerendipityNZ Ltd. ==
 /*
@@ -1029,14 +1037,14 @@ Lightbox.prototype = {
 };
 Spica.Event.run(function() { 
   new Lightbox({
-    loadingimg:'resource/loading.gif',
-    expandimg:'resource/expand.gif',
-    shrinkimg:'resource/shrink.gif',
-    blankimg:'resource/blank.gif',
-    previmg:'resource/prev.gif',
-    nextimg:'resource/next.gif',
-    closeimg:'resource/close.gif',
-    effectimg:'resource/zzoop.gif',
+    loadingimg:require('./loading.gif'),
+    expandimg:require('./expand.gif'),
+    shrinkimg:require('./shrink.gif'),
+    blankimg:require('./blank.gif'),
+    previmg:require('./prev.gif'),
+    nextimg:require('./next.gif'),
+    closeimg:require('./close.gif'),
+    effectimg:require('./zzoop.gif'),
     effectpos:{x:-40,y:-20},
     effectclass:'effectable',
     resizable:true,

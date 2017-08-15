@@ -37,7 +37,7 @@ for (const name of [
   "./common/css/event_project.css",
   "./common/css/style.css",
   "./event/2014/event_june/resource/lightbox.css",
-  "./event/2014/event_june/resource/lightbox_plus_min.js",
+  "./event/2014/event_june/resource/lightbox_plus.js",
   "./event/2015/event_june/resource/exhibition.css",
   "./event/2015/event_june/resource/pseudo_color_transition_jCanvas.js",
   "./event/2015/event_june/resource/science_show.css",
