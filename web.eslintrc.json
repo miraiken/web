@@ -1,0 +1,6 @@
+{
+  "env": {"browser": true, "commonjs": true, "jquery": true},
+  "extends": "closure-es5",
+  "globals": {"m": false, "particlesJS": false},
+  "parserOptions": {"ecmaVersion": 5}
+}

@@ -1,0 +1,7 @@
+{
+  "excludeFiles": ["node_modules", "packages/**"],
+  "extends": "clock",
+  "disallowIdLiterals": null,
+  "requireClassLiteralsBeforeIdLiterals": null,
+  "validateAttributeSeparator": null
+}
