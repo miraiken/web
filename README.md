@@ -4,7 +4,7 @@
 
 https://miraiken.github.io/web/index.html
 
-## Developping
+## Developing
 
 まず依存しているソフトウェアをインストールします。``npm``がない場合は、``nvm``や``nodist``などで``node.js``を導入してください。
 
