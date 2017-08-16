@@ -1,74 +1,87 @@
-﻿@charset "UTF-8";
+article.project_info {
+  margin: 18px 50px;
+  border: 1px solid #009000;
+}
 
-article.project_info{
-	margin: 18px 50px;
-	border: 1px solid #009000;
+article.project_info div {
+  margin: 0 0 18px;
 }
-article.project_info div{
-	margin: 0px 0px 18px 0px;
+
+div.project_info_main div.project_titile {
+  width: 22em;
+  margin: 0 0 18px;
 }
-div.project_info_main div.project_titile{
-	width: 22em;
-	margin: 0px 0px 18px 0px;
+
+div.project_info_main div.project_titile h2 {
+  margin: 5px;
 }
-div.project_info_main div.project_titile h2{
-	margin: 5px;
+
+div.project_info_main div.project_titile p {
+  margin: 5px;
+  text-align: right;
+  font-size: 15px;
 }
-div.project_info_main div.project_titile p{
-	margin: 5px;
-	text-align: right;
-	font-size: 15px;
+
+div.project_info_main div.project_info_introduce {
+  max-width: 70em;
+  margin: 18px 2em;
 }
-div.project_info_main div.project_info_introduce{
-	max-width: 70em;
-	margin: 18px 2em;
-}
+
 /*  pic_map */
-#map_list{
-	display: block;
+#map_list {
+  display: block;
 }
-#map_pic{
-	width: 370px !important;
-	display: inline-block;
+
+#map_pic {
+  width: 370px !important;
+  display: inline-block;
 }
-#map_pic img{
-	width: 369px;
-	margin-left: 0px;
-	margin: 0px !important;
+
+#map_pic img {
+  width: 369px;
+  margin: 0 !important;
 }
-#announce{
-	border: 1px solid #009000;
-	background-color: #009000;
-	color: white;
-	font: bold 20px sans-serif;
-	text-align: center;
-	padding: 6px;
+
+#announce {
+  border: 1px solid #009000;
+  background-color: #009000;
+  color: white;
+  font: bold 20px sans-serif;
+  text-align: center;
+  padding: 6px;
 }
-div.project_titile_list{
-	display: inline-block;
-	width: 324px;
+
+div.project_titile_list {
+  display: inline-block;
+  width: 324px;
 }
-div.project_titile_list div.project_titile{
-	width: 22em;
-	margin: 0px 0px 5px 0px;
+
+div.project_titile_list div.project_titile {
+  width: 22em;
+  margin: 0 0 5px;
 }
-div.project_titile_list div.project_titile h2{
-	margin: 5px;
-	font-size: 21px
+
+div.project_titile_list div.project_titile h2 {
+  margin: 5px;
+  font-size: 21px;
 }
-div.project_titile_list div.project_titile p{
-	margin: 5px;
-	text-align: right;
-	font-size: 15px;
+
+div.project_titile_list div.project_titile p {
+  margin: 5px;
+  text-align: right;
+  font-size: 15px;
 }
-.project_info_detail td{
-	border: solid 1px #000000;
-	vertical-align: middle;
-	text-align: left;
+
+.project_info_detail td {
+  border: solid 1px #000;
+  vertical-align: middle;
+  text-align: left;
 }
-.project_info_detail table{
-	margin: 20px;
+
+.project_info_detail table {
+  margin: 20px;
 }
+
 /*
 化学生命：#f4b3c2
 1部化学研究部/神楽坂
@@ -79,18 +92,20 @@ div.project_titile_list div.project_titile p{
 野老(トコロ)実験クラブ＋秋津研究室or竹村研究室/神楽坂
 ちびラボ
 */
-.org_color_chemistry{
-	background-color: #f4b3c2;
+.org_color_chemistry {
+  background-color: #f4b3c2;
 }
+
 /*
 数学：#cca6bf
 一部数学研究部/神楽坂
 2部数学研究部/神楽坂
 近代科学資料館/神楽坂
 */
-.org_color_math{
-	background-color: #cca6bf;
+.org_color_math {
+  background-color: #cca6bf;
 }
+
 /*
 物理宇宙地球かんきょう：#fef263
 1部2部天文研究部/神楽坂
@@ -99,9 +114,10 @@ div.project_titile_list div.project_titile p{
 地球科学研究部/神楽坂
 文具研究同好会
 */
-.org_color_geoscience{
-	background-color: #fef263;
+.org_color_geoscience {
+  background-color: #fef263;
 }
+
 /*
 機械電気ロボット：#89c3eb
 機械工学研究会/野田
@@ -109,9 +125,10 @@ div.project_titile_list div.project_titile p{
 AircraftMakers/野田
 1部無線研究部有志/神楽坂
 */
-.org_color_industrial{
-	background-color: #89c3eb;
+.org_color_industrial {
+  background-color: #89c3eb;
 }
+
 /*
 自然の不思議:#fef263
 1部物理研究会/神楽坂
@@ -119,9 +136,10 @@ AircraftMakers/野田
 2部生物研究部/神楽坂
 文具研究同好会
 */
-.org_color_geoscience2{
-	background-color: #fef263;
+.org_color_geoscience2 {
+  background-color: #fef263;
 }
+
 /*
 身の回りの科学:#f4b3c2
 理工学部化学研究会/野田
@@ -130,9 +148,10 @@ AircraftMakers/野田
 野老(トコロ)実験クラブ/神楽坂
 サイエンスコミュニケ―ションサークルchibi lab./神楽坂
 */
-.org_color_chemistry2{
-	background-color: #f4b3c2;
+.org_color_chemistry2 {
+  background-color: #f4b3c2;
 }
+
 /*
 算数と宇宙:#cca6bf
 一部数学研究部/神楽坂
@@ -140,9 +159,10 @@ AircraftMakers/野田
 1部2部天文研究部/神楽坂
 野田天文研/野田
 */
-.org_color_math2{
-	background-color: #cca6bf;
+.org_color_math2 {
+  background-color: #cca6bf;
 }
+
 /*
 乗り物と技術:#89c3eb
 AircraftMakers/野田
@@ -150,6 +170,6 @@ AircraftMakers/野田
 1部無線研究部有志/神楽坂
 1部無線研究部有志/神楽坂
 */
-.org_color_industrial2{
-	background-color: #89c3eb;
+.org_color_industrial2 {
+  background-color: #89c3eb;
 }

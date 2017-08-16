@@ -8,6 +8,9 @@ deploy:
  provider: pages
  skip_cleanup: true
 
+env:
+ - POSTCSS_THROW_ERROR=1
+
 language: node_js
 
 node_js:

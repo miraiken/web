@@ -1,26 +1,31 @@
-@charset "UTF-8";
 div.project_info_main div.project_titile {
-    width: 23em;
+  width: 23em;
 }
 
 div.project_titile_list div.project_titile {
-    width: 23em;
+  width: 23em;
 }
-div.project_info_detail th{
-	border: 1px solid #000;
+
+div.project_info_detail th {
+  border: 1px solid #000;
 }
+
 .project_name_cell {
-	width: 190px;
+  width: 190px;
 }
+
 .project_form_cell {
-	width: 36px;
+  width: 36px;
 }
+
 .target_age_cell {
-	width: 54px;
+  width: 54px;
 }
-td.time_required_cell{
-	text-align: center;
+
+td.time_required_cell {
+  text-align: center;
 }
-#map1{
-	border: 1px solid gray;
+
+#map1 {
+  border: 1px solid gray;
 }
