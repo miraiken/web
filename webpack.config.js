@@ -2,6 +2,12 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const fs = require("fs");
 const path = require("path");
 
+const extractCSSPlugin = new ExtractTextPlugin({
+  filename(getPath) {
+    return getPath("[name]").replace(/\.[^\.]*$/, ".css");
+  },
+});
+
 function *listFilesRecursively(dir) {
   for (const entry of fs.readdirSync(dir)) {
     const entryPath = path.join(dir, entry);
@@ -109,7 +115,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract([
+        use: extractCSSPlugin.extract([
           "css-loader",
           "postcss-loader",
         ]),
@@ -145,5 +151,5 @@ module.exports = {
     path: path.join(__dirname, "build"),
     publicPath: "/web/"
   },
-  plugins: [omitDummy, new ExtractTextPlugin("[name]")],
+  plugins: [omitDummy, extractCSSPlugin, new ExtractTextPlugin("[name]")],
 };
