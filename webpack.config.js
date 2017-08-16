@@ -2,11 +2,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const fs = require('fs');
 const path = require('path');
 
-const extractCSSPlugin = new ExtractTextPlugin({
-  filename(getPath) {
-    return getPath('[name]').replace(/\.[^.]*$/, '.css');
-  },
-});
+function createSpecializedExtractTextPlugin(extension) {
+  return new ExtractTextPlugin({
+    filename(getPath) {
+      return getPath('[name]').replace(/[^.]*$/, extension);
+    },
+  });
+}
 
 function* listFilesRecursively(dir) {
   for (const entry of fs.readdirSync(dir)) {
@@ -33,6 +35,9 @@ function omitDummy() {
     callback();
   });
 }
+
+const extractCSSPlugin = createSpecializedExtractTextPlugin('css');
+const extractHTMLPlugin = createSpecializedExtractTextPlugin('html');
 
 const entry = {'slideshow.js': './slideshow'};
 
@@ -125,7 +130,7 @@ module.exports = {
       }, {
         test: /\.pug$/,
         exclude: path.join(__dirname, 'include'),
-        use: ExtractTextPlugin.extract([
+        use: extractHTMLPlugin.extract([
           './pug-executing-loader',
           {
             loader: 'pug-loader',
@@ -154,5 +159,5 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     publicPath: '/web/',
   },
-  plugins: [omitDummy, extractCSSPlugin, new ExtractTextPlugin('[name]')],
+  plugins: [omitDummy, extractCSSPlugin, extractHTMLPlugin],
 };
