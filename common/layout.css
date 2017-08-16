@@ -166,6 +166,7 @@ table.normal_table th {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: #9ad9ea;
+  padding-left: 16px;
 }
 
 .topic_path {
