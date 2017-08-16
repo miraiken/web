@@ -10,30 +10,20 @@ html(lang='ja')
     include /normalize-7.0.0.pug
     |   
     link(rel='stylesheet', href='../common/layout.css')
-    |   
-    link(href='./resource/camera_kai_pre.css', rel='stylesheet')
-    |   
-    link(href='../common/camera_kai.css', rel='stylesheet')
-    |   
-    include /jquery-3.2.1.pug
-    |   
-    script(crossorigin='anonoymous',
-           integrity='sha384-leGYpHE9Tc4N9OwRd98xg6YFpB9shlc/RkilpFi0ljr3QD4tFoFptZvgnnzzwG4Q'
-           src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
-    |   
+    link(crossorigin='anonymous',
+         href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css',
+         integrity='sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh',
+         rel='stylesheet')
+    link(crossorigin='anonymous',
+         href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css',
+         integrity='sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R',
+         rel='stylesheet')
     script(crossorigin='anonymous',
-           integrity='sha384-3+/xYuDafDx5/M2OGHUSbP5cOOSRXaeHfmMQJQ6byyO/zJdLlLSrEMdn4dOfJ3u0',
-           src='https://cdnjs.cloudflare.com/ajax/libs/Camera/1.3.4/scripts/camera.min.js')
-    |   
-    script.
-      jQuery(function () {
-      jQuery('#slide').camera({
-      height: '400px',
-      hover: false,
-      fx: 'simpleFade',
-      time: 6000
-      });//任意のセレクタですが、今回は#slideにしています
-      });
+           integrity='sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy',
+           src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js')
+    script(crossorigin='anonymous',
+           integrity='sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q',
+           src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js')
   body
     #page
       #page_head_back_1
@@ -125,27 +115,31 @@ html(lang='ja')
             |   
             p 広報班が過去に作った物の一部を紹介します。
             |   
-            #slide.camera_wrap.camera_lime_skin(style='width: 561px;')
-              div(data-src=require('./resource/201406配布ビラ表.png'))
-                .camera_caption.fadeFromBottom
-                  | 201406配布ビラ。
-                  a(href='./resource/201406配布ビラ表.pdf') pdf版
-              div(data-src=require('./resource/2014年度　6月期表紙.png'))
-                .camera_caption.fadeFromTop
-                  | 2014年度　6月期パンフレット表紙。
-                  a(href='./resource/2014年度　6月期表紙　.pdf') pdf版
-              div(data-src=require('./resource/201503 アンケート.png'))
-                .camera_caption.fadeFromBottom
-                  | 2014年度3月期　アンケート。
-                  a(href='./resource/2014年度3月期　アンケート　見やすくした.pdf') pdf版
-              div(data-src=require('./resource/学内周知用ポスター-2014.png'))
-                .camera_caption.fadeFromBottom
-                  | 学内周知用ポスター。
-                  a(href='./resource/学内周知用ポスター 2014.pdf') pdf版
-              div(data-src=require('./resource/当日用ビラ　2014年度3月期.png'))
-                .camera_caption.fadeFromBottom
-                  | 当日用ビラ　2014年度3月期。
-                  a(href='./resource/当日用ビラ　2014年度3月期.pdf') pdf版
+            div(style='position: relative; height: 400px;')
+              .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                .pswp__bg
+                .pswp__scroll-wrap
+                  .pswp__container
+                    .pswp__item
+                    .pswp__item
+                    .pswp__item
+                  .pswp__ui.pswp__ui--hidden
+                    .pswp__top-bar
+                      .pswp__counter
+                      button.pswp__button.pswp__button--close(title='Close (Esc)')
+                      button.pswp__button.pswp__button--share(title='Share')
+                      button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                      button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                      .pswp__preloader
+                        .pswp__preloader__icn
+                           .pswp__preloader_cut
+                             .pswp__preloader__donut
+                    .pswp__share-modal.pswp__share-modal--hidden.pswp__single_tap
+                      .pswp__share-tooltip
+                    button.pswp_button.pswp__button--arrow--left(title='Previous (arrow left)')
+                    button.pswp_button.pswp__button--arrow--right(title='Next (arrow right)')
+                    .pswp__caption
+                      .pswp__caption__center
         #page_body_sub
           nav.side_navi
             ul
@@ -164,3 +158,37 @@ html(lang='ja')
             | Copyright © #{lastModified.getFullYear()}
             | 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
             | #{lastModified.toLocaleString("ja", {timeZone: "Asia/Tokyo"})}
+      script.
+        (new PhotoSwipe(document.getElementsByClassName("pswp")[0],
+                        PhotoSwipeUI_Default,
+                        [
+                          {
+                            src: !{JSON.stringify(require("./resource/201406配布ビラ表.png"))},
+                            w: 561,
+                            h: 400,
+                            title: "201406配布ビラ。<a href='./resource/201406配布ビラ表.pdf'>pdf版</a>",
+                          }, {
+                            src: !{JSON.stringify(require("./resource/2014年度　6月期表紙.png"))},
+                            w: 561,
+                            h: 400,
+                            title: "2014年度　6月期パンフレット表紙。<a href='./resource/2014年度　6月期表紙　.pdf'>pdf版</a>",
+                          }, {
+                            src: !{JSON.stringify(require("./resource/201503 アンケート.png"))},
+                            w: 561,
+                            h: 400,
+                            title: "2014年度3月期　アンケート。<a href='./resource/2014年度3月期　アンケート　見やすくした.pdf'>pdf版</a>",
+                          }, {
+                            src: !{JSON.stringify(require("./resource/学内周知用ポスター-2014.png"))},
+                            w: 561,
+                            h: 400,
+                            title: "学内周知用ポスター。<a href='./resource/学内周知用ポスター 2014.pdf'>pdf版</a>",
+                          }, {
+                            src: !{JSON.stringify(require("./resource/当日用ビラ　2014年度3月期.png"))},
+                            w: 561,
+                            h: 400,
+                            title: "当日用ビラ　2014年度3月期。<a href='./resource/当日用ビラ　2014年度3月期.pdf'>pdf版</a>",
+                          },
+                        ], {
+                          modal: false,
+                          closeOnScroll: false,
+                        })).init();
