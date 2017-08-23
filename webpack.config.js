@@ -47,7 +47,6 @@ for (const name of listFilesRecursively('./raw')) {
 
 for (const name of [
   './common/google_analytics.js',
-  './common/event_project.css',
   './common/layout.css',
   './event/2014/event_june/resource/lightbox.css',
   './event/2014/event_june/resource/lightbox_plus.js',
@@ -61,6 +60,7 @@ for (const name of [
   './event/2017/event_june/resource/js/exhibition_creater.js',
   './event/2017/event_march/resource/css/xxx.css',
   './event/2017/event_march/resource/js/exhibition_creater.js',
+  './event/project.css',
 ]) {
   entry[name] = name;
 }
