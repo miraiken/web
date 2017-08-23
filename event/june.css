@@ -1,0 +1,17 @@
+#page_body_sub nav.color_june ul li {
+  border-left: solid 3px #fa6603;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+  background-color: #fa6603;
+  background-image: -webkit-linear-gradient(left, #fff, #f8b30a);
+  background-image: -moz-linear-gradient(left, #fff, #f8b30a);
+  background-image: -ms-linear-gradient(left, #fff, #f8b30a);
+  background-image: -o-linear-gradient(left, #fff, #f8b30a);
+  background-image: linear-gradient(to left, #fff, #f8b30a);
+  color: #fa6603;
+}
+
+#page_body_sub nav.color_june li:first-child {
+  background-color: #fa6603;
+  background-image: none;
+}

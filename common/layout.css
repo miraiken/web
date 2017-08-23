@@ -55,12 +55,6 @@ td {
   margin: 0 auto;
 }
 
-#topimage {
-  width: 1110px;
-  height: 400px;
-  background-image: url("./top/back.jpg");
-}
-
 /* normal */
 table.normal_table {
   margin: 20px;
@@ -223,41 +217,6 @@ table.normal_table th {
   width: 100%;
 }
 
-#page_body_main .lecture table {
-  font-size: 14px;
-  line-height: 1.429;
-  border: 1px solid #ccc;
-  width: 80%;
-  margin-left: 60px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-
-#page_body_main .lecture table th,
-#page_body_main .lecture table td {
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-}
-
-#page_body_main .lecture table th {
-  background-color: #eee;
-  text-align: left;
-}
-
-#page_body_main .lecture table td {
-  text-align: center;
-}
-
-#page_body_main .lecture img {
-  display: block;
-  margin: 0 auto;
-}
-
-.concept {
-  font-size: 25px;
-  text-align: center;
-}
-
 .content {
   font-size: 18px;
   text-align: center;
@@ -268,18 +227,6 @@ table.normal_table th {
   font-size: 18px;
   line-height: 40px;
   margin: 18px 50px;
-}
-
-ul.content_list {
-  font-size: 18px;
-  line-height: 18px;
-  margin: 18px 50px;
-}
-
-.eventdate {
-  font-size: 30px;
-  text-align: center;
-  margin: 0 auto;
 }
 
 #page_body_main .event_navi ul {
@@ -474,77 +421,12 @@ footer p small {
   color: #fff;
 }
 
-#page_body_sub nav.color_june ul li {
-  border-left: solid 3px #fa6603;
-  border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
-  background-color: #fa6603;
-  background-image: -webkit-linear-gradient(left, #fff, #f8b30a);
-  background-image: -moz-linear-gradient(left, #fff, #f8b30a);
-  background-image: -ms-linear-gradient(left, #fff, #f8b30a);
-  background-image: -o-linear-gradient(left, #fff, #f8b30a);
-  background-image: linear-gradient(to left, #fff, #f8b30a);
-  color: #fa6603;
-}
-
-#page_body_sub nav.color_march ul li {
-  border-left: solid 3px #e10d47;
-  border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
-  background-image: -webkit-linear-gradient(left, #fff, #f98980);
-  background-image: -moz-linear-gradient(left, #fff, #f98980);
-  background-image: -ms-linear-gradient(left, #fff, #f98980);
-  background-image: -o-linear-gradient(left, #fff, #f98980);
-  background-image: linear-gradient(to left, #fff, #f98980);
-  color: #e10d47;
-}
-
-/* 過去のHTMLとの互換性のためだけに存在 */
-#page_body_sub nav.side_navi_event li.color_june {
-  border-left: solid 3px #fa6603;
-  border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
-  background-color: #fa6603;
-  background-image: -webkit-linear-gradient(left, #fa6603, #f8b30a);
-  background-image: -moz-linear-gradient(left, #fa6603, #f8b30a);
-  background-image: -ms-linear-gradient(left, #fa6603, #f8b30a);
-  background-image: -o-linear-gradient(left, #fa6603, #f8b30a);
-  background-image: linear-gradient(to left, #fa6603, #f8b30a);
-  color: #fff;
-  height: 85px;
-}
-
-/* 過去のHTMLとの互換性のためだけに存在 */
-#page_body_sub nav.side_navi_event li.color_march {
-  border-left: solid 3px #e10d47;
-  border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
-  background-color: #e10d47;
-  background-image: -webkit-linear-gradient(left, #e10d47, #f98980);
-  background-image: -moz-linear-gradient(left, #e10d47, #f98980);
-  background-image: -ms-linear-gradient(left, #e10d47, #f98980);
-  background-image: -o-linear-gradient(left, #e10d47, #f98980);
-  background-image: linear-gradient(to left, #e10d47, #f98980);
-  color: #fff;
-  height: 85px;
-}
-
 #page_body_sub .side_navi_event li:first-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #57b82b;
   background-image: none;
   color: white;
-}
-
-#page_body_sub nav.color_june li:first-child {
-  background-color: #fa6603;
-  background-image: none;
-}
-
-#page_body_sub nav.color_march li:first-child {
-  background-color: #e10d47;
-  background-image: none;
 }
 
 #page_body_sub .side_navi_event li:last-child {
@@ -578,16 +460,6 @@ footer p small {
   color: #fff;
 }
 
-#page_body_sub .side_navi_event ul li.color_june:hover {
-  background-color: #f8b30a;
-  color: #fff;
-}
-
-#page_body_sub .side_navi_event ul li.color_march:hover {
-  background-color: #f98980;
-  color: #fff;
-}
-
 #page_foot {
   border-top: solid 2px #009000;
   margin-top: 1.5;
@@ -596,26 +468,4 @@ footer p small {
 #page_foot p {
   font-size: 12px;
   text-align: center;
-}
-
-div.link_box {
-  background-color: #ff5959;
-  border: 3px #ff5959 solid;     /* 枠線の装飾 */
-  width: 230px;
-  color: #fff;
-  -moz-border-radius: 10px;    /* Firefox */
-  -webkit-border-radius: 10px; /* Safari,Chrome */
-  border-radius: 10px;         /* CSS3 */
-  margin: 10px auto;
-}
-
-div.link_box a {
-  display: block;
-  background-color: inherit;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-  padding: 15px 0;
-  text-align: center;
-  color: inherit;
 }

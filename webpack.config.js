@@ -60,6 +60,10 @@ for (const name of [
   './event/2017/event_june/resource/js/exhibition_creater.js',
   './event/2017/event_march/resource/css/xxx.css',
   './event/2017/event_march/resource/js/exhibition_creater.js',
+  './event/access.css',
+  './event/date.css',
+  './event/june.css',
+  './event/lecture.css',
   './event/project.css',
 ]) {
   entry[name] = name;
