@@ -176,6 +176,9 @@ GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 
+# Visual Studio Code
+.vscode/
+
 #other
 desktop.ini
 *.db
