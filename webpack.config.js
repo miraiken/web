@@ -39,15 +39,17 @@ function omitDummy() {
 const extractCSSPlugin = createSpecializedExtractTextPlugin('css');
 const extractHTMLPlugin = createSpecializedExtractTextPlugin('html');
 
-const entry = {'slideshow.js': './slideshow'};
+const entry = {
+  'slideshow.js': './slideshow',
+  'common/google_analytics.js': './common/google_analytics',
+  'common/layout.css': './common/layout/index.css',
+};
 
 for (const name of listFilesRecursively('./raw')) {
   entry[`dummy${ name}`] = `./raw/${ name}`;
 }
 
 for (const name of [
-  './common/google_analytics.js',
-  './common/layout.css',
   './event/2014/event_june/resource/lightbox.css',
   './event/2014/event_june/resource/lightbox_plus.js',
   './event/2015/event_june/resource/exhibition.css',
@@ -133,17 +135,17 @@ module.exports = {
         ]),
       }, {
         test: /\.pug$/,
-        exclude: path.join(__dirname, 'include'),
+        exclude: path.join(__dirname, 'common'),
         use: extractHTMLPlugin.extract([
           './pug-executing-loader',
           {
             loader: 'pug-loader',
-            options: {root: path.join(__dirname, 'include')},
+            options: {root: path.join(__dirname, 'common')},
           },
         ]),
       }, {
         test: /\.pug$/,
-        include: path.join(__dirname, 'include'),
+        include: path.join(__dirname, 'common'),
         loader: 'pug-loader',
       }, {
         include: path.join(__dirname, 'raw'),

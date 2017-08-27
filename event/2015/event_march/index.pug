@@ -1,123 +1,65 @@
-doctype html
-html(lang='ja')
-  head
-    meta(charset='UTF-8')
-    |   
-    title オドロキ科学箱|東京理科大学みらい研究室
-    |   
-    include /google_analytics.pug
-    |   
-    include /normalize-5.0.0.pug
-    |   
-    link(rel='stylesheet', href='../../../common/layout.css')
-    link(rel='stylesheet', href='../../common.css')
-    link(rel='stylesheet', href='../../march.css')
-  body
-    #page
-      #page_head_back_1
-        header#page_head
-          .toptitle
-            h1.toptitle1
-              | 東京理科大学サイエンスフェア学生企画
-              br
-            |           
-            h1.toptitle2 みらい研究室実行委員会
-          |         
-          nav.global_navi
-            ul
-              li
-                a(href='../../../index.html')
-                  | ホーム
-                  br
-                  | HOME
-              |             
-              li
-                a(href='../../../event/index.html')
-                  | イベント情報
-                  br
-                  | EVENT
-              |             
-              li
-                a(href='../../../contact/index.html')
-                  | お問い合わせ
-                  br
-                  | CONTACT
-              |             
-              li
-                a(href='../../../link/index.html')
-                  | リンク
-                  br
-                  | LINK
-              |             
-              li
-                a(href='../../../for_freshman/index.html')
-                  | 新入生向けページ
-                  br
-                  | for Freshman
-      |     
-      #page_body
-        .topic_path_back
-          p.topic_path ホーム >> イベント情報 >> みらい研究室 ～オドロキ科学箱～
-        |       
-        #page_body_main
-          section
-            h1.pagetitle ３月開催　みらい研究室 ～オドロキ科学箱～
-            |           
-            p.content
-              | 毎年３月に葛飾区で開催される、
-              br
-              |  みらい研究室実行委員会主催　イベント
-              |             
-              br
-              |  「オドロキ科学箱」２０１５年も開催決定！！
-            |           
-            table.eventdate
-              tr
-                th 日時：
-                |               
-                td 3/14　(10：00～16：00)
-              |             
-              tr
-                th 場所：
-                |               
-                td ウィメンズ・パル(1F,2F,3F)
-                // 要編集
-            //
-              <p class="content">
-              子供と大人が一緒に楽しめる企画が充実！<br>
-              ぜひ保護者の方と一緒にお越しください！<br>
-              みらい研究室実行委員一同、心よりお待ちしております。<br>
-              </p>
-            p.pagetitle_sub イベント当日の諸注意
-            |           
-            p.content_1
-              | 混雑時、会場内の安全を確保するために入場規制をかけることがあります。ご了承ください
-        |       
-        #page_body_sub
-          nav.side_navi_event.color_march
-            ul
-              li
-                a(href='index.html') イベント概要
-              |             
-              li
-                a(href='about_march.html') ～オドロキ科学箱～について
-              |             
-              li
-                a(href='exhibition.html') 企画案内
-              |             
-              li
-                a(href='access.html') 会場アクセス
-          //
-            <nav class="sideNavi">
-            <ul>
-            <li><a href="../members/index.html">企画出展者向け<br>情報提供ページ</a></li>
-            <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
-            </ul>
-            </nav>
-      |     
-      footer#page_foot
-        p#copyright
-          small
-            | Copyright © #{lastModified.getFullYear()}
-            | 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
-            | #{lastModified.toLocaleString("ja", {timeZone: "Asia/Tokyo"})}
+extends /layout/index.pug
+
+append head
+  title オドロキ科学箱|東京理科大学みらい研究室
+  link(rel='stylesheet', href='../../common.css')
+  link(rel='stylesheet', href='../../march.css')
+
+block path
+  | ホーム >> イベント情報 >> みらい研究室 ～オドロキ科学箱～
+
+block article
+  section
+    h1.pagetitle ３月開催　みらい研究室 ～オドロキ科学箱～
+    |           
+    p.content
+      | 毎年３月に葛飾区で開催される、
+      br
+      |  みらい研究室実行委員会主催　イベント
+      |             
+      br
+      |  「オドロキ科学箱」２０１５年も開催決定！！
+    |           
+    table.eventdate
+      tr
+        th 日時：
+        |               
+        td 3/14　(10：00～16：00)
+      |             
+      tr
+        th 場所：
+        |               
+        td ウィメンズ・パル(1F,2F,3F)
+        // 要編集
+    //
+      <p class="content">
+      子供と大人が一緒に楽しめる企画が充実！<br>
+      ぜひ保護者の方と一緒にお越しください！<br>
+      みらい研究室実行委員一同、心よりお待ちしております。<br>
+      </p>
+    p.pagetitle_sub イベント当日の諸注意
+    |           
+    p.content_1
+      | 混雑時、会場内の安全を確保するために入場規制をかけることがあります。ご了承ください
+
+prepend sidebar
+  nav.side_navi_event.color_march
+    ul
+      li
+        a(href='index.html') イベント概要
+      |             
+      li
+        a(href='about_march.html') ～オドロキ科学箱～について
+      |             
+      li
+        a(href='exhibition.html') 企画案内
+      |             
+      li
+        a(href='access.html') 会場アクセス
+  //
+    <nav class="sideNavi">
+    <ul>
+    <li><a href="../members/index.html">企画出展者向け<br>情報提供ページ</a></li>
+    <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
+    </ul>
+    </nav>

@@ -10,7 +10,7 @@
   },
   "scripts": {
     "eslint-node": "eslint -c node.eslintrc.json postcss.config.js pug-executing-loader.js webpack.config.js",
-    "eslint-web": "eslint -c web.eslintrc.json --ignore-pattern **/google_analytics.js --ignore-pattern **/lightbox_plus*.js --ignore-pattern postcss.config.js --ignore-pattern pug-executing-loader.js --ignore-pattern webpack.config.js .",
+    "eslint-web": "eslint -c web.eslintrc.json --ignore-pattern **/lightbox_plus*.js --ignore-pattern postcss.config.js --ignore-pattern pug-executing-loader.js --ignore-pattern webpack.config.js .",
     "eslint": "npm run eslint-node && npm run eslint-web",
     "lint": "npm run eslint && pug-lint .",
     "start": "webpack-dev-server"

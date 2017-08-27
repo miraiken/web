@@ -18,15 +18,6 @@ td {
 
 #page_head_back {
   background-color: #fff;
-  height: 557px;
-  margin: 0 auto;
-  background-image: url("./page_head_back.jpg");
-  background-repeat: repeat-x;
-  background-position: bottom;
-}
-
-#page_head_back_1 {
-  background-color: #fff;
   height: 157px;
   margin: 0 auto;
   background-image: url("./page_head_back.jpg");

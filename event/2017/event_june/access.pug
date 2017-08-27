@@ -1,104 +1,46 @@
-doctype html
-html(lang='ja')
-  head
-    meta(charset='UTF-8')
-    |   
-    title 会場アクセス|科学へのトビラ|東京理科大学みらい研究室
-    |   
-    include /google_analytics.pug
-    |   
-    include /normalize-5.0.0.pug
-    |   
-    link(rel='stylesheet', href='../../../common/layout.css')
-    link(rel='stylesheet', href='../../june.css')
-  body
-    #page
-      #page_head_back_1
-        header#page_head
-          .toptitle
-            h1.toptitle1
-              | 東京理科大学サイエンスフェア学生企画
-              br
-            |           
-            h1.toptitle2 みらい研究室実行委員会
-          |         
-          nav.global_navi
-            ul
-              li
-                a(href='../../../index.html')
-                  | ホーム
-                  br
-                  | HOME
-              |             
-              li
-                a(href='../../../event/index.html')
-                  | イベント情報
-                  br
-                  | EVENT
-              |             
-              li
-                a(href='../../../contact/index.html')
-                  | お問い合わせ
-                  br
-                  | CONTACT
-              |             
-              li
-                a(href='../../../link/index.html')
-                  | リンク
-                  br
-                  | LINK
-              |             
-              li
-                a(href='../../../for_freshman/index.html')
-                  | 新入生向けページ
-                  br
-                  | for Freshman
-      |     
-      #page_body
-        .topic_path_back
-          p.topic_path ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> 会場アクセス
-        |       
-        #page_body_main
-          section
-            h1.pagetitle 会場アクセス
-            |           
-            dl
-              dt 会場
-              |             
-              dd 東芝未来科学館
-              |             
-              dt 所在地
-              |             
-              dd 神奈川県川崎市幸区堀川町 72番地 34
-              |             
-              dt 海抜(標高)
-              |             
-              dd 2.3 m
-            |           
-            p
-              | JR川崎駅西口より徒歩１分
-              br
-              |             京浜急行線京急川崎駅下車 徒歩７分
-            |           
-            iframe(width='600', height='400', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.8741288845313!2d139.69229941538484!3d35.53210808022928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018607f3b3678ab%3A0x8c3ae1855a70ddc9!2sToshiba+Science+Museum!5e0!3m2!1sen!2sjp!4v1493644512718')
-            |           
-            p 会場にお越しの際は、公共交通機関をご利用ください。
-        |       
-        #page_body_sub
-          nav.side_navi_event.color_june
-            ul
-              li
-                a(href='index.html') イベント概要
-              |             
-              li
-                a(href='exhibition.html') 企画案内
-              |             
-              li
-                a(href='access.html') 会場アクセス
-      |     
-      footer#page_foot
-        p#copyright
-          small
-            | Copyright © #{lastModified.getFullYear()}
-            | 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved. 
-            | #{lastModified.toLocaleString("ja", {timeZone: "Asia/Tokyo"})}
+extends /layout/index.pug
+
+append head
+  title 会場アクセス|科学へのトビラ|東京理科大学みらい研究室
+  link(rel='stylesheet', href='../../june.css')
+
+block path
+  | ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> 会場アクセス
+
+block article
+  section
+    h1.pagetitle 会場アクセス
+    |           
+    dl
+      dt 会場
+      |             
+      dd 東芝未来科学館
+      |             
+      dt 所在地
+      |             
+      dd 神奈川県川崎市幸区堀川町 72番地 34
+      |             
+      dt 海抜(標高)
+      |             
+      dd 2.3 m
+    |           
+    p
+      | JR川崎駅西口より徒歩１分
+      br
+      |             京浜急行線京急川崎駅下車 徒歩７分
+    |           
+    iframe(width='600', height='400', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.8741288845313!2d139.69229941538484!3d35.53210808022928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018607f3b3678ab%3A0x8c3ae1855a70ddc9!2sToshiba+Science+Museum!5e0!3m2!1sen!2sjp!4v1493644512718')
+    |           
+    p 会場にお越しの際は、公共交通機関をご利用ください。
+
+prepend sidebar
+  nav.side_navi_event.color_june
+    ul
+      li
+        a(href='index.html') イベント概要
+      |             
+      li
+        a(href='exhibition.html') 企画案内
+      |             
+      li
+        a(href='access.html') 会場アクセス

@@ -1,281 +1,210 @@
-doctype html
-html(lang='ja')
-  head
-    meta(charset='UTF-8')
-    |   
-    title サイエンスショー|科学へのトビラ|東京理科大学みらい研究室
-    |   
-    include /google_analytics.pug
-    |   
-    include /normalize-5.0.0.pug
-    |   
-    link(rel='stylesheet', href='../../../common/layout.css')
-    link(rel='stylesheet', href='../../june.css')
-    link(rel='stylesheet', href='../../lecture.css')
-    |   
-    link(rel='stylesheet', href='./resource/science_show.css')
-    |   
-    link(rel='prefetch', href=require('./resource/西村　クイズ（コーラ）.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/西村　クイズ（ブロワー）.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/西村　クイズ（人間椅子）.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/西村　クイズ（説明）.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/西村　ブーメラン.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/西村　ブーメラン2.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/西村　巨大空気砲.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/西村　渦巻き.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/西村　百人おどし.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/西村　空気砲（的）.jpg'))
-    |   
-    link(rel='prefetch', href=require('./resource/centrifugal.jpg'))
-    |   
-    include /jquery-3.2.1.pug
-    script(charset='UTF-8', src='./resource/simple_slideshow.js')
-    style.
-      .strike{
+extends /layout/index.pug
+
+append head
+  title サイエンスショー|科学へのトビラ|東京理科大学みらい研究室
+  link(rel='stylesheet', href='../../june.css')
+  link(rel='stylesheet', href='../../lecture.css')
+  link(rel='stylesheet', href='./resource/science_show.css')
+  link(rel='prefetch', href=require('./resource/西村　クイズ（コーラ）.jpg'))
+  link(rel='prefetch', href=require('./resource/西村　クイズ（ブロワー）.jpg'))
+  link(rel='prefetch', href=require('./resource/西村　クイズ（人間椅子）.jpg'))
+  link(rel='prefetch', href=require('./resource/西村　クイズ（説明）.jpg'))
+  link(rel='prefetch', href=require('./resource/西村　ブーメラン.jpg'))
+  link(rel='prefetch', href=require('./resource/西村　ブーメラン2.jpg'))
+  link(rel='prefetch', href=require('./resource/西村　巨大空気砲.jpg'))
+  link(rel='prefetch', href=require('./resource/西村　渦巻き.jpg'))
+  link(rel='prefetch', href=require('./resource/西村　百人おどし.jpg'))
+  link(rel='prefetch', href=require('./resource/西村　空気砲（的）.jpg'))
+  link(rel='prefetch', href=require('./resource/centrifugal.jpg'))
+  include /jquery-3.2.1.pug
+  script(charset='UTF-8', src='./resource/simple_slideshow.js')
+  style.
+    .strike {
       text-decoration: line-through;
-      }
-  body
-    #page
-      #page_head_back_1
-        header#page_head
-          .toptitle
-            h1.toptitle1
-              | 東京理科大学サイエンスフェア学生企画
-              br
-            |           
-            h1.toptitle2 みらい研究室実行委員会
-          |         
-          nav.global_navi
-            ul
-              li
-                a(href='../../../index.html')
-                  | ホーム
-                  br
-                  | HOME
-              |             
-              li
-                a(href='../../../event/index.html')
-                  | イベント情報
-                  br
-                  | EVENT
-              |             
-              li
-                a(href='../../../contact/index.html')
-                  | お問い合わせ
-                  br
-                  | CONTACT
-              |             
-              li
-                a(href='../../../link/index.html')
-                  | リンク
-                  br
-                  | LINK
-              |             
-              li
-                a(href='../../../for_freshman/index.html')
-                  | 新入生向けページ
-                  br
-                  | for Freshman
-      |     
-      #page_body
-        .topic_path_back
-          p.topic_path ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> 特別企画:サイエンスショー
-        |       
-        #page_body_main
-          section
-            h1.pagetitle 特別企画:サイエンスショー
-            |           
-            img(src=require('./resource/サイエンスショー　ウェブ用ポップ.png'), height='480', width='720', alt='サイエンスショー紹介写真')
-            |           
-            p
-              | 今年のみらい研では10周年特別企画として、
-              br
-              |  米村でんじろう先生の1番弟子、チャーリー西村さんによるサイエンスショーを行うことになりました！
-            |           
-            p
-              b 注意：米村でんじろう先生本人は出演しません。
-            |           
-            section.lecture
-              h2.pagetitle 申し込み
-              |             
-              table
-                tr
-                  th 日時
-                  |                 
-                  td 6月7日(日) (13時～と15時～)
-                |               
-                tr
-                  th 受付開始時刻
-                  |                 
-                  td それぞれ45分前から
-                |               
-                tr
-                  th 所要時間
-                  |                 
-                  td 約1時間
-                |               
-                tr
-                  th 会場
-                  |                 
-                  td 日本科学未来館７階　みらいCANホール
-                |               
-                tr
-                  th 定員
-                  |                 
-                  td 各回300人
-                |               
-                tr
-                  th 講師
-                  |                 
-                  td 米村でんじろうサイエンスプロダクション　チャーリー西村
-              |             
-              p 変更等がありましたらHPでお知らせいたします。
-              |             
-              section
-                h3.pagetitle_sub 当日枠
-                |               
-                p
-                  b 第2回目(15:00～)のみ
-                  | 当日枠があります。席数は50席程度と少なめになる予定です。
-                  br
-                  |  消防法上
-                  |                 
-                  b 立ち見はできません
-                  | 、予めご了承ください。
-                |               
-                p 当日、何時から受け付けるかはまだ決まっていません、もうしばらくお待ち下さい。
-              |             
-              section
-                h3.pagetitle_sub 事前予約枠
-                |               
-                p
-                  | 事前予約受付はすべて終了しました。予約した方は全員入場いただけます。
-                  br
-                  |                 
-                  b キャンセル待ちは受け付けていません。
-                |               
-                p
-                  a.strike 現在第1回、第2回の重複申込者の方に確認をとっている関係で申込者様全員へのメール送信が遅れています。もうしばらくお待ちください。
-                  br
-                  |  予約申し込み者全員にメールを一斉送信しました。遅れてしまい、誠に申し訳ありませんでした。
-                |               
-                p 予約キャンセル、人数変更(増加はできません)、その他お問い合わせは miraiken.pr@gmail.com まで。
-                |               
-                table
-                  tr
-                    th 第1回
-                    |                   
-                    td 13：00～
-                    |                   
-                    td
-                      //
-                        <div class="link_box">
-                        <a href="https://docs.google.com/forms/d/19Qh7rjgDXPl1L5RqfLWZjHOWXhp7wZgmYSE4L22Jhn0/viewform">第1回申し込みフォーム</a>
-                        </div>
-                      | 終了しました。
-                  |                 
-                  tr
-                    th 第2回
-                    |                   
-                    td 15：00～
-                    |                   
-                    td
-                      //
-                        <div class="link_box">
-                        <a href="https://docs.google.com/forms/d/1PEa8ujNsXOVIWwuTjzQ1jrXqCbi9tvbul5wyGRQwu1A/viewform">第2回申し込みフォーム</a>
-                        </div>
-                      | 終了しました。
-            |           
-            section.lecture
-              h2.pagetitle 講師プロフィール
-              |             
-              p 今回は、講師として本学卒業生のチャーリー西村さんをお招きして、特別企画、サイエンスショーを行います。
-              |             
-              ol.listed_cell_horizontally.boli
-                li
-                  img(src=require('./resource/西村Profile.jpg'), alt='profile_picture')
-                  |                 
-                  p 講師名 : チャーリー西村
-                |               
-                li
-                  img(src=require('./resource/with_balloon.jpg'), alt='西村with_balloon.jpg')
-                  |                 
-                  p
-                    | 東京理科大学理学部第二部化学科卒業。
-                    br
-                    |  米村でんじろう氏の一番弟子として活躍し
-                    |                   
-                    br
-                    |  海外公演なども経験豊富。
-                    |                   
-                    br
-                    |  照明・音響・映像を活用したショーが特徴的。
-              |             
-              p 過去のイベント写真
-              |             
-              #slide
-                img(alt='西村_クイズ（コーラ）', src=require('./resource/西村　クイズ（コーラ）.jpg'))
-                |               
-                img(alt='西村_クイズ（ブロワー）', src=require('./resource/西村　クイズ（ブロワー）.jpg'))
-                |               
-                img(alt='西村_クイズ（人間椅子）', src=require('./resource/西村　クイズ（人間椅子）.jpg'))
-                |               
-                img(alt='西村_クイズ（説明）', src=require('./resource/西村　クイズ（説明）.jpg'))
-                |               
-                img(alt='西村_ブーメラン', src=require('./resource/西村　ブーメラン.jpg'))
-                |               
-                img(alt='西村_ブーメラン2', src=require('./resource/西村　ブーメラン2.jpg'))
-                |               
-                img(alt='西村_巨大空気砲', src=require('./resource/西村　巨大空気砲.jpg'))
-                |               
-                img(alt='西村_渦巻き', src=require('./resource/西村　渦巻き.jpg'))
-                |               
-                img(alt='西村_百人おどし', src=require('./resource/西村　百人おどし.jpg'))
-                |               
-                img(alt='西村_空気砲（的）', src=require('./resource/西村　空気砲（的）.jpg'))
-                |               
-                img(alt='西村_遠心力', src=require('./resource/centrifugal.jpg'))
-        |       
-        #page_body_sub
-          nav.side_navi_event.color_june
-            ul
-              li
-                a(href='index.html') イベント概要
-              |             
-              li
-                a(href='about_june.html') ～科学へのトビラ～について
-              |             
-              li
-                a(href='exhibition.html') 企画案内
-              |             
-              li
-                a(href='science_show.html') 特別企画:サイエンスショー
-              |             
-              li
-                a(href='pinhole_camera.html') 特別企画:針穴写真実験
-              |             
-              li
-                a(href='access.html') 会場アクセス
-          //
-            <nav class="side_navi">
-            <ul>
-            <li><a href="../members/index.html">企画出展者向け<br>情報提供ページ</a></li>
-            <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
-            </ul>
-            </nav>
-      |     
-      footer#page_foot
-        p#copyright
-          small
-            | Copyright © #{lastModified.getFullYear()}
-            | 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
-            | #{lastModified.toLocaleString("ja", {timeZone: "Asia/Tokyo"})}
+    }
+
+block path
+  | ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> 特別企画:サイエンスショー
+
+block article
+  section
+    h1.pagetitle 特別企画:サイエンスショー
+    |           
+    img(src=require('./resource/サイエンスショー　ウェブ用ポップ.png'), height='480', width='720', alt='サイエンスショー紹介写真')
+    |           
+    p
+      | 今年のみらい研では10周年特別企画として、
+      br
+      |  米村でんじろう先生の1番弟子、チャーリー西村さんによるサイエンスショーを行うことになりました！
+    |           
+    p
+      b 注意：米村でんじろう先生本人は出演しません。
+    |           
+    section.lecture
+      h2.pagetitle 申し込み
+      |             
+      table
+        tr
+          th 日時
+          |                 
+          td 6月7日(日) (13時～と15時～)
+        |               
+        tr
+          th 受付開始時刻
+          |                 
+          td それぞれ45分前から
+        |               
+        tr
+          th 所要時間
+          |                 
+          td 約1時間
+        |               
+        tr
+          th 会場
+          |                 
+          td 日本科学未来館７階　みらいCANホール
+        |               
+        tr
+          th 定員
+          |                 
+          td 各回300人
+        |               
+        tr
+          th 講師
+          |                 
+          td 米村でんじろうサイエンスプロダクション　チャーリー西村
+      |             
+      p 変更等がありましたらHPでお知らせいたします。
+      |             
+      section
+        h3.pagetitle_sub 当日枠
+        |               
+        p
+          b 第2回目(15:00～)のみ
+          | 当日枠があります。席数は50席程度と少なめになる予定です。
+          br
+          |  消防法上
+          |                 
+          b 立ち見はできません
+          | 、予めご了承ください。
+        |               
+        p 当日、何時から受け付けるかはまだ決まっていません、もうしばらくお待ち下さい。
+      |             
+      section
+        h3.pagetitle_sub 事前予約枠
+        |               
+        p
+          | 事前予約受付はすべて終了しました。予約した方は全員入場いただけます。
+          br
+          |                 
+          b キャンセル待ちは受け付けていません。
+        |               
+        p
+          a.strike 現在第1回、第2回の重複申込者の方に確認をとっている関係で申込者様全員へのメール送信が遅れています。もうしばらくお待ちください。
+          br
+          |  予約申し込み者全員にメールを一斉送信しました。遅れてしまい、誠に申し訳ありませんでした。
+        |               
+        p 予約キャンセル、人数変更(増加はできません)、その他お問い合わせは miraiken.pr@gmail.com まで。
+        |               
+        table
+          tr
+            th 第1回
+            |                   
+            td 13：00～
+            |                   
+            td
+              //
+                <div class="link_box">
+                <a href="https://docs.google.com/forms/d/19Qh7rjgDXPl1L5RqfLWZjHOWXhp7wZgmYSE4L22Jhn0/viewform">第1回申し込みフォーム</a>
+                </div>
+              | 終了しました。
+          |                 
+          tr
+            th 第2回
+            |                   
+            td 15：00～
+            |                   
+            td
+              //
+                <div class="link_box">
+                <a href="https://docs.google.com/forms/d/1PEa8ujNsXOVIWwuTjzQ1jrXqCbi9tvbul5wyGRQwu1A/viewform">第2回申し込みフォーム</a>
+                </div>
+              | 終了しました。
+    |           
+    section.lecture
+      h2.pagetitle 講師プロフィール
+      |             
+      p 今回は、講師として本学卒業生のチャーリー西村さんをお招きして、特別企画、サイエンスショーを行います。
+      |             
+      ol.listed_cell_horizontally.boli
+        li
+          img(src=require('./resource/西村Profile.jpg'), alt='profile_picture')
+          |                 
+          p 講師名 : チャーリー西村
+        |               
+        li
+          img(src=require('./resource/with_balloon.jpg'), alt='西村with_balloon.jpg')
+          |                 
+          p
+            | 東京理科大学理学部第二部化学科卒業。
+            br
+            |  米村でんじろう氏の一番弟子として活躍し
+            |                   
+            br
+            |  海外公演なども経験豊富。
+            |                   
+            br
+            |  照明・音響・映像を活用したショーが特徴的。
+      |             
+      p 過去のイベント写真
+      |             
+      #slide
+        img(alt='西村_クイズ（コーラ）', src=require('./resource/西村　クイズ（コーラ）.jpg'))
+        |               
+        img(alt='西村_クイズ（ブロワー）', src=require('./resource/西村　クイズ（ブロワー）.jpg'))
+        |               
+        img(alt='西村_クイズ（人間椅子）', src=require('./resource/西村　クイズ（人間椅子）.jpg'))
+        |               
+        img(alt='西村_クイズ（説明）', src=require('./resource/西村　クイズ（説明）.jpg'))
+        |               
+        img(alt='西村_ブーメラン', src=require('./resource/西村　ブーメラン.jpg'))
+        |               
+        img(alt='西村_ブーメラン2', src=require('./resource/西村　ブーメラン2.jpg'))
+        |               
+        img(alt='西村_巨大空気砲', src=require('./resource/西村　巨大空気砲.jpg'))
+        |               
+        img(alt='西村_渦巻き', src=require('./resource/西村　渦巻き.jpg'))
+        |               
+        img(alt='西村_百人おどし', src=require('./resource/西村　百人おどし.jpg'))
+        |               
+        img(alt='西村_空気砲（的）', src=require('./resource/西村　空気砲（的）.jpg'))
+        |               
+        img(alt='西村_遠心力', src=require('./resource/centrifugal.jpg'))
+
+prepend sidebar
+  nav.side_navi_event.color_june
+    ul
+      li
+        a(href='index.html') イベント概要
+      |             
+      li
+        a(href='about_june.html') ～科学へのトビラ～について
+      |             
+      li
+        a(href='exhibition.html') 企画案内
+      |             
+      li
+        a(href='science_show.html') 特別企画:サイエンスショー
+      |             
+      li
+        a(href='pinhole_camera.html') 特別企画:針穴写真実験
+      |             
+      li
+        a(href='access.html') 会場アクセス
+  //
+    <nav class="side_navi">
+    <ul>
+    <li><a href="../members/index.html">企画出展者向け<br>情報提供ページ</a></li>
+    <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
+    </ul>
+    </nav>

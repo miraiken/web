@@ -1,752 +1,692 @@
-doctype html
-html
-  head
-    meta(charset='UTF-8')
-    |   
-    title 企画案内|オドロキ科学箱|東京理科大学みらい研究室
-    |   
-    include /google_analytics.pug
-    |   
-    include /normalize-5.0.0.pug
-    |   
-    link(rel='stylesheet', href='../../../common/layout.css')
-    |   
-    link(rel='stylesheet', href='../../march.css')
-    link(rel='stylesheet', href='../../project.css')
-    |   
-    style.
-      div.project_info_main div.project_titile{
+extends /layout/index.pug
+
+append head
+  title 企画案内|オドロキ科学箱|東京理科大学みらい研究室
+  link(rel='stylesheet', href='../../march.css')
+  link(rel='stylesheet', href='../../project.css')
+  style.
+    div.project_info_main div.project_titile {
       width: 22.5em;
-      }
-      div.project_titile_list div.project_titile{
+    }
+    div.project_titile_list div.project_titile {
       width: 22.5em;
-      }
-  body
-    #page
-      #page_head_back_1
-        header#page_head
-          .toptitle
-            h1.toptitle1
-              | 東京理科大学サイエンスフェア学生企画
-              br
-            |           
-            h1.toptitle2 みらい研究室実行委員会
-          |         
-          nav.global_navi
-            ul
-              li
-                a(href='../../../index.html')
-                  | ホーム
-                  br
-                  | HOME
-              |             
-              li
-                a(href='../../../event/index.html')
-                  | イベント情報
-                  br
-                  | EVENT
-              |             
-              li
-                a(href='../../../contact/index.html')
-                  | お問い合わせ
-                  br
-                  | CONTACT
-              |             
-              li
-                a(href='../../../link/index.html')
-                  | リンク
-                  br
-                  | LINK
-              |             
-              li
-                a(href='../../../for_freshman/index.html')
-                  | 新入生向けページ
-                  br
-                  | for Freshman
-      |     
-      #page_body
-        .topic_path_back
-          p.topic_path ホーム >> イベント情報 >> みらい研究室 ～オドロキ科学箱～ >> 企画案内
-        |       
-        #page_body_main
-          h1.pagetitle 企画案内
-          |         
-          section#map_list
-          //
-            <section id="map_list">
-            <div id="map_pic">
-            <img id="third_floor" src="./map/third_floor_hidden.png" alt="third_floor_hidden" usemap="#map-third_floor">
-            <map id="map-third_floor" name="map-third_floor">
-            <area id="map_chibilab" shape="rect" coords="284,30,358,94">
-            <area id="map_ACM" shape="rect" coords="234,102,277,182">
-            <area id="map_rikoukaken" shape="rect" coords="4,141,78,215">
-            <area id="map_ichikaken" shape="rect" coords="108,141,181,215">
-            <area id="map_nikaken" shape="rect" coords="260,216,334,262">
-            </map>
-            <img id="second_floor" src="./map/second_floor_hidden.png" alt="second_floor_hidden" usemap="#map-second_floor">
-            <map id="map-second_floor" name="map-second_floor">
-            <area id="map_seibutuken" shape="rect" coords="258,4,356,82">
-            <area id="map_bunngukenn" shape="rect" coords="240,214,296,282">
-            </map>
-            <img id="first_floor" src="./map/first_floor_hidden.png" alt="first_floor_hidden" usemap="#map-first_floor">
-            <map id="map-first_floor" name="map-first_floor">
-            <area id="map_chikaken" shape="rect" coords="227,23,256,60">
-            <area id="map_tenmonken" shape="rect" coords="257,23,298,60">
-            </map>
-            </div>
-            <div class="project_titile_list">
-            <div id="title_chikaken" class="project_titile org_color_geoscience">
-            <h2>1.地球をENJOY!</h2>
-            <p>地球科学研究部</p>
-            </div>
-            <div id="title_tenmonken" class="project_titile org_color_geoscience">
-            <h2>2.無限の星空の中へようこそ</h2>
-            <p>Ⅰ部Ⅱ部天文研究部</p>
-            </div>
-            <div id="title_seibutuken" class="project_titile org_color_chemistry">
-            <h2>3.生き物の秘密を解き明かそう！</h2>
-            <p>Ⅱ部研究会生物研究部</p>
-            </div>
-            <div id="title_bunngukenn" class="project_titile org_color_geoscience">
-            <h2>4.花咲インクともくねんさん</h2>
-            <p>文具研究同好会</p>
-            </div>
-            <div id="title_chibilab" class="project_titile org_color_chemistry">
-            <h2>5.光をつかった工作をしよう！</h2>
-            <p>サイエンスコミュニケーションサークル chibi lab.</p>
-            </div>
-            <div id="title_ACM" class="project_titile org_color_industrial">
-            <h2>6.模型飛行機を作ろう</h2>
-            <p>AircraftMakers</p>
-            </div>
-            <div id="title_nikaken" class="project_titile org_color_chemistry">
-            <h2>7.三分化学実験</h2>
-            <p>Ⅱ部化学研究部</p>
-            </div>
-            <div id="title_ichikaken" class="project_titile org_color_chemistry">
-            <h2>8.見る「科学」、触る「科学」</h2>
-            <p>Ⅰ部化学研究部</p>
-            </div>
-            <div id="title_rikoukaken" class="project_titile org_color_chemistry">
-            <h2>9.身近な化学を楽しく学ぼう</h2>
-            <p>理工学部化学研究会</p>
-            </div>
-            </div>
-            </section>
-            <p id="announce">左上の地図の数字、または、右上の企画名を押してください</p>
-          article#description_chikaken.project_info
-            .project_info_main
-              .project_titile.org_color_geoscience
-                h2 地球をENJOY!
-                |             
-                p 地球科学研究部
-              |           
-              .project_info_introduce
-                p 竜巻、落雷装置、海流装置、霧箱、鉱物を展示しています。地球学研究しませんか?
-            |         
-            .project_info_detail
-              table
-                colgroup(style='width: 32px;')
-                |             
-                colgroup(style='width: 160px;')
-                |             
-                colgroup(style='width: 85px;')
-                |             
-                colgroup(style='width: 120px;')
-                |             
-                tr
-                  td No.
-                  |               
-                  td 企画名
-                  |               
-                  td 企画形態
-                  |               
-                  td 対象年齢
-                |             
-                tr
-                  td 1
-                  |               
-                  td 竜巻装置展示
-                  |               
-                  td 実験
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 5
-                  |               
-                  td 落雷を観察しよう
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 3
-                  |               
-                  td 鉱物展示
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 2
-                  |               
-                  td 霧箱実験
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-          |       
-          article#description_tenmonken.project_info
-            .project_info_main
-              .project_titile.org_color_geoscience
-                h2 目指せ宇宙博士！
-                |             
-                p Ⅰ部Ⅱ部天文研究部
-              |           
-              .project_info_introduce
-                p
-                  | プラネタリウムを使った星の解説や天体写真の展示、望遠鏡を使った太陽の観測などを行います。
-                  br
-                  | また、親子で楽しめる天文クイズや放射線を見る実験、
-                  br
-                  | 星座を立体に見たりなど様ざまな展示を行っています。
-                  br
-                  | さあ、あなたも宇宙博士を目指そう！
-            |         
-            .project_info_detail
-              table(border='0')
-                colgroup(style='width: 32px;')
-                |             
-                colgroup(style='width: 170px;')
-                |             
-                colgroup(style='width: 85px;')
-                |             
-                colgroup(style='width: 120px;')
-                |             
-                tr
-                  td No.
-                  |               
-                  td 企画名
-                  |               
-                  td 企画形態
-                  |               
-                  td 対象年齢
-                |             
-                tr
-                  td 1
-                  |               
-                  td プラネタリウム上映
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 2
-                  |               
-                  td 星空の写真展
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 3
-                  |               
-                  td 霧箱体験
-                  |               
-                  td 実験
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 4
-                  |               
-                  td 宇宙論スケッチブック
-                  |               
-                  td 展示
-                  |               
-                  td 中学生以上
-                |             
-                tr
-                  td 5
-                  |               
-                  td 天文グッズ
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 6
-                  |               
-                  td 太陽観測
-                  |               
-                  td 実験
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 7
-                  |               
-                  td アストロボックス
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 8
-                  |               
-                  td 惑星クイズ
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 9
-                  |               
-                  td 模型展示
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 10
-                  |               
-                  td すごろく
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-          |       
-          article#description_seibutuken.project_info
-            .project_info_main
-              .project_titile.org_color_chemistry
-                h2 生き物の秘密を解き明かそう！
-                |             
-                p Ⅱ部研究会生物研究部
-              |           
-              .project_info_introduce
-                p 見て、作って体験！～生き物の不思議～
-            |         
-            .project_info_detail
-              table(border='0')
-                colgroup(style='width: 32px;')
-                |             
-                colgroup(style='width: 160px;')
-                |             
-                colgroup(style='width: 85px;')
-                |             
-                colgroup(style='width: 120px;')
-                |             
-                tr
-                  td No.
-                  |               
-                  td 企画名
-                  |               
-                  td 企画形態
-                  |               
-                  td 対象年齢
-                |             
-                tr
-                  td 1
-                  |               
-                  td 化石レプリカ作成
-                  |               
-                  td 制作
-                  |               
-                  td 6～12
-                |             
-                tr
-                  td 2
-                  |               
-                  td 生態展示
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 3
-                  |               
-                  td アイシャドウで指紋検出
-                  |               
-                  td 展示
-                  |               
-                  td 6～12
-          |       
-          article#description_bunngukenn.project_info
-            .project_info_main
-              .project_titile.org_color_geoscience
-                h2 花咲インクともくねんさん
-                |             
-                p 文具研究同好会
-              |           
-              .project_info_introduce
-                p
-                  | 木くずの粘土「もくねんさん」でストラップなどを作れるもくねんさんコーナーや、
-                  br
-                  | 封蝋体験など普段では体験できないおもしろいことをします！
-                  br
-                  | ご来場お待ちしています！
-            |         
-            .project_info_detail
-              table(border='0')
-                colgroup(style='width: 32px;')
-                |             
-                colgroup(style='width: 160px;')
-                |             
-                colgroup(style='width: 85px;')
-                |             
-                colgroup(style='width: 120px;')
-                |             
-                tr
-                  td No.
-                  |               
-                  td 企画名
-                  |               
-                  td 企画形態
-                  |               
-                  td 対象年齢
-                |             
-                tr
-                  td 1
-                  |               
-                  td 花咲(はなさき)インク
-                  |               
-                  td 実験
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 2
-                  |               
-                  td もくねんさんストラップ作り
-                  |               
-                  td 制作
-                  |               
-                  td 小学校低学年
-                |             
-                tr
-                  td 3
-                  |               
-                  td シーリングワックス
-                  |               
-                  td 製作
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 4
-                  |               
-                  td 消えるインク
-                  |               
-                  td 実験
-                  |               
-                  td 全年齢
-                |             
-                tr
-                  td 5
-                  |               
-                  td 文房具および研究資料の展示
-                  |               
-                  td 展示
-                  |               
-                  td 全年齢
-          |       
-          article#description_chibilab.project_info
-            .project_info_main
-              .project_titile.org_color_chemistry
-                h2 紙コップで楽器を作ろう！
-                |             
-                p サイエンスコミュニケーションサークル chibi lab.
-              |           
-              .project_info_introduce
-                p
-                  | 身近に手に入る紙コップ、輪ゴム、割りばしなどを使ってゴムギター、
-                  br
-                  | ぶんぶんゼミの音が出るおもちゃを作ります。作ったおもちゃは持って帰って遊ぶことができます。
-            |         
-            .project_info_detail
-              table(border='0')
-                colgroup(style='width: 32px;')
-                |             
-                colgroup(style='width: 160px;')
-                |             
-                colgroup(style='width: 85px;')
-                |             
-                colgroup(style='width: 120px;')
-                |             
-                tr
-                  td No.
-                  |               
-                  td 企画名
-                  |               
-                  td 企画形態
-                  |               
-                  td 対象年齢
-                |             
-                tr
-                  td 1
-                  |               
-                  td びよよんゴムギター
-                  |               
-                  td 制作
-                  |               
-                  td 小学校低学年～小学校高学年
-                |             
-                tr
-                  td 2
-                  |               
-                  td ぶんぶんゼミ
-                  |               
-                  td 制作
-                  |               
-                  td 小学校低学年～小学校高学年
-          |         
-          article#description_acm.project_info
-            .project_info_main
-              .project_titile.org_color_industrial
-                h2 模型飛行機を作ろう
-                |               
-                p AircraftMakers
-              |             
-              .project_info_introduce
-                p
-                  | 自分の力で模型飛行機を作ってみませんか？
-                  br
-                  | うまくいけば紙飛行機よりずっと遠くまで飛ぶ模型飛行機が作れます！！
-            |           
-            .project_info_detail
-              table(border='0')
-                colgroup(style='width: 32px;')
-                |               
-                colgroup(style='width: 160px;')
-                |               
-                colgroup(style='width: 110px;')
-                |               
-                colgroup(style='width: 120px;')
-                |               
-                tr
-                  td No.
-                  |                 
-                  td 企画名
-                  |                 
-                  td 企画形態
-                  |                 
-                  td 対象年齢
-                |               
-                tr
-                  td 1
-                  |                 
-                  td 模型飛行機製作
-                  |                 
-                  td 製作
-                  |                 
-                  td ４才?（はさみが使える歳）
-          |         
-          article#description_nikaken.project_info
-            .project_info_main
-              .project_titile.org_color_chemistry
-                h2 おうちで使える簡単化学実験
-                |               
-                p Ⅱ部化学研究部
-              |             
-              .project_info_introduce
-                p
-                  | 小さなお子さんにも楽しんでもらえるような簡単で楽しい化学実験をやっています。
-                  br
-                  | 実験で作った物は持ち帰ることができます。
-            |           
-            .project_info_detail
-              table(border='0')
-                colgroup(style='width: 32px;')
-                |               
-                colgroup(style='width: 160px;')
-                |               
-                colgroup(style='width: 85px;')
-                |               
-                colgroup(style='width: 120px;')
-                |               
-                tr
-                  td No.
-                  |                 
-                  td 企画名
-                  |                 
-                  td 企画形態
-                  |                 
-                  td 対象年齢
-                |               
-                tr
-                  td 1
-                  |                 
-                  td 入浴剤
-                  |                 
-                  td 実験
-                  |                 
-                  td 全年齢
-                |               
-                tr
-                  td 2
-                  |                 
-                  td 芳香剤
-                  |                 
-                  td 実験
-                  |                 
-                  td 全年齢
-                |               
-                tr
-                  td 3
-                  |                 
-                  td 発泡スチロールスタンプ
-                  |                 
-                  td 実験
-                  |                 
-                  td 全年齢
-          |         
-          article#description_ichikaken.project_info
-            .project_info_main
-              .project_titile.org_color_chemistry
-                h2 見て、さわって楽しむ化学
-                |               
-                p Ⅰ部化学研究部
-              |             
-              .project_info_introduce
-                p Ⅰ部化学研究部のブースでは３つの実験を用意しました。どれも簡単な実験なので誰でも気軽に楽しむことができます。作ったものを持ち帰れる実験もあります。
-            |           
-            .project_info_detail
-              table(border='0')
-                colgroup(style='width: 32px;')
-                |               
-                colgroup(style='width: 160px;')
-                |               
-                colgroup(style='width: 85px;')
-                |               
-                colgroup(style='width: 130px;')
-                |               
-                tr
-                  td No.
-                  |                 
-                  td 企画名
-                  |                 
-                  td 企画形態
-                  |                 
-                  td 対象年齢
-                |               
-                tr
-                  td 1
-                  |                 
-                  td ダイラタンシー
-                  |                 
-                  td 製作
-                  |                 
-                  td 全年齢
-                |               
-                tr
-                  td 2
-                  |                 
-                  td 人工イクラ
-                  |                 
-                  td 製作
-                  |                 
-                  td 3歳以上
-                |               
-                tr
-                  td 3
-                  |                 
-                  td 不思議な液体
-                  |                 
-                  td 実験
-                  |                 
-                  td 全年齢
-          |         
-          article#description_rikoukaken.project_info
-            .project_info_main
-              .project_titile.org_color_chemistry
-                h2 身近なものを使って化学を体験しよう！
-                |               
-                p 理工学部化学研究会
-              |             
-              .project_info_introduce
-                p 私たちの身近にあるものを使って、ちょっと不思議な体験をしてみよう！
-            |           
-            .project_info_detail
-              table(border='0')
-                colgroup(style='width: 32px;')
-                |               
-                colgroup(style='width: 250px;')
-                |               
-                colgroup(style='width: 85px;')
-                |               
-                colgroup(style='width: 120px;')
-                |               
-                tr
-                  td No.
-                  |                 
-                  td 企画名
-                  |                 
-                  td 企画形態
-                  |                 
-                  td 対象年齢
-                |               
-                tr
-                  td 1
-                  |                 
-                  td 電気ペンでお絵かきしてみよう！
-                  |                 
-                  td 実験
-                  |                 
-                  td 全年齢
-                |               
-                tr
-                  td 1
-                  |                 
-                  td 割れないシャボン玉で遊ぼう！
-                  |                 
-                  td 実験
-                  |                 
-                  td 全年齢
-                |               
-                tr
-                  td 3
-                  |                 
-                  td スライムを作ってみよう！
-                  |                 
-                  td 実験
-                  |                 
-                  td 全年齢
-        |       
-        #page_body_sub
-          nav.side_navi_event.color_march
-            ul
-              li
-                a(href='index.html') イベント概要
-              |             
-              li
-                a(href='about_march.html') ～オドロキ科学箱～について
-              |             
-              li
-                a(href='exhibition.html') 企画案内
-              |             
-              li
-                a(href='access.html') 会場アクセス
-          //
-            <nav class="sideNavi">
-            <ul>
-            <li><a href="../members/index.html">企画出展者向け<br>情報提供ページ</a></li>
-            <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
-            </ul>
-            </nav>
-      |     
-      footer#page_foot
-        p#copyright
-          small
-            | Copyright © #{lastModified.getFullYear()}
-            | 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
-            | #{lastModified.toLocaleString("ja", {timeZone: "Asia/Tokyo"})}
+    }
+
+block path
+  | ホーム >> イベント情報 >> みらい研究室 ～オドロキ科学箱～ >> 企画案内
+
+block article
+  h1.pagetitle 企画案内
+  |         
+  section#map_list
+  //
+    <section id="map_list">
+    <div id="map_pic">
+    <img id="third_floor" src="./map/third_floor_hidden.png" alt="third_floor_hidden" usemap="#map-third_floor">
+    <map id="map-third_floor" name="map-third_floor">
+    <area id="map_chibilab" shape="rect" coords="284,30,358,94">
+    <area id="map_ACM" shape="rect" coords="234,102,277,182">
+    <area id="map_rikoukaken" shape="rect" coords="4,141,78,215">
+    <area id="map_ichikaken" shape="rect" coords="108,141,181,215">
+    <area id="map_nikaken" shape="rect" coords="260,216,334,262">
+    </map>
+    <img id="second_floor" src="./map/second_floor_hidden.png" alt="second_floor_hidden" usemap="#map-second_floor">
+    <map id="map-second_floor" name="map-second_floor">
+    <area id="map_seibutuken" shape="rect" coords="258,4,356,82">
+    <area id="map_bunngukenn" shape="rect" coords="240,214,296,282">
+    </map>
+    <img id="first_floor" src="./map/first_floor_hidden.png" alt="first_floor_hidden" usemap="#map-first_floor">
+    <map id="map-first_floor" name="map-first_floor">
+    <area id="map_chikaken" shape="rect" coords="227,23,256,60">
+    <area id="map_tenmonken" shape="rect" coords="257,23,298,60">
+    </map>
+    </div>
+    <div class="project_titile_list">
+    <div id="title_chikaken" class="project_titile org_color_geoscience">
+    <h2>1.地球をENJOY!</h2>
+    <p>地球科学研究部</p>
+    </div>
+    <div id="title_tenmonken" class="project_titile org_color_geoscience">
+    <h2>2.無限の星空の中へようこそ</h2>
+    <p>Ⅰ部Ⅱ部天文研究部</p>
+    </div>
+    <div id="title_seibutuken" class="project_titile org_color_chemistry">
+    <h2>3.生き物の秘密を解き明かそう！</h2>
+    <p>Ⅱ部研究会生物研究部</p>
+    </div>
+    <div id="title_bunngukenn" class="project_titile org_color_geoscience">
+    <h2>4.花咲インクともくねんさん</h2>
+    <p>文具研究同好会</p>
+    </div>
+    <div id="title_chibilab" class="project_titile org_color_chemistry">
+    <h2>5.光をつかった工作をしよう！</h2>
+    <p>サイエンスコミュニケーションサークル chibi lab.</p>
+    </div>
+    <div id="title_ACM" class="project_titile org_color_industrial">
+    <h2>6.模型飛行機を作ろう</h2>
+    <p>AircraftMakers</p>
+    </div>
+    <div id="title_nikaken" class="project_titile org_color_chemistry">
+    <h2>7.三分化学実験</h2>
+    <p>Ⅱ部化学研究部</p>
+    </div>
+    <div id="title_ichikaken" class="project_titile org_color_chemistry">
+    <h2>8.見る「科学」、触る「科学」</h2>
+    <p>Ⅰ部化学研究部</p>
+    </div>
+    <div id="title_rikoukaken" class="project_titile org_color_chemistry">
+    <h2>9.身近な化学を楽しく学ぼう</h2>
+    <p>理工学部化学研究会</p>
+    </div>
+    </div>
+    </section>
+    <p id="announce">左上の地図の数字、または、右上の企画名を押してください</p>
+  article#description_chikaken.project_info
+    .project_info_main
+      .project_titile.org_color_geoscience
+        h2 地球をENJOY!
+        |             
+        p 地球科学研究部
+      |           
+      .project_info_introduce
+        p 竜巻、落雷装置、海流装置、霧箱、鉱物を展示しています。地球学研究しませんか?
+    |         
+    .project_info_detail
+      table
+        colgroup(style='width: 32px;')
+        |             
+        colgroup(style='width: 160px;')
+        |             
+        colgroup(style='width: 85px;')
+        |             
+        colgroup(style='width: 120px;')
+        |             
+        tr
+          td No.
+          |               
+          td 企画名
+          |               
+          td 企画形態
+          |               
+          td 対象年齢
+        |             
+        tr
+          td 1
+          |               
+          td 竜巻装置展示
+          |               
+          td 実験
+          |               
+          td 全年齢
+        |             
+        tr
+          td 5
+          |               
+          td 落雷を観察しよう
+          |               
+          td 展示
+          |               
+          td 全年齢
+        |             
+        tr
+          td 3
+          |               
+          td 鉱物展示
+          |               
+          td 展示
+          |               
+          td 全年齢
+        |             
+        tr
+          td 2
+          |               
+          td 霧箱実験
+          |               
+          td 展示
+          |               
+          td 全年齢
+  |       
+  article#description_tenmonken.project_info
+    .project_info_main
+      .project_titile.org_color_geoscience
+        h2 目指せ宇宙博士！
+        |             
+        p Ⅰ部Ⅱ部天文研究部
+      |           
+      .project_info_introduce
+        p
+          | プラネタリウムを使った星の解説や天体写真の展示、望遠鏡を使った太陽の観測などを行います。
+          br
+          | また、親子で楽しめる天文クイズや放射線を見る実験、
+          br
+          | 星座を立体に見たりなど様ざまな展示を行っています。
+          br
+          | さあ、あなたも宇宙博士を目指そう！
+    |         
+    .project_info_detail
+      table(border='0')
+        colgroup(style='width: 32px;')
+        |             
+        colgroup(style='width: 170px;')
+        |             
+        colgroup(style='width: 85px;')
+        |             
+        colgroup(style='width: 120px;')
+        |             
+        tr
+          td No.
+          |               
+          td 企画名
+          |               
+          td 企画形態
+          |               
+          td 対象年齢
+        |             
+        tr
+          td 1
+          |               
+          td プラネタリウム上映
+          |               
+          td 展示
+          |               
+          td 全年齢
+        |             
+        tr
+          td 2
+          |               
+          td 星空の写真展
+          |               
+          td 展示
+          |               
+          td 全年齢
+        |             
+        tr
+          td 3
+          |               
+          td 霧箱体験
+          |               
+          td 実験
+          |               
+          td 全年齢
+        |             
+        tr
+          td 4
+          |               
+          td 宇宙論スケッチブック
+          |               
+          td 展示
+          |               
+          td 中学生以上
+        |             
+        tr
+          td 5
+          |               
+          td 天文グッズ
+          |               
+          td 展示
+          |               
+          td 全年齢
+        |             
+        tr
+          td 6
+          |               
+          td 太陽観測
+          |               
+          td 実験
+          |               
+          td 全年齢
+        |             
+        tr
+          td 7
+          |               
+          td アストロボックス
+          |               
+          td 展示
+          |               
+          td 全年齢
+        |             
+        tr
+          td 8
+          |               
+          td 惑星クイズ
+          |               
+          td 展示
+          |               
+          td 全年齢
+        |             
+        tr
+          td 9
+          |               
+          td 模型展示
+          |               
+          td 展示
+          |               
+          td 全年齢
+        |             
+        tr
+          td 10
+          |               
+          td すごろく
+          |               
+          td 展示
+          |               
+          td 全年齢
+  |       
+  article#description_seibutuken.project_info
+    .project_info_main
+      .project_titile.org_color_chemistry
+        h2 生き物の秘密を解き明かそう！
+        |             
+        p Ⅱ部研究会生物研究部
+      |           
+      .project_info_introduce
+        p 見て、作って体験！～生き物の不思議～
+    |         
+    .project_info_detail
+      table(border='0')
+        colgroup(style='width: 32px;')
+        |             
+        colgroup(style='width: 160px;')
+        |             
+        colgroup(style='width: 85px;')
+        |             
+        colgroup(style='width: 120px;')
+        |             
+        tr
+          td No.
+          |               
+          td 企画名
+          |               
+          td 企画形態
+          |               
+          td 対象年齢
+        |             
+        tr
+          td 1
+          |               
+          td 化石レプリカ作成
+          |               
+          td 制作
+          |               
+          td 6～12
+        |             
+        tr
+          td 2
+          |               
+          td 生態展示
+          |               
+          td 展示
+          |               
+          td 全年齢
+        |             
+        tr
+          td 3
+          |               
+          td アイシャドウで指紋検出
+          |               
+          td 展示
+          |               
+          td 6～12
+  |       
+  article#description_bunngukenn.project_info
+    .project_info_main
+      .project_titile.org_color_geoscience
+        h2 花咲インクともくねんさん
+        |             
+        p 文具研究同好会
+      |           
+      .project_info_introduce
+        p
+          | 木くずの粘土「もくねんさん」でストラップなどを作れるもくねんさんコーナーや、
+          br
+          | 封蝋体験など普段では体験できないおもしろいことをします！
+          br
+          | ご来場お待ちしています！
+    |         
+    .project_info_detail
+      table(border='0')
+        colgroup(style='width: 32px;')
+        |             
+        colgroup(style='width: 160px;')
+        |             
+        colgroup(style='width: 85px;')
+        |             
+        colgroup(style='width: 120px;')
+        |             
+        tr
+          td No.
+          |               
+          td 企画名
+          |               
+          td 企画形態
+          |               
+          td 対象年齢
+        |             
+        tr
+          td 1
+          |               
+          td 花咲(はなさき)インク
+          |               
+          td 実験
+          |               
+          td 全年齢
+        |             
+        tr
+          td 2
+          |               
+          td もくねんさんストラップ作り
+          |               
+          td 制作
+          |               
+          td 小学校低学年
+        |             
+        tr
+          td 3
+          |               
+          td シーリングワックス
+          |               
+          td 製作
+          |               
+          td 全年齢
+        |             
+        tr
+          td 4
+          |               
+          td 消えるインク
+          |               
+          td 実験
+          |               
+          td 全年齢
+        |             
+        tr
+          td 5
+          |               
+          td 文房具および研究資料の展示
+          |               
+          td 展示
+          |               
+          td 全年齢
+  |       
+  article#description_chibilab.project_info
+    .project_info_main
+      .project_titile.org_color_chemistry
+        h2 紙コップで楽器を作ろう！
+        |             
+        p サイエンスコミュニケーションサークル chibi lab.
+      |           
+      .project_info_introduce
+        p
+          | 身近に手に入る紙コップ、輪ゴム、割りばしなどを使ってゴムギター、
+          br
+          | ぶんぶんゼミの音が出るおもちゃを作ります。作ったおもちゃは持って帰って遊ぶことができます。
+    |         
+    .project_info_detail
+      table(border='0')
+        colgroup(style='width: 32px;')
+        |             
+        colgroup(style='width: 160px;')
+        |             
+        colgroup(style='width: 85px;')
+        |             
+        colgroup(style='width: 120px;')
+        |             
+        tr
+          td No.
+          |               
+          td 企画名
+          |               
+          td 企画形態
+          |               
+          td 対象年齢
+        |             
+        tr
+          td 1
+          |               
+          td びよよんゴムギター
+          |               
+          td 制作
+          |               
+          td 小学校低学年～小学校高学年
+        |             
+        tr
+          td 2
+          |               
+          td ぶんぶんゼミ
+          |               
+          td 制作
+          |               
+          td 小学校低学年～小学校高学年
+  |         
+  article#description_acm.project_info
+    .project_info_main
+      .project_titile.org_color_industrial
+        h2 模型飛行機を作ろう
+        |               
+        p AircraftMakers
+      |             
+      .project_info_introduce
+        p
+          | 自分の力で模型飛行機を作ってみませんか？
+          br
+          | うまくいけば紙飛行機よりずっと遠くまで飛ぶ模型飛行機が作れます！！
+    |           
+    .project_info_detail
+      table(border='0')
+        colgroup(style='width: 32px;')
+        |               
+        colgroup(style='width: 160px;')
+        |               
+        colgroup(style='width: 110px;')
+        |               
+        colgroup(style='width: 120px;')
+        |               
+        tr
+          td No.
+          |                 
+          td 企画名
+          |                 
+          td 企画形態
+          |                 
+          td 対象年齢
+        |               
+        tr
+          td 1
+          |                 
+          td 模型飛行機製作
+          |                 
+          td 製作
+          |                 
+          td ４才?（はさみが使える歳）
+  |         
+  article#description_nikaken.project_info
+    .project_info_main
+      .project_titile.org_color_chemistry
+        h2 おうちで使える簡単化学実験
+        |               
+        p Ⅱ部化学研究部
+      |             
+      .project_info_introduce
+        p
+          | 小さなお子さんにも楽しんでもらえるような簡単で楽しい化学実験をやっています。
+          br
+          | 実験で作った物は持ち帰ることができます。
+    |           
+    .project_info_detail
+      table(border='0')
+        colgroup(style='width: 32px;')
+        |               
+        colgroup(style='width: 160px;')
+        |               
+        colgroup(style='width: 85px;')
+        |               
+        colgroup(style='width: 120px;')
+        |               
+        tr
+          td No.
+          |                 
+          td 企画名
+          |                 
+          td 企画形態
+          |                 
+          td 対象年齢
+        |               
+        tr
+          td 1
+          |                 
+          td 入浴剤
+          |                 
+          td 実験
+          |                 
+          td 全年齢
+        |               
+        tr
+          td 2
+          |                 
+          td 芳香剤
+          |                 
+          td 実験
+          |                 
+          td 全年齢
+        |               
+        tr
+          td 3
+          |                 
+          td 発泡スチロールスタンプ
+          |                 
+          td 実験
+          |                 
+          td 全年齢
+  |         
+  article#description_ichikaken.project_info
+    .project_info_main
+      .project_titile.org_color_chemistry
+        h2 見て、さわって楽しむ化学
+        |               
+        p Ⅰ部化学研究部
+      |             
+      .project_info_introduce
+        p Ⅰ部化学研究部のブースでは３つの実験を用意しました。どれも簡単な実験なので誰でも気軽に楽しむことができます。作ったものを持ち帰れる実験もあります。
+    |           
+    .project_info_detail
+      table(border='0')
+        colgroup(style='width: 32px;')
+        |               
+        colgroup(style='width: 160px;')
+        |               
+        colgroup(style='width: 85px;')
+        |               
+        colgroup(style='width: 130px;')
+        |               
+        tr
+          td No.
+          |                 
+          td 企画名
+          |                 
+          td 企画形態
+          |                 
+          td 対象年齢
+        |               
+        tr
+          td 1
+          |                 
+          td ダイラタンシー
+          |                 
+          td 製作
+          |                 
+          td 全年齢
+        |               
+        tr
+          td 2
+          |                 
+          td 人工イクラ
+          |                 
+          td 製作
+          |                 
+          td 3歳以上
+        |               
+        tr
+          td 3
+          |                 
+          td 不思議な液体
+          |                 
+          td 実験
+          |                 
+          td 全年齢
+  |         
+  article#description_rikoukaken.project_info
+    .project_info_main
+      .project_titile.org_color_chemistry
+        h2 身近なものを使って化学を体験しよう！
+        |               
+        p 理工学部化学研究会
+      |             
+      .project_info_introduce
+        p 私たちの身近にあるものを使って、ちょっと不思議な体験をしてみよう！
+    |           
+    .project_info_detail
+      table(border='0')
+        colgroup(style='width: 32px;')
+        |               
+        colgroup(style='width: 250px;')
+        |               
+        colgroup(style='width: 85px;')
+        |               
+        colgroup(style='width: 120px;')
+        |               
+        tr
+          td No.
+          |                 
+          td 企画名
+          |                 
+          td 企画形態
+          |                 
+          td 対象年齢
+        |               
+        tr
+          td 1
+          |                 
+          td 電気ペンでお絵かきしてみよう！
+          |                 
+          td 実験
+          |                 
+          td 全年齢
+        |               
+        tr
+          td 1
+          |                 
+          td 割れないシャボン玉で遊ぼう！
+          |                 
+          td 実験
+          |                 
+          td 全年齢
+        |               
+        tr
+          td 3
+          |                 
+          td スライムを作ってみよう！
+          |                 
+          td 実験
+          |                 
+          td 全年齢
+
+prepend sidebar
+  nav.side_navi_event.color_march
+    ul
+      li
+        a(href='index.html') イベント概要
+      |             
+      li
+        a(href='about_march.html') ～オドロキ科学箱～について
+      |             
+      li
+        a(href='exhibition.html') 企画案内
+      |             
+      li
+        a(href='access.html') 会場アクセス
+  //
+    <nav class="sideNavi">
+    <ul>
+    <li><a href="../members/index.html">企画出展者向け<br>情報提供ページ</a></li>
+    <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
+    </ul>
+    </nav>
