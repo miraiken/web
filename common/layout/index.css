@@ -144,7 +144,7 @@ main h2 {
 
 main .layout_event_nav ul {
   list-style: none;
-  width: 610px;
+  max-width: 610px;
   margin: 0 auto;
   padding: 0;
 }

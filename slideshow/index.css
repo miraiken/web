@@ -8,26 +8,21 @@
   }
 }
 
-#slideshow {
-  position: relative;
-  width: 800px;
-  height: 400px;
-  margin: 0 auto;
-}
-
-#slideshow img {
+.slideshow-next,
+.slideshow-active,
+.slideshow-inactive {
+  width: 72%;
+  left: 14%;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
-#slideshow .next.active {
+.slideshow-next {
   animation: 1s ease-in 5s slideshow-keyframes;
   animation-fill-mode: both;
   opacity: 0;
   z-index: 1;
 }
 
-#slideshow :not(.active) {
+.slideshow-inactive {
   visibility: hidden;
 }

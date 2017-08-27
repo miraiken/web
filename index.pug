@@ -3,17 +3,15 @@ extends /layout/index.pug
 append head
   meta(content='default-src \'self\' \'unsafe-inline\' https://cdnjs.cloudflare.com/ajax/libs/ https://www.google-analytics.com/',
        http-equiv='Content-Security-Policy')
-  link(rel='stylesheet', href='common/layout/inflex.css')
   link(rel='stylesheet', href='slideshow.css')
   script(src='slideshow.js')
   title 東京理科大学みらい研究室
 
 append top
-  div(style=`background-image: url(${require("./common/top/back.jpg")}); width: 1110px; height: 400px;`)
-    p#slideshow
-      img.active(src=require('./common/top/slide/3.jpg'), alt='画像１')
-      img(src=require('./common/top/slide/2.jpg'), alt='画像２')
-      img(src=require('./common/top/slide/1.jpg'), alt='画像３')
+  div(style='background: linear-gradient(to right, white, orange 14%, orange 86%, white);')
+    img.slideshow-active(src=require('./common/top/slide/3.jpg'), alt='画像１')
+    img.slideshow-inactive(src=require('./common/top/slide/2.jpg'), alt='画像２')
+    img.slideshow-inactive(src=require('./common/top/slide/1.jpg'), alt='画像３')
 
 block path
   | ホーム
