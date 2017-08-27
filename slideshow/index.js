@@ -1,6 +1,6 @@
 require('./index.css');
 
-document.addEventListener('DOMContentLoaded', function() {
+onload = function() {
   var actives = document.getElementsByClassName('slideshow-active');
   var tallests = Array.prototype.map.call(actives, function(active) {
     var parent = active.parentNode;
@@ -40,4 +40,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   onresize();
-});
+};
