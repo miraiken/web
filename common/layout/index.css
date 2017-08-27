@@ -2,28 +2,22 @@ body {
   background: #dff;
 }
 
-.layout_top_captions {
-  height: 90px;
-}
-
 .layout_top_captions_title {
   margin: 0;
-  font-size: 25px;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .layout_top_captions_subtitle {
-  margin: 0;
-  font-size: 35px;
   color: orange;
-  line-height: 60px;
+  margin: 0.2em;
 }
 
 /* #65c441 */
 header {
   background: #fff;
-  height: 157px;
-  width: 1110px;
   margin: 0 auto;
+  max-width: 1110px;
 }
 
 .layout_table {
@@ -41,57 +35,57 @@ header nav {
   width: 100%;
 }
 
-header nav ul li {
-  list-style: none;
-  width: 222px;
-  height: 66px;
-  float: left;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 16px;
-  border-left: solid 1px #060;
-  background: url("./arrow/default.jpg") 0 100% no-repeat;
-  font-weight: bold;
-  color: #fff;
-  margin: 0 auto;
-  line-height: 22px;
-}
-
-header nav ul li:last-child {
-  border-right: solid 1px #060;
-}
-
-header nav ul li:hover {
-  color: #080;
-  background: url("./arrow/hover.jpg") 0 100% no-repeat;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 10px;
-  width: 202px;
-  height: 46px;
-}
-
 header nav ul {
   background-image: linear-gradient(to bottom, #afa, #5b3);
+  display: flex;
+  flex-flow: row wrap;
   margin: 0;
   padding: 0;
-  border-top: solid 1px #060;
 }
 
-header nav ul::after {
-  content: "";
-  clear: both;
+header nav li {
+  border-top: solid 1px;
+  border-left: solid 1px;
+  box-sizing: border-box;
+  flex: 1;
+  flex-direction: column;
+  font-weight: bold;
+  list-style: none;
+  text-align: center;
+}
+
+header nav li:last-child {
+  border-right: solid 1px;
+}
+
+header nav a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+header nav div {
+  flex: 1;
+}
+
+header nav a::after {
+  background: #bea;
+  content: url("./arrow/default.png");
   display: block;
+}
+
+header nav a:hover::after {
+  background: #9de;
+  content: url("./arrow/hover.png");
 }
 
 /* -----  本体部分  ----- */
 
 .layout_body {
-  width: 1108px;
+  max-width: 1108px;
   margin: 0 auto;
   border-left: solid 1px #000;
   border-right: solid 1px #000;
@@ -115,7 +109,7 @@ header nav ul::after {
 }
 
 main {
-  width: 800px;
+  max-width: 800px;
   float: left;
   padding: 10px;
 }

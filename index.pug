@@ -3,12 +3,9 @@ extends /layout/index.pug
 append head
   meta(content='default-src \'self\' \'unsafe-inline\' https://cdnjs.cloudflare.com/ajax/libs/ https://www.google-analytics.com/',
        http-equiv='Content-Security-Policy')
+  link(rel='stylesheet', href='common/layout/inflex.css')
   link(rel='stylesheet', href='slideshow.css')
   script(src='slideshow.js')
-  style.
-    header {
-      height: 557px;
-    }
   title 東京理科大学みらい研究室
 
 append top

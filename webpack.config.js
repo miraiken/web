@@ -50,6 +50,7 @@ for (const name of listFilesRecursively('./raw')) {
 }
 
 for (const name of [
+  './common/layout/inflex.css',
   './event/2014/event_june/resource/lightbox.css',
   './event/2014/event_june/resource/lightbox_plus.js',
   './event/2015/event_june/resource/exhibition.css',
