@@ -2,12 +2,34 @@ extends /layout/index.pug
 
 append head
   title 2015年までのWebページ更新情報
+  style.
+    table {
+      width: 100%;
+    }
+
+    th,
+    td {
+      font-size: 16px;
+      line-height: 22px;
+      border-bottom: dotted 1px #080;
+      vertical-align: top;
+    }
+
+    th {
+      white-space: nowrap;
+      padding-right: 30px;
+      text-align: left;
+    }
+
+    td {
+      width: 100%;
+    }
 
 block path
   | ホーム > 2015年までのWebページ更新情報
 
 block article
-  section.news
+  section(style='padding-left: 0;')
     h1 2015年までのWebページ更新情報
     |     
     p

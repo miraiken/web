@@ -1,19 +1,5 @@
 body {
-  background-color: #e0ffff;
-  font-family: "IPAexゴシック", "IPAゴシック", "Lucida Grande", YuGothic, '游ゴシック', "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
-}
-
-input {
-  font-family: "IPAexゴシック", "IPAゴシック", "Lucida Grande", YuGothic, '游ゴシック', "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td {
-  padding: 4px 2px;
+  background: #dff;
 }
 
 .layout_top_captions {
@@ -32,30 +18,21 @@ td {
   line-height: 60px;
 }
 
+/* #65c441 */
 header {
-  background-color: #fff;
-  background-image: url("./header.jpg");
-  background-position: bottom;
-  background-repeat: repeat-x;
+  background: #fff;
   height: 157px;
   width: 1110px;
   margin: 0 auto;
 }
 
 .layout_table {
-  margin: 20px;
+  border-collapse: collapse;
 }
 
-.layout_table td {
-  border: solid 1px #000;
-  vertical-align: middle;
-  text-align: left;
-}
-
+.layout_table td,
 .layout_table th {
-  border: solid 1px #000;
-  vertical-align: middle;
-  text-align: center;
+  border: solid 1px;
 }
 
 /* ----- タイトル＋SlideShow＋Menu  ----- */
@@ -72,10 +49,8 @@ header nav ul li {
   box-sizing: border-box;
   text-align: center;
   font-size: 16px;
-  border-left: solid 1px #006000;
-  background-image: url("./arrow/default.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 100%;
+  border-left: solid 1px #060;
+  background: url("./arrow/default.jpg") 0 100% no-repeat;
   font-weight: bold;
   color: #fff;
   margin: 0 auto;
@@ -83,16 +58,12 @@ header nav ul li {
 }
 
 header nav ul li:last-child {
-  border-right: solid 1px #006000;
+  border-right: solid 1px #060;
 }
 
 header nav ul li:hover {
-  color: #009000;
-  background-color: #afa;
-  background-image: url("./arrow/hover.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  border-bottom: none;
+  color: #080;
+  background: url("./arrow/hover.jpg") 0 100% no-repeat;
 }
 
 header nav ul li a {
@@ -105,11 +76,10 @@ header nav ul li a {
 }
 
 header nav ul {
-  background-image: linear-gradient(to bottom, #afa, #57b82b);
-  margin-top: 0;
-  margin-bottom: 0;
+  background-image: linear-gradient(to bottom, #afa, #5b3);
+  margin: 0;
   padding: 0;
-  border-top: solid 1px #006000;
+  border-top: solid 1px #060;
 }
 
 header nav ul::after {
@@ -135,10 +105,9 @@ header nav ul::after {
 }
 
 .layout_path {
-  background-color: #9ad9ea;
+  background-color: #9de;
   border-bottom: solid 1px #000;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 0 0 10px 10px;
   height: 20px;
   line-height: 20px;
   margin: 0;
@@ -152,47 +121,19 @@ main {
 }
 
 main h1 {
-  background-image: url("./door.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 50%;
+  background: url("./door.jpg") 0 50% no-repeat;
   padding-top: 6px;
-  border-bottom: solid 1px #009000;
-  border-top: solid 1px #009000;
+  border-bottom: solid 1px #080;
+  border-top: solid 1px #080;
   font-size: 25px;
   padding-left: 30px;
 }
 
 main h2 {
   font-size: 20px;
-  border-bottom: solid 1px #009000;
-  border-top: solid 1px #009000;
-  border-left: solid 5px #009000;
-}
-
-main .news {
-  padding-left: 0;
-}
-
-main .news table {
-  width: 100%;
-}
-
-main .news table tr th,
-main .news table tr td {
-  font-size: 16px;
-  line-height: 22px;
-  border-bottom: dotted 1px #009000;
-  vertical-align: top;
-}
-
-main .news table tr th {
-  white-space: nowrap;
-  padding-right: 30px;
-  text-align: left;
-}
-
-main .news table tr td {
-  width: 100%;
+  border-bottom: solid 1px #080;
+  border-top: solid 1px #080;
+  border-left: solid 5px #080;
 }
 
 .content {
@@ -215,8 +156,7 @@ main .layout_event_nav ul {
 }
 
 main .layout_event_nav li {
-  background-color: #b3f0af;
-  background-image: linear-gradient(to bottom, #b3f0af, #57b82b);
+  background: linear-gradient(to bottom, #be9, #5b3);
   border-radius: 10px;
   color: #fff;
   font-size: 20px;
@@ -225,11 +165,11 @@ main .layout_event_nav li {
 }
 
 main .layout_event_nav li.color_june {
-  background-image: linear-gradient(to bottom, #f8b30a, #fa6603);
+  background: linear-gradient(to bottom, #fa0, #f60);
 }
 
 main .layout_event_nav li.color_march {
-  background-image: linear-gradient(to bottom, #f98980, #e10d47);
+  background: linear-gradient(to bottom, #f88, #d04);
 }
 
 main .layout_event_nav li:last-child {
@@ -255,16 +195,13 @@ main .layout_event_nav ul li a {
   font-size: 30px;
 }
 
+main div img,
 main iframe {
   margin-left: 100px;
 }
 
 footer p small {
   margin-left: 0;
-}
-
-main div img {
-  margin-left: 100px;
 }
 
 /* ---- event情報などのためのside bar ---- */
@@ -277,17 +214,16 @@ main div img {
 .layout_sidebar ul {
   list-style: none;
   width: 239px;
-  margin-right: 0;
-  margin-top: 0;
-  padding-left: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
 }
 
 .layout_sidebar li {
-  border-left: solid 3px #57b82b;
+  border-left: solid 3px #5b3;
   border-top: solid 1px #000;
   border-bottom: solid 1px #000;
-  background-color: #57b82b;
-  background-image: linear-gradient(to left, #57b82b, #98d98e);
+  background: linear-gradient(to left, #5b3, #9d8);
   color: #fff;
   text-align: center;
   border-bottom-left-radius: 10px;
@@ -301,8 +237,7 @@ main div img {
 .layout_sidebar li:first-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #57b82b;
-  background-image: none;
+  background: #5b3;
   color: white;
 }
 
@@ -322,13 +257,12 @@ main div img {
 }
 
 .layout_sidebar ul li:hover {
-  background-color: #b3f0af;
-  background-image: none;
+  background: #be9;
   color: #fff;
 }
 
 footer {
-  border-top: solid 2px #009000;
+  border-top: solid 2px #080;
   margin-top: 1.5;
 }
 
