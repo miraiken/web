@@ -69,7 +69,6 @@ header nav ul li {
   width: 222px;
   height: 66px;
   float: left;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
   font-size: 16px;
@@ -106,10 +105,6 @@ header nav ul li a {
 }
 
 header nav ul {
-  background-image: -webkit-linear-gradient(top, #afa, #57b82b);
-  background-image: -moz-linear-gradient(top, #afa, #57b82b);
-  background-image: -ms-linear-gradient(top, #afa, #57b82b);
-  background-image: -o-linear-gradient(top, #afa, #57b82b);
   background-image: linear-gradient(to bottom, #afa, #57b82b);
   margin-top: 0;
   margin-bottom: 0;
@@ -221,13 +216,7 @@ main .layout_event_nav ul {
 
 main .layout_event_nav li {
   background-color: #b3f0af;
-  background-image: -webkit-linear-gradient(top, #b3f0af, #57b82b);
-  background-image: -moz-linear-gradient(top, #b3f0af, #57b82b);
-  background-image: -ms-linear-gradient(top, #b3f0af, #57b82b);
-  background-image: -o-linear-gradient(top, #b3f0af, #57b82b);
   background-image: linear-gradient(to bottom, #b3f0af, #57b82b);
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
   border-radius: 10px;
   color: #fff;
   font-size: 20px;
@@ -236,18 +225,10 @@ main .layout_event_nav li {
 }
 
 main .layout_event_nav li.color_june {
-  background-image: -webkit-linear-gradient(top, #f8b30a, #fa6603);
-  background-image: -moz-linear-gradient(top, #f8b30a, #fa6603);
-  background-image: -ms-linear-gradient(top, #f8b30a, #fa6603);
-  background-image: -o-linear-gradient(top, #f8b30a, #fa6603);
   background-image: linear-gradient(to bottom, #f8b30a, #fa6603);
 }
 
 main .layout_event_nav li.color_march {
-  background-image: -webkit-linear-gradient(top, #f98980, #e10d47);
-  background-image: -moz-linear-gradient(top, #f98980, #e10d47);
-  background-image: -ms-linear-gradient(top, #f98980, #e10d47);
-  background-image: -o-linear-gradient(top, #f98980, #e10d47);
   background-image: linear-gradient(to bottom, #f98980, #e10d47);
 }
 
@@ -306,10 +287,6 @@ main div img {
   border-top: solid 1px #000;
   border-bottom: solid 1px #000;
   background-color: #57b82b;
-  background-image: -webkit-linear-gradient(left, #57b82b, #98d98e);
-  background-image: -moz-linear-gradient(left, #57b82b, #98d98e);
-  background-image: -ms-linear-gradient(left, #57b82b, #98d98e);
-  background-image: -o-linear-gradient(left, #57b82b, #98d98e);
   background-image: linear-gradient(to left, #57b82b, #98d98e);
   color: #fff;
   text-align: center;
