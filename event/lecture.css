@@ -1,4 +1,4 @@
-#page_body_main .lecture table {
+main .lecture table {
   font-size: 14px;
   line-height: 1.429;
   border: 1px solid #ccc;
@@ -8,22 +8,22 @@
   margin-top: 30px;
 }
 
-#page_body_main .lecture table th,
-#page_body_main .lecture table td {
+main .lecture table th,
+main .lecture table td {
   border: 1px solid #ccc;
   padding: 5px 10px;
 }
 
-#page_body_main .lecture table th {
+main .lecture table th {
   background-color: #eee;
   text-align: left;
 }
 
-#page_body_main .lecture table td {
+main .lecture table td {
   text-align: center;
 }
 
-#page_body_main .lecture img {
+main .lecture img {
   display: block;
   margin: 0 auto;
 }

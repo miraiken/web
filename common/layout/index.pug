@@ -10,54 +10,63 @@ html(lang='ja')
       link(rel='stylesheet', href='/web/common/layout.css')
       meta(charset='UTF-8')
   body
-    #page
-      #page_head_back
-        header#page_head
-          block top
-            .toptitle
-              h1.toptitle1
-                | 東京理科大学サイエンスフェア学生企画
-                br
-              h1.toptitle2 みらい研究室実行委員会
-          nav.global_navi
-            ul
-              li
-                a(href='/web/')
-                  | ホーム
-                  br
-                  | HOME
-              li
-                a(href='/web/event/')
-                  | イベント情報
-                  br
-                  | EVENT
-              li
-                a(href='/web/contact/')
-                  | お問い合わせ
-                  br
-                  | CONTACT
-              li
-                a(href='/web/link/')
-                  | リンク
-                  br
-                  | LINK
-              li
-                a(href='/web/for_freshman/')
-                  | 新入生向けページ
-                  br
-                  | for Freshman
-      #page_body
-        .topic_path_back
-          p.topic_path
-            block path
-        article#page_body_main
+    header
+      block top
+        .layout_top_captions
+          h1.layout_top_captions_title
+            | 東京理科大学サイエンスフェア学生企画
+            br
+          h1.layout_top_captions_subtitle みらい研究室実行委員会
+      nav
+        ul
+          li
+            a(href='/web/')
+              | ホーム
+              br
+              | HOME
+          li
+            a(href='/web/event/')
+              | イベント情報
+              br
+              | EVENT
+          li
+            a(href='/web/contact/')
+              | お問い合わせ
+              br
+              | CONTACT
+          li
+            a(href='/web/link/')
+              | リンク
+              br
+              | LINK
+          li
+            a(href='/web/for_freshman/')
+              | 新入生向けページ
+              br
+              | for Freshman
+    .layout_body
+      p.layout_path
+        block path
+      main
+        article
           block article
-        #page_body_sub
-          block sidebar
-            include /side_navi_event.pug
-      footer#page_foot
-        p#copyright
-          small
-            | Copyright © #{lastModified.getFullYear()}
-            | 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
-            | #{lastModified.toLocaleString("ja", {timeZone: "Asia/Tokyo"})}
+      nav.layout_sidebar
+        block sidebar
+          ul
+            // <li class="color_march"><a href="./event/2017/event_march/index.html">2017年<br>3月4日開催<br>-オドロキ科学箱-</a></li>
+            // <li class="color_june"><a href="./event/2017/event_june/index.html">2017年<br>6月10,11日開催<br>-科学へのトビラ-</a></li>
+            li
+              a(href='/web/event/index.html') 過去のイベント情報はこちら
+          //
+            <nav class="side_navi">
+            <ul>
+            <li><a href="../members/index.html">企画出展者向け<br>情報提供ページ</a></li>
+            <li><a href="../for_freshman/index.html">新入生向けページ</a></li>
+            </ul>
+            </nav>
+    footer
+      p
+        small
+          | Copyright © #{lastModified.getFullYear()}
+          | 東京理科大学みらい研究室～科学へのトビラ～ All rights reserved.
+          | #{lastModified.toLocaleString("ja", {timeZone: "Asia/Tokyo"})}

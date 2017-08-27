@@ -1,4 +1,4 @@
-#page_body_sub nav.color_june ul li {
+.layout_sidebar .color_june li {
   border-left: solid 3px #fa6603;
   border-top: solid 1px #000;
   border-bottom: solid 1px #000;
@@ -11,7 +11,13 @@
   color: #fa6603;
 }
 
-#page_body_sub nav.color_june li:first-child {
+.layout_sidebar .color_june li:first-child {
   background-color: #fa6603;
   background-image: none;
+  color: white;
+}
+
+.layout_sidebar .color_june li:hover {
+  background-color: #f8b30a;
+  color: #fff;
 }

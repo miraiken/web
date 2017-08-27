@@ -21,13 +21,13 @@ canvas {
 }
 
 section > dl,
-section > table.normal_table {
+section > table.layout_table {
   margin: 18px 50px;
 }
 
 /* ---- particles.js container ---- */
 
-#page_body {
+.layout_body {
   background-color: #57b82b;
   background-position: 50% 50%;
 }
@@ -38,7 +38,7 @@ section > table.normal_table {
   position: absolute;
 }
 
-#page_body_main > section {
+main > article > section {
   background-color: white;
 }
 

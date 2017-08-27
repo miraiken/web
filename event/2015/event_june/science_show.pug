@@ -28,7 +28,7 @@ block path
 
 block article
   section
-    h1.pagetitle 特別企画:サイエンスショー
+    h1 特別企画:サイエンスショー
     |           
     img(src=require('./resource/サイエンスショー　ウェブ用ポップ.png'), height='480', width='720', alt='サイエンスショー紹介写真')
     |           
@@ -41,7 +41,7 @@ block article
       b 注意：米村でんじろう先生本人は出演しません。
     |           
     section.lecture
-      h2.pagetitle 申し込み
+      h2 申し込み
       |             
       table
         tr
@@ -77,7 +77,7 @@ block article
       p 変更等がありましたらHPでお知らせいたします。
       |             
       section
-        h3.pagetitle_sub 当日枠
+        h3 当日枠
         |               
         p
           b 第2回目(15:00～)のみ
@@ -91,7 +91,7 @@ block article
         p 当日、何時から受け付けるかはまだ決まっていません、もうしばらくお待ち下さい。
       |             
       section
-        h3.pagetitle_sub 事前予約枠
+        h3 事前予約枠
         |               
         p
           | 事前予約受付はすべて終了しました。予約した方は全員入場いただけます。
@@ -132,7 +132,7 @@ block article
               | 終了しました。
     |           
     section.lecture
-      h2.pagetitle 講師プロフィール
+      h2 講師プロフィール
       |             
       p 今回は、講師として本学卒業生のチャーリー西村さんをお招きして、特別企画、サイエンスショーを行います。
       |             
@@ -182,25 +182,24 @@ block article
         img(alt='西村_遠心力', src=require('./resource/centrifugal.jpg'))
 
 prepend sidebar
-  nav.side_navi_event.color_june
-    ul
-      li
-        a(href='index.html') イベント概要
-      |             
-      li
-        a(href='about_june.html') ～科学へのトビラ～について
-      |             
-      li
-        a(href='exhibition.html') 企画案内
-      |             
-      li
-        a(href='science_show.html') 特別企画:サイエンスショー
-      |             
-      li
-        a(href='pinhole_camera.html') 特別企画:針穴写真実験
-      |             
-      li
-        a(href='access.html') 会場アクセス
+  ul.color_june
+    li
+      a(href='index.html') イベント概要
+    |             
+    li
+      a(href='about_june.html') ～科学へのトビラ～について
+    |             
+    li
+      a(href='exhibition.html') 企画案内
+    |             
+    li
+      a(href='science_show.html') 特別企画:サイエンスショー
+    |             
+    li
+      a(href='pinhole_camera.html') 特別企画:針穴写真実験
+    |             
+    li
+      a(href='access.html') 会場アクセス
   //
     <nav class="side_navi">
     <ul>

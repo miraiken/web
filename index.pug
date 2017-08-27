@@ -6,7 +6,7 @@ append head
   link(rel='stylesheet', href='slideshow.css')
   script(src='slideshow.js')
   style.
-    #page_head_back {
+    header {
       height: 557px;
     }
   title 東京理科大学みらい研究室
@@ -23,7 +23,7 @@ block path
 
 block article
   section
-    h1.pagetitle はじめに
+    h1 はじめに
     p(style='font-size: 25px; text-align: center;')
       | 「 理科が好き。だから、伝えたい。」
     p.content(style='margin-bottom: 1em;')
@@ -45,14 +45,14 @@ block article
       br
       | イベントの詳しい情報が載ってます！
       br
-    nav.event_navi
+    nav.layout_event_nav
       ul
         // <li class="color_june"><a href="./event/2017/event_june/index.html">2017年6月10,11日開催<br>-科学へのトビラ-</a></li>
         // <li class="color_march"><a href="./event/2017/event_march/index.html">2017年3月4日開催<br>-オドロキ科学箱-</a></li>
         li
           a(href='./event/index.html') 過去のイベント情報はこちら
   section
-    h1.pagetitle メールマガジン
+    h1 メールマガジン
     p
       | みらい研究室実行委員会では、無料メールマガジンに登録された読者のみなさんに、
       br
@@ -63,7 +63,7 @@ block article
         style='display: block; background-color: inherit; text-decoration: none; font-size: 17px; font-weight: bold; padding: 15px 0; text-align: center; color: inherit;')
         | メールマガジン登録
   section.news
-    h1.pagetitle HP更新情報
+    h1 HP更新情報
     p
       | 現在このWebページは
       a(href='https://ja.wikipedia.org/wiki/Git') git
