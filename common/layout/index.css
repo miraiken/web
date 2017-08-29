@@ -85,6 +85,8 @@ header nav a:hover::after {
 /* -----  本体部分  ----- */
 
 .layout_body {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1108px;
   margin: 0 auto;
   border-left: solid 1px #000;
@@ -92,13 +94,12 @@ header nav a:hover::after {
   background-color: #fff;
 }
 
-.layout_body::after {
-  content: "";
-  clear: both;
-  display: block;
+.layout_path {
+  border-left: solid 1px;
+  border-right: solid 1px;
 }
 
-.layout_path {
+.layout_path p {
   background-color: #9de;
   border-bottom: solid 1px #000;
   border-radius: 0 0 10px 10px;
@@ -110,7 +111,6 @@ header nav a:hover::after {
 
 main {
   max-width: 800px;
-  float: left;
   padding: 10px;
 }
 
@@ -174,12 +174,6 @@ main .layout_event_nav li:hover {
   opacity: 0.7;
 }
 
-main .layout_event_nav ul::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
 main .layout_event_nav ul li a {
   text-decoration: none;
   color: inherit;
@@ -201,7 +195,6 @@ footer p small {
 /* ---- event情報などのためのside bar ---- */
 .layout_sidebar {
   width: 280px;
-  float: right;
   padding: 10px 0;
 }
 
