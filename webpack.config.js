@@ -67,6 +67,7 @@ for (const name of [
   './event/date.css',
   './event/june.css',
   './event/lecture.css',
+  './event/march.css',
   './event/project.css',
 ]) {
   entry[name] = name;
