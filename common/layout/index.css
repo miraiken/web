@@ -13,10 +13,14 @@ body {
   margin: 0.2em;
 }
 
+header,
+.layout_body {
+  max-width: 1110px;
+}
+
 header {
   background: #fff;
   margin: 0 auto;
-  max-width: 1110px;
 }
 
 .layout_table {
@@ -86,10 +90,10 @@ header nav a:hover::after {
 .layout_body {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1108px;
   margin: 0 auto;
   border-left: solid 1px #000;
   border-right: solid 1px #000;
+  box-sizing: border-box;
   background-color: #fff;
 }
 
