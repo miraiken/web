@@ -87,19 +87,18 @@ header nav a:hover::after {
 
 /* -----  本体部分  ----- */
 
+.layout_body,
+.layout_path {
+  border-left: solid 1px;
+  border-right: solid 1px;
+}
+
 .layout_body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  border-left: solid 1px #000;
-  border-right: solid 1px #000;
   box-sizing: border-box;
   background-color: #fff;
-}
-
-.layout_path {
-  border-left: solid 1px;
-  border-right: solid 1px;
 }
 
 .layout_path p {
@@ -119,19 +118,21 @@ main {
   padding: 10px;
 }
 
+main h1,
+main h2 {
+  border-bottom: solid 1px #080;
+  border-top: solid 1px #080;
+}
+
 main h1 {
   background: url("./door.jpg") 0 50% no-repeat;
   padding-top: 6px;
-  border-bottom: solid 1px #080;
-  border-top: solid 1px #080;
   font-size: 1.5rem;
   padding-left: 30px;
 }
 
 main h2 {
   font-size: 1.3rem;
-  border-bottom: solid 1px #080;
-  border-top: solid 1px #080;
   border-left: solid 5px #080;
 }
 
