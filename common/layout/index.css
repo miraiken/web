@@ -110,7 +110,9 @@ header nav a:hover::after {
 }
 
 main {
+  min-width: 0;
   max-width: 800px;
+  overflow-wrap: break-word;
   padding: 10px;
 }
 
