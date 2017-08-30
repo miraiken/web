@@ -1,0 +1,24 @@
+extends /layout/index.pug
+
+prepend contentSecurityPolicy
+  - var defaultSrc = ['\'unsafe-inline\'']
+  - var connectSrc = []
+
+append head
+  link(rel='stylesheet', href='slideshow.css')
+  script(src='slideshow.js')
+  title このWebページについて|東京理科大学みらい研究室
+
+block article
+  section
+    h1 このWebページについて
+    p
+      | このWebページは2017年8月まではみらい研究室が独自に作成し,
+      | 以降は東京理科大学のサークル, 神楽坂一丁目通信局の1部門であるWeb部がみらい研究室から委託を受け作成,
+      | 管理を行っています.
+    figure(style='margin: 1rem;')
+      img(alt='スクリーンショット',
+          src=require('./old.png'),
+          style='width: 100%;')
+      figcaption 2017年8月時点での様子
+    p 神楽坂一丁目通信局Web部はみらい研究室のWebページの作成, 管理に興味がある方を募集しています.

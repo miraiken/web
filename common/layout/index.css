@@ -132,12 +132,20 @@ main h2 {
   background: #be9;
 }
 
+footer,
+footer a {
+  color: #fff;
+}
+
 footer {
   background: #080;
-  color: #fff;
 }
 
 footer p {
   margin: 1rem 0 0;
   padding: 8px;
+}
+
+footer a {
+  text-decoration: underline;
 }

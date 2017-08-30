@@ -115,6 +115,7 @@ for (const name of [
   './googlea583e982345d2026',
   './index',
   './introduction/index',
+  './kagucho',
   './link/index',
   './members/index',
   './privacy',
