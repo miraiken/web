@@ -1,12 +1,9 @@
 .layout_body > nav .color_march li {
   border-left: solid 3px #e10d47;
+  border-right: solid 3px #e10d47;
   border-top: solid 1px #000;
   border-bottom: solid 1px #000;
-  background-image: -webkit-linear-gradient(left, #fff, #f98980);
-  background-image: -moz-linear-gradient(left, #fff, #f98980);
-  background-image: -ms-linear-gradient(left, #fff, #f98980);
-  background-image: -o-linear-gradient(left, #fff, #f98980);
-  background-image: linear-gradient(to left, #fff, #f98980);
+  background-image: linear-gradient(to left, #f98980, #fff 50%, #f98980);
   color: #e10d47;
 }
 

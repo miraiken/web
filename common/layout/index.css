@@ -1,5 +1,6 @@
 body {
   background: #dff;
+  min-width: 400px;
 }
 
 .layout_top_captions_title {
@@ -202,36 +203,36 @@ footer p small {
 
 /* ---- event情報などのためのside bar ---- */
 .layout_body > nav {
-  width: 280px;
+  flex: 1 1 280px;
+  min-width: 280px;
   padding: 10px 0;
 }
 
 .layout_body > nav ul {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  width: 239px;
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
 }
 
 .layout_body > nav li {
+  flex: 1;
   border-left: solid 3px #5b3;
+  border-right: solid 3px #5b3;
   border-top: solid 1px #000;
   border-bottom: solid 1px #000;
   background: linear-gradient(to left, #5b3, #9d8);
   color: #fff;
   text-align: center;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  margin-left: 37px;
-  margin-bottom: 1px;
-  width: 240px;
+  border-radius: 10px;
+  margin: 1px 37px;
+  min-width: 240px;
   height: 50px;
 }
 
 .layout_body > nav li:first-child {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   background: #5b3;
 }
 
@@ -243,7 +244,6 @@ footer p small {
   font-weight: bold;
   line-height: 1.3rem;
   padding: 15px 0;
-  width: 237px;
 }
 
 .layout_body > nav li:hover {
