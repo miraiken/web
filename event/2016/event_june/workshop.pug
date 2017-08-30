@@ -4,7 +4,6 @@ append head
   title ワークショップ|科学へのトビラ|東京理科大学みらい研究室
   link(rel='stylesheet', href='../../june.css')
   link(rel='stylesheet', href='../../lecture.css')
-  include /jquery-3.2.1.pug
   // jQuery UI
   include /jquery-ui-south-street-1.12.1.pug
   include /jquery-ui-1.12.1.pug
@@ -31,8 +30,8 @@ append head
       });
     });
 
-block path
-  | ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> ワークショップ
+prepend header
+  - var active = 'event'
 
 block article
   section.lecture

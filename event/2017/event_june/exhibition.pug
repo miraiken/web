@@ -9,8 +9,8 @@ append head
          src='https://cdnjs.cloudflare.com/ajax/libs/mithril/1.1.1/mithril.min.js')
   script(src='./resource/js/exhibition_creater.js')
 
-block path
-  | ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> 企画案内
+prepend header
+  - var active = 'event'
 
 block article
   h1 企画案内

@@ -5,7 +5,6 @@ append head
   link(rel='stylesheet', href='../../june.css')
   link(rel='stylesheet', href='../../lecture.css')
   link(rel='stylesheet', href='./resource/css/style.css')
-  include /jquery-3.2.1.pug
   // jQuery UI
   include /jquery-ui-south-street-1.12.1.pug
   include /jquery-ui-1.12.1.pug
@@ -32,8 +31,8 @@ append head
       });
     });
 
-block path
-  | ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> 講演会
+prepend header
+  - var active = 'event'
 
 block article
   section.lecture

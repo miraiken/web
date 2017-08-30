@@ -16,15 +16,14 @@ append head
   link(rel='prefetch', href=require('./resource/西村　百人おどし.jpg'))
   link(rel='prefetch', href=require('./resource/西村　空気砲（的）.jpg'))
   link(rel='prefetch', href=require('./resource/centrifugal.jpg'))
-  include /jquery-3.2.1.pug
   script(charset='UTF-8', src='./resource/simple_slideshow.js')
   style.
     .strike {
       text-decoration: line-through;
     }
 
-block path
-  | ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> 特別企画:サイエンスショー
+prepend header
+  - var active = 'event'
 
 block article
   section

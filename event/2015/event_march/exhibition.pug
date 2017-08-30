@@ -29,8 +29,8 @@ append head
   link(rel='prefetch', href='./map/third_floor_rikoukaken.png')
   script(charset='UTF-8', src='./resource/pseudo_screen_transition.js')
 
-block path
-  | ホーム >> イベント情報 >> みらい研究室 ～オドロキ科学箱～ >> 企画案内
+prepend header
+  - var active = 'event'
 
 block article
   h1 企画案内

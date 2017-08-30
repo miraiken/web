@@ -21,8 +21,8 @@ append head
          integrity='sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q',
          src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js')
 
-block path
-  | ホーム >> 新入生向けページ >> 広報班
+prepend header
+  - var active = 'for_freshman'
 
 block article
   h1 広報班

@@ -4,14 +4,13 @@ append head
   title 企画案内|科学へのトビラ|東京理科大学みらい研究室
   link(rel='stylesheet', href='../../march.css')
   link(rel='stylesheet', href='./resource/css/xxx.css')
-  include /jquery-3.2.1.pug
   script(crossorigin='anonymous',
          integrity='sha384-0eJVCFsnr+DhU/kroNh1PFqEDXNgpAApLJRJFIPh2yStFWQyhRLZ/UqH37JoUWka',
          src='https://cdnjs.cloudflare.com/ajax/libs/mithril/1.0.1/mithril.min.js')
   script(src='./resource/js/exhibition_creater.js')
 
-block path
-  | ホーム >> イベント情報 >> みらい研究室 ～オドロキ科学箱～ >> 企画案内
+prepend header
+  - var active = 'event'
 
 block article
   h1 企画案内

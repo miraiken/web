@@ -7,8 +7,8 @@ prepend contentSecurityPolicy
 append head
   title 新入生向けページ|東京理科大学みらい研究室
 
-block path
-  | ホーム >> 新入生向けページ >> 企画班
+prepend header
+  - var active = 'for_freshman'
 
 block article
   h1 企画班

@@ -7,8 +7,8 @@ prepend contentSecurityPolicy
 append head
   title リンク|東京理科大学みらい研究室～科学へのトビラ～
 
-block path
-  | ホーム >> リンク
+prepend header
+  - var active = 'link'
 
 block article
   h1 リンク

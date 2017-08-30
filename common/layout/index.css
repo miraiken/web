@@ -1,5 +1,4 @@
-body,
-.layout_path p {
+body {
   background: #eee;
 }
 
@@ -7,16 +6,16 @@ body {
   min-width: 300px;
 }
 
-.layout_top_captions_title {
+.layout_top_captions_subtitle {
   color: #aaa;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
-.layout_top_captions_subtitle {
+.layout_top_captions_title {
   color: #080;
-  margin: 0.2rem;
+  margin: 0.5rem;
 }
 
 .layout_top_captions_subtitle img {
@@ -43,63 +42,21 @@ header {
   border: solid 1px;
 }
 
-/* ----- タイトル＋SlideShow＋Menu  ----- */
-header nav {
-  padding-top: 0;
-  width: 100%;
-}
-
-header nav ul {
-  background-image: linear-gradient(to bottom, #afa, #5b3);
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0;
-  padding: 0;
-}
-
-header nav li {
-  border-top: solid 1px #ddd;
-  border-left: solid 1px #ddd;
-  box-sizing: border-box;
-  flex: 1;
-  flex-direction: column;
-  font-weight: bold;
-  list-style: none;
-  text-align: center;
-}
-
-header nav li:last-child {
-  border-right: solid 1px #ddd;
-}
+/* ----- Menu  ----- */
 
 header nav a {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  text-decoration: none;
-  white-space: nowrap;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  font-weight: bold;
 }
 
-header nav div {
-  flex: 1;
-}
-
-header nav a::after {
-  background: #bea;
-  content: url("./arrow/default.png");
-  display: block;
-}
-
-header nav a:hover::after {
-  background: #9de;
-  content: url("./arrow/hover.png");
+header nav .active > a {
+  background: #cfb !important;
 }
 
 /* -----  本体部分  ----- */
 
-.layout_body,
-.layout_path {
+.layout_body {
   border-left: solid 1px #ddd;
   border-right: solid 1px #ddd;
 }
@@ -111,16 +68,6 @@ header nav a:hover::after {
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #fff;
-}
-
-.layout_path p {
-  border-bottom: solid 1px #ddd;
-  border-bottom-right-radius: 10px;
-  color: #555;
-  height: 1.3rem;
-  line-height: 1.3rem;
-  margin: 0;
-  padding-left: 16px;
 }
 
 main {
@@ -139,26 +86,16 @@ main h2 {
 
 main h1 {
   padding-top: 6px;
-  font-size: 1.5rem;
 }
 
 main h2 {
-  font-size: 1.3rem;
+  padding-top: 4px;
+  font-size: 2rem;
   border-left: solid 5px #080;
-}
-
-.content,
-.content_1 {
-  font-size: 1.1rem;
-  line-height: 2.5rem;
 }
 
 .content {
   text-align: center;
-}
-
-.content_1 {
-  margin: 18px 50px;
 }
 
 main .layout_event_nav ul {
@@ -172,7 +109,6 @@ main .layout_event_nav li {
   background: linear-gradient(to bottom, #be9, #5b3);
   border-radius: 10px;
   color: #fff;
-  font-size: 1.3rem;
   text-decoration: none;
   text-align: center;
 }
@@ -198,8 +134,6 @@ main .layout_event_nav ul li a {
   color: inherit;
   display: block;
   padding: 20px 0;
-  line-height: 2.2rem;
-  font-size: 2rem;
 }
 
 main div img,
@@ -242,9 +176,8 @@ main iframe {
   text-decoration: none;
   color: inherit;
   display: block;
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 1.3rem;
   padding: 15px 0;
 }
 
@@ -258,7 +191,6 @@ footer {
 }
 
 footer p {
-  font-size: 0.8rem;
-  margin-bottom: 0;
+  margin: 1rem 0 0;
   padding: 8px;
 }

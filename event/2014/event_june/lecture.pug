@@ -5,8 +5,8 @@ append head
   link(rel='stylesheet', href='../../june.css')
   link(rel='stylesheet', href='../../lecture.css')
 
-block path
-  | ホーム >> イベント情報 >> みらい研究室 ～科学へのトビラ～ >> 講演会
+prepend header
+  - var active = 'event'
 
 block article
   section.lecture
