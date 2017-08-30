@@ -48,6 +48,7 @@ header nav a {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 header nav .active > a {
