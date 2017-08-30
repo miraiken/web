@@ -99,36 +99,6 @@ main h2 {
   text-align: center;
 }
 
-main .layout_event_nav ul {
-  list-style: none;
-  max-width: 610px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-main .layout_event_nav li {
-  background: linear-gradient(to bottom, #be9, #5b3);
-  border-radius: 10px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-}
-
-main .layout_event_nav li:last-child {
-  margin-right: 0;
-}
-
-main .layout_event_nav li:hover {
-  opacity: 0.7;
-}
-
-main .layout_event_nav ul li a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 20px 0;
-}
-
 main div img,
 main iframe {
   margin-left: 100px;
