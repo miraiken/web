@@ -1,17 +1,27 @@
+body,
+.layout_path p {
+  background: #eee;
+}
+
 body {
-  background: #dff;
   min-width: 300px;
 }
 
 .layout_top_captions_title {
+  color: #aaa;
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .layout_top_captions_subtitle {
-  color: orange;
+  color: #080;
   margin: 0.2rem;
+}
+
+.layout_top_captions_subtitle img {
+  display: inline;
+  vertical-align: middle;
 }
 
 header,
@@ -48,8 +58,8 @@ header nav ul {
 }
 
 header nav li {
-  border-top: solid 1px;
-  border-left: solid 1px;
+  border-top: solid 1px #ddd;
+  border-left: solid 1px #ddd;
   box-sizing: border-box;
   flex: 1;
   flex-direction: column;
@@ -59,7 +69,7 @@ header nav li {
 }
 
 header nav li:last-child {
-  border-right: solid 1px;
+  border-right: solid 1px #ddd;
 }
 
 header nav a {
@@ -90,11 +100,12 @@ header nav a:hover::after {
 
 .layout_body,
 .layout_path {
-  border-left: solid 1px;
-  border-right: solid 1px;
+  border-left: solid 1px #ddd;
+  border-right: solid 1px #ddd;
 }
 
 .layout_body {
+  border-bottom: solid 1px #ddd;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -103,9 +114,9 @@ header nav a:hover::after {
 }
 
 .layout_path p {
-  background-color: #9de;
-  border-bottom: solid 1px #000;
-  border-radius: 0 0 10px 10px;
+  border-bottom: solid 1px #ddd;
+  border-bottom-right-radius: 10px;
+  color: #555;
   height: 1.3rem;
   line-height: 1.3rem;
   margin: 0;
@@ -123,13 +134,12 @@ main h1,
 main h2 {
   border-bottom: solid 1px #080;
   border-top: solid 1px #080;
+  border-left: solid 10px #080;
 }
 
 main h1 {
-  background: url("./door.jpg") 0 50% no-repeat;
   padding-top: 6px;
   font-size: 1.5rem;
-  padding-left: 30px;
 }
 
 main h2 {
@@ -197,10 +207,6 @@ main iframe {
   margin-left: 100px;
 }
 
-footer p small {
-  margin-left: 0;
-}
-
 /* ---- event情報などのためのside bar ---- */
 .layout_body > nav {
   flex: 1 1 280px;
@@ -219,11 +225,7 @@ footer p small {
 
 .layout_body > nav li {
   flex: 1;
-  border-left: solid 3px #5b3;
-  border-right: solid 3px #5b3;
-  border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
-  background: linear-gradient(to left, #5b3, #9d8);
+  background: #6c4;
   color: #fff;
   text-align: center;
   border-radius: 10px;
@@ -251,11 +253,12 @@ footer p small {
 }
 
 footer {
-  border-top: solid 2px #080;
-  margin-top: 1.5;
+  background: #080;
+  color: #fff;
 }
 
 footer p {
   font-size: 0.8rem;
-  text-align: center;
+  margin-bottom: 0;
+  padding: 8px;
 }

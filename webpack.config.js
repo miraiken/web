@@ -167,4 +167,5 @@ module.exports = {
     publicPath: '/web/',
   },
   plugins: [omitDummy, extractCSSPlugin, extractHTMLPlugin],
+  resolve: {alias: {miraiken: __dirname}},
 };
