@@ -1,8 +1,5 @@
 body {
   background: #eee;
-}
-
-body {
   min-width: 300px;
 }
 
@@ -88,15 +85,6 @@ main h2 {
   padding-top: 4px;
   font-size: 2rem;
   border-left: solid 5px #080;
-}
-
-.content {
-  text-align: center;
-}
-
-main div img,
-main iframe {
-  margin-left: 100px;
 }
 
 /* ---- event情報などのためのside bar ---- */
