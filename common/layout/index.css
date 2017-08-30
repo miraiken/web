@@ -114,14 +114,6 @@ main .layout_event_nav li {
   text-align: center;
 }
 
-main .layout_event_nav li.color_june {
-  background: linear-gradient(to bottom, #fa0, #f60);
-}
-
-main .layout_event_nav li.color_march {
-  background: linear-gradient(to bottom, #f88, #d04);
-}
-
 main .layout_event_nav li:last-child {
   margin-right: 0;
 }
