@@ -52,7 +52,7 @@ JSON doesn't allow comment.
 
 ## Scope
 
-- for_freshman
+- for_freshmen
   - 新歓ページ
 - yymmevent
   - イベントページ。`yy=西暦下二桁, mm=月`
