@@ -16,7 +16,7 @@
   color: white;
 }
 
-.layout_sidebar .color_march ul li:hover {
+.layout_sidebar .color_march li:hover {
   background-color: #f98980;
   color: #fff;
 }
