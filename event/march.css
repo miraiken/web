@@ -1,4 +1,4 @@
-.layout_sidebar .color_march li {
+.layout_body > nav .color_march li {
   border-left: solid 3px #e10d47;
   border-top: solid 1px #000;
   border-bottom: solid 1px #000;
@@ -10,13 +10,13 @@
   color: #e10d47;
 }
 
-.layout_sidebar .color_march li:first-child {
+.layout_body > nav .color_march li:first-child {
   background-color: #e10d47;
   background-image: none;
   color: white;
 }
 
-.layout_sidebar .color_march li:hover {
+.layout_body > nav .color_march li:hover {
   background-color: #f98980;
   color: #fff;
 }
