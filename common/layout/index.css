@@ -58,12 +58,7 @@ header nav .active > a {
 /* -----  本体部分  ----- */
 
 .layout_body {
-  border-left: solid 1px #ddd;
-  border-right: solid 1px #ddd;
-}
-
-.layout_body {
-  border-bottom: solid 1px #ddd;
+  border: solid 1px #ddd;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
