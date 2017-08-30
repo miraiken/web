@@ -1,8 +1,10 @@
 extends /layout/index.pug
 
+prepend contentSecurityPolicy
+  - var defaultSrc = ['https://openclipart.org/image/300px/svg_to_png/']
+  - var connectSrc = []
+
 append head
-  meta(content='default-src \'self\' https://cdnjs.cloudflare.com/ajax/libs/ https://www.google-analytics.com/ https://openclipart.org/image/300px/svg_to_png/',
-       http-equiv='Content-Security-Policy')
   title 新入生向けページ|東京理科大学みらい研究室
 
 block path

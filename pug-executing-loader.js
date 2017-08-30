@@ -1,6 +1,11 @@
 const {spawn} = require('child_process');
 const {stderr} = require('process');
 
+function isParentFilename(m, filename) {
+  return m != null &&
+         (m.filename == filename || isParentFilename(m.parent, filename));
+}
+
 module.exports = function(source) {
   /* module.id reference is a workaround for the issue addressed in the
      following change in extract-text-webpack-plugin:
@@ -14,11 +19,22 @@ module.exports = function(source) {
                         ['log', '-1', '--format=%ct', '--', this.resourcePath],
                         {stdio: ['ignore', 'pipe', stderr]});
 
+  const devServerFilename =
+    require.resolve('webpack-dev-server/bin/webpack-dev-server');
+
   let result = `${source};
-module.exports = [[module.id, module.exports({lastModified: new Date(`;
+module.exports = [
+  [
+    module.id,
+    module.exports({
+      devServer: ${isParentFilename(module, devServerFilename)},
+      lastModified: new Date(`;
 
   process.stdout.on('data', chunk => chunk && (result += chunk));
-  process.stdout.on('end', () => callback(null, `${result } * 1000)})]];`));
+  process.stdout.on('end', () => callback(null, `${result } * 1000),
+    }),
+  ]
+];`));
 
   process.on('error', error => {
     process.stdout.removeAllListeners();

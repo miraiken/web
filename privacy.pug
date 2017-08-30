@@ -1,8 +1,10 @@
 extends /layout/index.pug
 
+prepend contentSecurityPolicy
+  - var defaultSrc = []
+  - var connectSrc = []
+
 append head
-  meta(content='default-src \'self\' https://cdnjs.cloudflare.com/ajax/libs/ https://www.google-analytics.com/',
-       http-equiv='Content-Security-Policy')
   title プライバシーポリシー|東京理科大学みらい研究室～科学へのトビラ～
 
 block path

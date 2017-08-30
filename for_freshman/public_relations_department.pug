@@ -1,8 +1,10 @@
 extends /layout/index.pug
 
+prepend contentSecurityPolicy
+  - var defaultSrc = ['\'unsafe-inline\' https://openclipart.org/image/300px/svg_to_png/']
+  - var connectSrc = []
+
 append head
-  meta(content='default-src \'self\' \'unsafe-inline\' https://cdnjs.cloudflare.com/ajax/libs/ https://www.google-analytics.com/ https://openclipart.org/image/300px/svg_to_png/',
-       http-equiv='Content-Security-Policy')
   title 新入生向けページ|東京理科大学みらい研究室
   link(crossorigin='anonymous',
        href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css',
