@@ -1,11 +1,10 @@
 function findIndex(array, element) {
   for (var index = 0; index < array.length; index++) {
     if (element == array[index]) {
-      return true;
+      return index;
     }
   }
-
-  return false;
+  return -1;
 }
 
 // グローバル変数開始
@@ -57,14 +56,10 @@ function hideAllDescriptions() {
 
 function showOrganizationDescriptions(id) {
   // 入力したidは存在するか判定
-  if (-1 != findIndex(organizationIds, id)) {
+  var index = findIndex(organizationIds, id);
+  if (-1 != index) {
     hideAllDescriptions();
-
-    // 表示
-    var index = findIndex(organizationIds, id);
-    if (-1 != index) {
-      descriptions[index].style.display = 'block';
-    }
+    descriptions[index].style.display = 'block';
   }
 }
 
