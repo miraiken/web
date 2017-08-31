@@ -27,30 +27,6 @@ div.project_info_main div.project_info_introduce {
   margin: 18px 2em;
 }
 
-/*  pic_map */
-#map_list {
-  display: block;
-}
-
-#map_pic {
-  width: 370px !important;
-  display: inline-block;
-}
-
-#map_pic img {
-  width: 369px;
-  margin: 0 !important;
-}
-
-#announce {
-  border: 1px solid #009000;
-  background-color: #009000;
-  color: white;
-  font: bold 20px sans-serif;
-  text-align: center;
-  padding: 6px;
-}
-
 div.project_titile_list {
   display: inline-block;
   width: 324px;
