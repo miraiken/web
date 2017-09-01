@@ -7,16 +7,16 @@ article.project_info div {
   margin: 0 0 18px;
 }
 
-div.project_info_main div.project_titile {
+div.project_info_main div.project_title {
   width: 22em;
   margin: 0 0 18px;
 }
 
-div.project_info_main div.project_titile h2 {
+div.project_info_main div.project_title h2 {
   margin: 5px;
 }
 
-div.project_info_main div.project_titile p {
+div.project_info_main div.project_title p {
   margin: 5px;
   text-align: right;
   font-size: 15px;
@@ -27,22 +27,22 @@ div.project_info_main div.project_info_introduce {
   margin: 18px 2em;
 }
 
-div.project_titile_list {
+div.project_title_list {
   display: inline-block;
   width: 324px;
 }
 
-div.project_titile_list div.project_titile {
+div.project_title_list div.project_title {
   width: 22em;
   margin: 0 0 5px;
 }
 
-div.project_titile_list div.project_titile h2 {
+div.project_title_list div.project_title h2 {
   margin: 5px;
   font-size: 21px;
 }
 
-div.project_titile_list div.project_titile p {
+div.project_title_list div.project_title p {
   margin: 5px;
   text-align: right;
   font-size: 15px;

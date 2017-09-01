@@ -81,12 +81,12 @@ main > article > section {
 }
 
 /* other */
-.project_titile > h2 {
+.project_title > h2 {
   margin: 0;
   padding: 0;
 }
 
-.project_titile > p {
+.project_title > p {
   margin: 0;
   padding: 0;
   font-size: 13px;
@@ -132,23 +132,23 @@ td {
   border: 1px solid black;
 }
 
-#aria_chemistory .project_titile {
+#aria_chemistory .project_title {
   background-color: #f4b3c2;
 }
 
-#aria_geoscience .project_titile {
+#aria_geoscience .project_title {
   background-color: #fef263;
 }
 
-#aria_math .project_titile {
+#aria_math .project_title {
   background-color: #cca6bf;
 }
 
-#aria_industrial .project_titile {
+#aria_industrial .project_title {
   background-color: #89c3eb;
 }
 
-#description_musenken .project_titile {
+#description_musenken .project_title {
   background-color: #89c3eb;
 }
 

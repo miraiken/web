@@ -9,7 +9,7 @@
 
 # Commit message規則
 
-> `Commit Type`(`Scope`<sup>opt</sup>): `Commit Titile`
+> `Commit Type`(`Scope`<sup>opt</sup>): `Commit Title`
 >
 > `Commit Body`
 
