@@ -18,9 +18,7 @@ block eyecatcher
       .slideshow-active(style=`background-image: url(${require('./slide/event_2013_june.jpg')});`)
       .slideshow-inactive(style=`background-image: url(${require('./slide/event_2012_june.jpg')});`)
       .slideshow-inactive(style=`background-image: url(${require('./slide/miraikan.jpg')});`)
-    // 618472 - Add WebView quirk setting for 8-digit colors - chromium - Monorail
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=618472
-    p(style='background: linear-gradient(to bottom, rgba(0.0, 0.0, 0.0, 0.5) 50%, rgba(0.0, 0.0, 0.0, 0.2)); color: #eee; font-weight: bold; font-size: 4rem; box-sizing: border-box; padding: 16px; position: relative; height: 100%; width: 100%; z-index: 2;')
+    p.caption
       | 理科が好き。だから、伝えたい。
 
 block article
