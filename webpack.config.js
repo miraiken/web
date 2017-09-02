@@ -116,7 +116,7 @@ for (const name of [
   './index',
   './introduction/index',
   './kagucho',
-  './link/index',
+  './links/index',
   './members/index',
   './privacy',
   './web_update_log',
