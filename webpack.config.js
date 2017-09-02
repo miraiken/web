@@ -40,7 +40,7 @@ const extractCSSPlugin = createSpecializedExtractTextPlugin('css');
 const extractHTMLPlugin = createSpecializedExtractTextPlugin('html');
 
 const entry = {
-  'slideshow.js': './slideshow',
+  'index.js': '.',
   'common/google_analytics.js': './common/google_analytics',
   'common/layout.css': './common/layout/index.css',
 };
