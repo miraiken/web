@@ -11,15 +11,21 @@ onload = function() {
       var previous = previousUnbound;
       var next = parent.children[(index + 1) % parent.children.length];
 
-      current.onanimationend = function() {
-        previous.className = 'slideshow-inactive';
-        current.className = 'slideshow-active';
-        next.className = 'slideshow-next';
-      };
+      current.addEventListener(
+        'animationend',
+        advance.bind(undefined, previous, current, next));
 
       previousUnbound = current;
     });
 
-    active.onanimationend();
+    advance(active.previousElementSibling || parent.lastChild,
+            active,
+            active.nextElementSibling || parent.firstChild);
   });
+
+  function advance(previous, current, next) {
+    previous.className = 'slideshow-inactive';
+    current.className = 'slideshow-active';
+    next.className = 'slideshow-next';
+  }
 };
