@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/miraiken/web#readme",
   "dependencies": {
-    "css-loader": "^0.28.4",
-    "eslint": "^4.4.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.6.0",
     "eslint-config-closure-es5": "0.0.1",
     "eslint-config-closure-es6": "0.0.1",
     "eslint-plugin-closure": "0.0.2",
@@ -42,7 +42,7 @@
     "raw-loader": "^0.5.1",
     "stylelint": "^8.0.0",
     "stylelint-config-standard": "^17.0.0",
-    "webpack": "^3.5.4"
+    "webpack": "^3.5.5"
   },
   "devDependencies": {
     "webpack-dev-server": "^2.7.1"
