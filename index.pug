@@ -11,62 +11,40 @@ append head
 
 prepend header
   - var active = 'home'
-  div(style='background: linear-gradient(to right, white, #be9, #5b3, white);')
-    img.slideshow-active(src=require('./slide/event_2013_june.jpg'), alt='2013年6月のイベント')
-    img.slideshow-inactive(src=require('./slide/event_2012_june.jpg'), alt='2012年6月のイベント')
-    img.slideshow-inactive(src=require('./slide/miraikan.jpg'), alt='日本科学未来館')
+
+block eyecatcher
+  section(style='position: relative; height: 320px; width: 100%; margin-bottom: 20px;')
+    div(aria-hidden='true', style='position: absolute; height: 100%; width: 100%;')
+      .slideshow-active(style=`background-image: url(${require('./slide/event_2013_june.jpg')});`)
+      .slideshow-inactive(style=`background-image: url(${require('./slide/event_2012_june.jpg')});`)
+      .slideshow-inactive(style=`background-image: url(${require('./slide/miraikan.jpg')});`)
+    p(style='background: linear-gradient(to bottom, #0008 50%, #0004); color: #eee; font-weight: bold; font-size: 4rem; box-sizing: border-box; padding: 16px; position: relative; height: 100%; width: 100%; z-index: 2;')
+      | 理科が好き。だから、伝えたい。
 
 block article
-  section
-    h1 はじめに
-    p(style='font-size: 25px; text-align: center;')
-      | 「 理科が好き。だから、伝えたい。」
-    p(style='margin-bottom: 1em; text-align: center;')
-      | こんな思いを胸に科学啓発イベントを行う学生団体、
-      br
-      | みらい研究室実行委員会です。
-    p(style='margin-bottom: 1em; text-align: center;')
-      | 東京理科大学の学生が、小中学生に科学の楽しさを伝えるため、
-      br
-      | キャンパスを飛び出し科学体験イベントを開催しています。
-      br
-      | ぜひ、ご家族でご来場になってください。
-    p(style='text-align: center;') みらい研究室実行委員一同、心よりお待ちしております。
+  p(style='font-weight: bold; font-size: 2rem;') 東京理科大学の学生が小中学生に科学の楽しさを伝えるため、キャンパスを飛び出し科学体験イベントを開催!
   section(style='margin-top: 3em;')
-    p(style='text-align: center;')
-      | 私たちが主催するイベントは、１年を通して２つ！
-      br
-      | 下のアイコンをクリックしてみてください。
-      br
-      | イベントの詳しい情報が載ってます！
-      br
-    nav
-      ul
-        li
-          a(href='./event/index.html') 過去のイベント情報はこちら
+    h1 イベント
+    p みらい研究室ではそれぞれ3月と6月にイベントを開催しています。
+    p 次回は来年、2018年3月です。イベントの情報を受け取るにはメールマガジンを購読してください。
   section
     h1 メールマガジン
     p
-      | みらい研究室実行委員会では、無料メールマガジンに登録された読者のみなさんに、
-      br
-      | イベントの情報をお伝えするオフィシャルメルマガをお届けしています。
+      | みらい研究室実行委員会では、無料メールマガジンに登録された読者のみなさんに、イベントの情報をお伝えするオフィシャルメルマガをお届けしています。
     p 登録はこちらから
     div(style='background-color: #ff5959; border: 3px #ff5959 solid; width: 230px; color: #fff; border-radius: 10px; margin: 10px auto;')
       a(href='https://docs.google.com/forms/d/1SxT0K75k7zmAiiIT_slalMUZn2I9Fw0931Ri1USYuO8/viewform',
         style='display: block; background-color: inherit; text-decoration: none; font-size: 17px; font-weight: bold; padding: 15px 0; text-align: center; color: inherit;')
         | メールマガジン登録
   section
-    h1 HP更新情報
-    p
-      | 現在このWebページは
-      a(href='https://ja.wikipedia.org/wiki/Git') git
-      | というバージョン管理システムで管理しているので、HP更新情報表は作成していません。
-      br
-      | commit log
-      br
-      a(href='https://github.com/miraiken/web/commits/master') https://github.com/miraiken/web/commits/master
-      br
-      | を御覧ください。
-      br
-      | 2015年以前の更新情報は
-      a(href='web_update_log.html') こちら
+    h1 更新情報
+    dl
+      dt 2017年8月
+      dd
+        | Webページの作成、管理を
+        a(href='kagucho.html') 神楽坂一丁目通信局
+        | が引き継ぎ、刷新を開始しました。
+      dt 2015年
+      dd
+        | Webページの更新履歴を移動しました。以前の更新情報は
+        a(href='web_update_log.html') こちら
