@@ -2,7 +2,7 @@
 
 みらい研究室実行委員会のWebページのrepogitory。
 
-https://miraiken.github.io/web/index.html
+https://miraiken.github.io/web/
 
 ## 開発
 
