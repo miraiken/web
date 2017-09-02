@@ -149,9 +149,3 @@ footer p {
 footer a {
   text-decoration: underline;
 }
-
-/* exhibition.html に対する .main h2の打ち消し*/
-
-.project_title > h2 {
-  border: 0;
-}

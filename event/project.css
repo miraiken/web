@@ -48,6 +48,10 @@ div.project_title_list div.project_title p {
   font-size: 15px;
 }
 
+div.project_title h2 {
+  border: 0;
+}
+
 .project_info_detail td {
   border: solid 1px #000;
   vertical-align: middle;

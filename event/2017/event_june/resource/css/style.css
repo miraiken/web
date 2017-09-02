@@ -86,6 +86,7 @@ main > article > section {
 
 /* other */
 .project_title > h2 {
+  border: 0;
   margin: 0;
   padding: 0;
 }
