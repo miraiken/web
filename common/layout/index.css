@@ -78,12 +78,13 @@ main {
 }
 
 main {
-  flex: 1 1 100%;
+  flex: 1 512px;
   min-width: 0;
-  max-width: 800px;
   overflow-wrap: break-word;
 }
 
+.main-h1,
+.main-h2,
 main h1,
 main h2 {
   border-bottom: solid 1px #080;
@@ -91,6 +92,7 @@ main h2 {
   border-left: solid 10px #080;
 }
 
+.main-h2,
 main h2 {
   padding-top: 4px;
   font-size: 2rem;
@@ -99,8 +101,7 @@ main h2 {
 
 /* ---- event情報などのためのside bar ---- */
 .layout_body > nav {
-  flex: 1 1 280px;
-  min-width: 280px;
+  flex: 0 1 280px;
 }
 
 .layout_body > nav ul {

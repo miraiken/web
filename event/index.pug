@@ -13,10 +13,26 @@ prepend header
 block article
   section
     h1 イベント情報
-    section
+    section(style='margin-bottom: 0.5rem;')
       h2 開催予定・開催中のイベント
-      nav
-        ul
+      table.layout_table
+        colgroup(style='width: 8rem;')
+        colgroup(style='width: 8rem;')
+        colgroup(style='width: 20rem;')
+        colgroup(style='width: 32rem;')
+        thead
+          tr
+            th 開催年
+            th 開催月
+            th 場所
+            th イベントトップページへのリンク
+        tbody
+          tr
+            td 2018
+            td 03
+            td 高砂地区センター
+            td
+              a(href='./2018/march/') みらい研究室 ～オドロキ科学箱～
     section
       h2 終了したイベント
       table.layout_table

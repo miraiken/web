@@ -36,6 +36,14 @@
   margin: 0;
 }
 
+.event-caption {
+  font-size: 1.75rem;
+}
+
+.event-caption > * {
+  margin: 0;
+}
+
 .eyecatcher-caption {
   background: linear-gradient(to bottom, #0008 50%, #0004);
   color: #eee;

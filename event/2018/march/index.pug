@@ -1,0 +1,82 @@
+extends /layout/index.pug
+
+prepend contentSecurityPolicy
+  - var defaultSrc = ['\'unsafe-inline\' www.google.com']
+  - var connectSrc = []
+
+append head
+  link(rel='stylesheet', href='./index.css')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css')
+  title オドロキ科学箱 2018 | 東京理科大学みらい研究室
+
+prepend header
+  - var active = 'event'
+
+block eyecatcher
+  h1.main-h1(style='background: #fff; margin-bottom: 0')
+    | 3月開催 みらい研究室 ～オドロキ科学箱～
+  div(style=`background: url(${require('../../../slide/event_2013_june.jpg')}) bottom/cover; margin-bottom: 1rem;`)
+    div(style='background: #fffc; padding: 10px;')
+      div(style='text-align: center;')
+        .caption
+          p 毎年3月に葛飾区で開催されるみらい研究室実行委員会主催 イベント
+          p 「オドロキ科学箱」2018年も開催！！
+        div(style='margin: 3rem 0;')
+          p.h3 3/17 (土) 10:00 ~ 16:00 (受付終了: 15:30)
+          p.h3 事前申し込み不要・参加費無料
+      div(style='max-width: 1110px; margin: auto;')
+        .card-columns
+          h2.card(style='background: #2a4')
+            .card-body
+              .card-title.text-white(style='text-align: center;') 企画一覧
+          a.card.air(href='./exhibition.html#chibi')
+            img.card-img-top(alt='', src=require('./image/air.png'))
+            .card-body
+              p.card-title.h5.text-white 水で空気を感じよう!
+          a.card.storm(href='./exhibition.html#chibi')
+            img.card-img-top(alt='', src=require('./image/storm.png'))
+            .card-body
+              p.card-title.h5.text-white 竜巻と雲を見てみよう!
+          a.card.light(href='./exhibition.html#geography')
+            img.card-img-top(alt='', src=require('./image/light.png'))
+            .card-body
+              p.card-title.h5.text-dark 光のマジック!?
+          a.card.planetarium(href='./exhibition.html#engineering_chemistry')
+            img.card-img-top(alt='', src=require('./image/astronomy.png'))
+            .card-body
+              p.card-title.h5.text-dark 手作りプラネタリウム
+          a.card.ikura(href='./exhibition.html#astronomy')
+            img.card-img-top(alt='', src=require('./image/ikura.jpg'))
+            .card-body
+              p.card-title.h5.text-white 人工イクラを作る
+          a.card.microbe(href='./exhibition.html#engineering_chemistry')
+            img.card-img-top(alt='', src=require('./image/microbe.png'))
+            .card-body
+              p.card-title.h5.text-white スマホで観察する微生物
+          a.card.plane(href='./exhibition.html#biology')
+            img.card-img-top(alt='', src=require('./image/plane.png'))
+            .card-body
+              p.card-title.h5.text-white 飛行機を作る
+          a.card.bubble(href='./exhibition.html#chemistry2')
+            img.card-img-top(alt='', src=require('./image/bubble.png'))
+            .card-body
+              p.card-title.h5.text-dark 割れないシャボン玉
+        a.btn.btn-lg.btn-primary(href='./exhibition.html')
+          i.material-icons(aria-hidden='true', style='vertical-align: sub;')
+            | navigate_next
+          | すべての企画を見る
+
+block article
+  h2 会場
+  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.1973030884806!2d139.86621431526058!3d35.745954980179306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601885933a6c808b%3A0xa466f496e1edc12b!2z6JGb6aO-5Yy6IOmrmOegguWcsOWMuuOCu-ODs-OCv-ODvA!5e0!3m2!1sja!2sjp!4v1519449004144', title='葛飾区 高砂地区センター - Google マップ', width='600', height='450', frameborder='0', style='border:0; width: 100%;', 'allowfullscreen')
+  h3 交通機関
+  dl
+    dt 電車
+    dd 京成高砂駅南口下車 徒歩10分
+  dl
+    dt バス
+    dd 京成タウンバス 京成小岩駅~亀有駅 高砂駅下車 徒歩10分
+  h2 注意
+  ul
+    li 企画は材料がなくなり次第終了、また予告なく変更することがあります。
+    li #[strong 駐車場はございません]ので、交通機関のご利用をお願いします。

@@ -1,0 +1,117 @@
+extends /layout/index.pug
+
+prepend contentSecurityPolicy
+  - var defaultSrc = ['\'unsafe-inline\'']
+  - var connectSrc = []
+
+append head
+  link(rel='stylesheet', href='./exhibition.css')
+  title オドロキ科学箱 2018 企画一覧 | 東京理科大学みらい研究室
+
+prepend header
+  - var active = 'event'
+
+block article
+  h1 企画一覧
+  p オドロキ科学箱は『科学の楽しさを伝えたい』を合言葉に東京理科大学の学生団体が集まり、小、中、高校生を対象に行われるサイエンスフェア (科学体験教室) です。それぞれの団体が様々な企画を行っています。
+  p 一部の企画では実際に実験もしくは制作が出来ます。また、参加前に整理券を受け取る必要がある企画があります。
+  h2 科学の体感
+  .section
+    section#plane
+      .heading
+        h3 飛行機を作って飛ばそう
+        p AircraftMakers
+      dl
+        dt 飛行機を作ろう #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+        dt 人力飛行機を知ろう
+        dd 対象: 全年齢
+    section#biology
+      .heading
+        h3 生き物の秘密を解き明かそう!
+        p II部研究会生物研究部
+      dl
+        dt 化石のレプリカを作ろう #[span.badge.text-white(style='background: #07f;') 実験・制作] #[span.badge.text-white(style='background: #d34;') 整理券配布]
+        dd 対象: 小学生以上
+        dt スマホで微生物をみてみよう #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 小学生以上
+        dt 生態展示
+        dd 対象: 全年齢
+    section#chemistry2
+      .heading
+        h3 簡単楽しい実験教室
+        p II部化学研究部
+      dl
+        dt 割れないシャボン玉 #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+        dt スーパーボールを作ろう #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+        dt カイロを作ろう #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+  h2 宇宙と地球のファンタジー
+  .section
+    section#astronomy
+      .heading
+        h3 星空の集い
+        p I部II部天文研究部 × 東京理科大学野田天文研究会
+      dl
+        dt プラネタリウム上映 #[span.badge.text-white(style='background: #d34;') 整理券配布]
+        dd 対象: 3歳以上
+        dt 手作りプラネタリウム #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 5歳以上
+        dt 模型の展示
+        dd 対象: 全年齢
+        dt 写真の展示
+        dd 対象: 全年齢
+    section#geography
+      .heading
+        h3 地球をENJOY!
+        p 地球科学研究部
+      dl
+        dt エネルギーのファンタジー #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 小学生以上
+        dt 竜巻と雲の観察
+        dd 対象: 全年齢
+        dt 鉱物の観察
+        dd 対象: 全年齢
+        dt 霧箱を見てみよう
+        dd 対象: 小学生以上
+  h2 水と空気と光のふしぎ
+  .section
+    section#chemistry1
+      .heading
+        h3 見て、触れて、楽しむ科学!
+        p I部化学研究部
+      dl
+        dt ダイラタンシー #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+        dt スライム #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+        dt ふしぎな水 #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+        dt ふしぎな液体 #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+    section#engineering_chemistry
+      .heading
+        h3 身近な科学体験
+        p 理工学部 化学研究会
+      dl
+        dt 人工イクラを作ろう #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+        dt メッキでお絵かき #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+        dt 光のマジック #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+    section#chibi
+      .heading
+        h3 みえない力をかんじよう!
+        p 東京理科大学サイエンスコミュニケーションサークル chibi lab.
+      dl
+        dt 水で感じる空気の力 #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 5歳以上
+        dt 液体タワー #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 全年齢
+        dt 光のフシギ #[span.badge.text-white(style='background: #07f;') 実験・制作]
+        dd 対象: 5歳以上
+        dt 肺のしくみをたしかめよう
+        dd 対象: 全年齢

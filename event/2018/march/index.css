@@ -1,0 +1,81 @@
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+.caption {
+  font-size: 1.75rem;
+}
+
+.caption > * {
+  margin: 0;
+}
+
+a.card {
+  text-decoration: none;
+}
+
+.air {
+  background: #6af;
+}
+
+.air:hover {
+  background: #07f;
+}
+
+.storm {
+  background: #1bb;
+}
+
+.storm:hover {
+  background: #088;
+}
+
+.light {
+  background: #fe4;
+}
+
+.light:hover {
+  background: #fb0;
+}
+
+.planetarium {
+  background: #ff7;
+}
+
+.planetarium:hover {
+  background: #fe3;
+}
+
+.ikura {
+  background: #f66;
+}
+
+.ikura:hover {
+  background: #d34;
+}
+
+.microbe {
+  background: #f85;
+}
+
+.microbe:hover {
+  background: #f52;
+}
+
+.plane {
+  background: #78e;
+}
+
+.plane:hover {
+  background: #45b;
+}
+
+.bubble {
+  background: #6df;
+}
+
+.bubble:hover {
+  background: #0ae;
+}
