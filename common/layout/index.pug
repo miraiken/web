@@ -9,23 +9,26 @@ html(lang='ja')
         if devServer
           - connectSrc.push('*')
         - connectSrc.unshift('connect-src')
-        meta(content=`${defaultSrc.join(' ')}; ${connectSrc.join(' ')}`,
+        meta(content=`${defaultSrc.join(' ')}; ${connectSrc.join(' ')}; img-src \'self\' data: https://www.google-analytics.com/`,
              http-equiv='Content-Security-Policy')
     block head
       include /google_analytics/index.pug
       link(crossorigin='anonymous',
            rel='stylesheet',
-           href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css',
-           integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u')
+           href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css',
+           integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm')
       link(rel='stylesheet', href='/web/common/layout.css')
       meta(charset='UTF-8')
       meta(content='initial-scale=1', name='viewport')
       script(crossorigin='anonymous',
-             integrity='sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f',
-             src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+             integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo',
+             src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js')
+      script(crossorigin='anonymous'
+             integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q'
+             src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js')
       script(crossorigin='anonymous', defer,
-             integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa',
-             src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+             integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl',
+             src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js')
   body
     header
       p.layout_top_captions_subtitle 東京理科大学サイエンスフェア学生企画
@@ -34,46 +37,41 @@ html(lang='ja')
         | みらい研究室実行委員会
       block header
         - var active
-        nav.navbar.navbar-default
-          .container-fluid
-            .navbar-header
-              button.navbar-toggle.collapsed(aria-expanded='false', data-target='#layout_header_navbar_collapse' data-toggle='collapse', type='button')
-                span.sr-only 目次を開閉する
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            #layout_header_navbar_collapse.collapse.navbar-collapse
-              ul.nav.navbar-nav
-                li(class=active === 'home' && 'active')
-                  a(href='/web/')
-                    div
-                      | ホーム
-                      br
-                      | Home
-                li(class=active === 'event' && 'active')
-                  a(href='/web/event/')
-                    div
-                      | イベント情報
-                      br
-                      | Event
-                li(class=active === 'contact' && 'active')
-                  a(href='/web/contact/')
-                    div
-                      | お問い合わせ
-                      br
-                      | Contact
-                li(class=active === 'links' && 'active')
-                  a(href='/web/links/')
-                    div
-                      | リンク
-                      br
-                      | Links
-                li(class=active === 'for_freshmen' && 'active')
-                  a(href='/web/for_freshmen/')
-                    div
-                      | 新入生向けページ
-                      br
-                      | For Freshmen
+        nav.bg-light.border-top.navbar.navbar-expand-lg.navbar-light
+          button.navbar-toggler(aria-controls='layout_header_navbar_collapse', aria-expanded='false', aria-label='目次を開閉する', data-target='#layout_header_navbar_collapse' data-toggle='collapse', type='button')
+            span.navbar-toggler-icon
+          #layout_header_navbar_collapse.collapse.navbar-collapse
+            ul.navbar-nav
+              li.nav-item(class=active === 'home' && 'active')
+                a.nav-link(href='/web/')
+                  div
+                    | ホーム
+                    br
+                    | Home
+              li.nav-item(class=active === 'event' && 'active')
+                a.nav-link(href='/web/event/')
+                  div
+                    | イベント情報
+                    br
+                    | Event
+              li.nav-item(class=active === 'contact' && 'active')
+                a.nav-link(href='/web/contact/')
+                  div
+                    | お問い合わせ
+                    br
+                    | Contact
+              li.nav-item(class=active === 'links' && 'active')
+                a.nav-link(href='/web/links/')
+                  div
+                    | リンク
+                    br
+                    | Links
+              li.nav-item(class=active === 'for_freshmen' && 'active')
+                a.nav-link(href='/web/for_freshmen/')
+                  div
+                    | 新入生向けページ
+                    br
+                    | For Freshmen
     block eyecatcher
     .layout_body
       main
@@ -82,7 +80,7 @@ html(lang='ja')
       nav
         block sidebar
           ul
-            li
+            li.btn.btn-lg
               a(href='/web/event/') 過去のイベント情報はこちら
     footer
       p

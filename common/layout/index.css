@@ -6,13 +6,13 @@ body {
 .layout_top_captions_subtitle {
   color: #aaa;
   margin: 0;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .layout_top_captions_title {
   color: #080;
-  margin: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .layout_top_captions_subtitle img {
@@ -41,15 +41,24 @@ header {
 
 /* ----- Menu  ----- */
 
-header nav a {
+header > .navbar {
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+header > .navbar a {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-header nav .active > a {
+header > .navbar .active > a {
   background: #cfb !important;
+}
+
+header > .navbar > .navbar-toggler {
+  margin: 0.5rem 1rem;
 }
 
 /* -----  本体部分  ----- */
@@ -63,12 +72,16 @@ header nav .active > a {
   background-color: #fff;
 }
 
+.layout_body > nav,
+main {
+  padding: 10px;
+}
+
 main {
   flex: 1 1 100%;
   min-width: 0;
   max-width: 800px;
   overflow-wrap: break-word;
-  padding: 10px;
 }
 
 main h1,
@@ -76,10 +89,6 @@ main h2 {
   border-bottom: solid 1px #080;
   border-top: solid 1px #080;
   border-left: solid 10px #080;
-}
-
-main h1 {
-  padding-top: 6px;
 }
 
 main h2 {
@@ -92,7 +101,6 @@ main h2 {
 .layout_body > nav {
   flex: 1 1 280px;
   min-width: 280px;
-  padding: 10px 0;
 }
 
 .layout_body > nav ul {
@@ -108,11 +116,6 @@ main h2 {
   flex: 1;
   background: #6c4;
   color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  margin: 1px;
-  min-width: 240px;
-  height: 50px;
 }
 
 .layout_body > nav li:first-child {
@@ -122,10 +125,7 @@ main h2 {
 .layout_body > nav li a {
   text-decoration: none;
   color: inherit;
-  display: block;
-  font-size: 2rem;
   font-weight: bold;
-  padding: 15px 0;
 }
 
 .layout_body > nav li:hover {

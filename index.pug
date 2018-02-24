@@ -18,13 +18,13 @@ block eyecatcher
       .slideshow-active(style=`background-image: url(${require('./slide/event_2013_june.jpg')});`)
       .slideshow-inactive(style=`background-image: url(${require('./slide/event_2012_june.jpg')});`)
       .slideshow-inactive(style=`background-image: url(${require('./slide/miraikan.jpg')});`)
-    p.caption
+    p.eyecatcher-caption
       | 理科が好き。だから、伝えたい。
 
 block article
-  p(style='font-weight: bold; font-size: 2rem;')
-    | 東京理科大学の学生が小中学生に科学の楽しさを伝えるため、
-    | キャンパスを飛び出し科学体験イベントを開催!
+  .article-caption
+    p 東京理科大学の学生がキャンパスを飛び出し科学体験イベントを開催!
+    p 小中学生に科学の楽しさを伝えます。
   section(style='margin-top: 3em;')
     h1 イベント
     p みらい研究室ではそれぞれ3月と6月にイベントを開催しています。
