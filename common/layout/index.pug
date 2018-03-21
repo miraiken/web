@@ -4,12 +4,16 @@ html(lang='ja')
     block contentSecurityPolicy
       - var defaultSrc
       - var connectSrc
+      - var imgSrc
       if defaultSrc !== undefined && connectSrc !== undefined
         - defaultSrc.unshift('default-src \'self\' https://cdnjs.cloudflare.com/ajax/libs/ https://www.google-analytics.com/')
         if devServer
           - connectSrc.push('*')
         - connectSrc.unshift('connect-src')
-        meta(content=`${defaultSrc.join(' ')}; ${connectSrc.join(' ')}; img-src \'self\' data: https://www.google-analytics.com/`,
+        if imgSrc === undefined
+          - imgSrc = []
+        - imgSrc.unshift('img-src \'self\' data: https://www.google-analytics.com/')
+        meta(content=`${defaultSrc.join(' ')}; ${connectSrc.join(' ')}; ${imgSrc.join(' ')}`,
              http-equiv='Content-Security-Policy')
     block head
       include /google_analytics/index.pug
@@ -73,16 +77,12 @@ html(lang='ja')
                     br
                     | For Freshmen
     block eyecatcher
-    .layout_body
-      main
-        article
-          block article
-      block sidebar
-      //nav
+    .layout_body_wrapper
+      .layout_body
+        main
+          article
+            block article
         block sidebar
-          ul
-            li.btn.btn-lg
-              a(href='/web/event/') 過去のイベント情報はこちら
     footer
       p
         small

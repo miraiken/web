@@ -1,11 +1,13 @@
 extends /layout/index.pug
 
 prepend contentSecurityPolicy
-  - var defaultSrc = ['\'unsafe-inline\'']
+  - var defaultSrc = ['\'unsafe-inline\'', 'https://*.twimg.com/', 'https://*.twitter.com/']
+  - var imgSrc = ['https://*.twimg.com/', 'https://*.twitter.com/']
   - var connectSrc = []
 
 append head
   link(rel='stylesheet', href='index.css')
+  script(async, src='https://platform.twitter.com/widgets.js')
   script(src='index.js')
   title 東京理科大学みらい研究室
 
@@ -62,3 +64,7 @@ block article
       dd
         | Webページの更新履歴を移動しました。以前の更新情報は
         a(href='web_update_log.html') こちら
+
+block sidebar
+  .layout_sidebar
+    a.twitter-timeline(href='https://twitter.com/_miraiken_') @_miraiken_ のツイート

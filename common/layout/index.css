@@ -21,8 +21,8 @@ body {
 }
 
 header,
-.layout_body {
-  max-width: 1110px;
+.layout_body_wrapper {
+  max-width: 1000px;
 }
 
 header {
@@ -63,24 +63,34 @@ header > .navbar > .navbar-toggler {
 
 /* -----  本体部分  ----- */
 
+.layout_body_wrapper {
+  margin: auto;
+  overflow: hidden;
+}
+
 .layout_body {
-  border: solid 1px #ddd;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #fff;
+  margin: -10px;
+  overflow: hidden;
+}
+
+.layout_body > * {
+  margin: 10px;
 }
 
 .layout_body > nav,
+.layout_sidebar,
 main {
-  padding: 10px;
+  background-color: #fff;
+  border: solid 1px #ddd;
 }
 
 main {
   flex: 1 512px;
   min-width: 0;
   overflow-wrap: break-word;
+  padding: 10px;
 }
 
 .main-h1,
@@ -100,8 +110,8 @@ main h2 {
 }
 
 /* ---- event情報などのためのside bar ---- */
-.layout_body > nav {
-  flex: 0 1 280px;
+.layout_sidebar {
+  flex: 1 100px;
 }
 
 .layout_body > nav ul {
