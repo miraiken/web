@@ -66,5 +66,6 @@ block article
         a(href='web_update_log.html') こちら
 
 block sidebar
-  .layout_sidebar
-    a.twitter-timeline(href='https://twitter.com/_miraiken_') @_miraiken_ のツイート
+  .layout_sidebar(style='display: flex; flex-direction: column')
+    div(style='flex: 32rem; overflow: auto')
+      a.twitter-timeline(data-chrome='nofooter noscrollbar', href='https://twitter.com/_miraiken_') @_miraiken_ のツイート
