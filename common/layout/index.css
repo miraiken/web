@@ -1,6 +1,6 @@
 body {
   background: #eee;
-  min-width: 300px;
+  overflow-x: hidden;
 }
 
 .layout_top_captions_subtitle {
@@ -65,14 +65,12 @@ header > .navbar > .navbar-toggler {
 
 .layout_body_wrapper {
   margin: auto;
-  overflow: hidden;
 }
 
 .layout_body {
   display: flex;
   flex-wrap: wrap;
   margin: -10px;
-  overflow: hidden;
 }
 
 .layout_body > * {

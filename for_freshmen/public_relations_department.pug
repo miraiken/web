@@ -1,25 +1,13 @@
 extends /layout/index.pug
 
 prepend contentSecurityPolicy
-  - var defaultSrc = ['\'unsafe-inline\' https://openclipart.org/image/300px/svg_to_png/']
-  - var connectSrc = []
+  - var defaultSrc = ['\'unsafe-inline\'', 'https://*.twimg.com/', 'https://*.twitter.com/']
+  - var imgSrc = ['https://*.twimg.com/', 'https://*.twitter.com/']
 
 append head
   title 新入生向けページ | 東京理科大学みらい研究室
-  link(crossorigin='anonymous',
-       href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css',
-       integrity='sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh',
-       rel='stylesheet')
-  link(crossorigin='anonymous',
-       href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css',
-       integrity='sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R',
-       rel='stylesheet')
-  script(crossorigin='anonymous',
-         integrity='sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy',
-         src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js')
-  script(crossorigin='anonymous',
-         integrity='sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q',
-         src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js')
+  link(rel='stylesheet', href='public_relations_department.css')
+  script(async, src='https://platform.twitter.com/widgets.js')
 
 prepend header
   - var active = 'for_freshmen'
@@ -27,94 +15,69 @@ prepend header
 block article
   h1 広報班
   section
-    div(style='width:400px; margin-left:0px; display:inline-block; vertical-align:top;')
-      h2 活動内容
-      ul
-        li ビラ・ポスター等のデザイン
-        li Webサイト管理
-        li アンケートの作成・解析
-      p この他にもメルマガ配信やラジオ出演などの活動も!
-    div(style='display:inline-block;')
-      img(style='margin-left:0px;', alt='2014年度 6月期表紙 (webに貼る用)', width='290', src=require('./resource/2014年度 6月期表紙 (webに貼る用).png'))
+    h2 活動内容
+    div(style='display: flex; flex-wrap: wrap')
+      div
+        ul
+          li ビラ・ポスター等のデザイン
+          li アンケートの作成・解析
+        p この他にもメルマガ配信やラジオ出演などの活動も!
+      img(alt='2014年度 6月期表紙', width='290', src=require('./resource/2014年度 6月期表紙 (webに貼る用).png'))
   section
     h2 こんな人は大歓迎!
     p
       | デザイン出来る人、文章を書ける人、Webサイト運用企画に興味ある人大歓迎!
       | 初心者でも、デザインはやる気があれば大丈夫です! 一から教えます。
       | いろいろな技術を身につけることができます!
-    img(width='150', alt='HTML-Icon-Final', src='https://openclipart.org/image/300px/svg_to_png/69331/HTML-Icon-Final.png')
-    img(width='150', alt='simplePc', src='https://openclipart.org/image/300px/svg_to_png/174173/simplePc.png')
-    img(width='150', alt='1397134150', src='https://openclipart.org/image/300px/svg_to_png/192640/1397134150.png')
   section
     h2 過去の作品
     p 広報班が過去に作った物の一部を紹介します。
-    div(style='position: relative; height: 400px;')
-      .pswp(tabindex='-1', role='dialog', aria-hidden='true')
-        .pswp__bg
-        .pswp__scroll-wrap
-          .pswp__container
-            .pswp__item
-            .pswp__item
-            .pswp__item
-          .pswp__ui.pswp__ui--hidden
-            .pswp__top-bar
-              .pswp__counter
-              button.pswp__button.pswp__button--close(title='Close (Esc)')
-              button.pswp__button.pswp__button--share(title='Share')
-              button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
-              button.pswp__button.pswp__button--zoom(title='Zoom in/out')
-              .pswp__preloader
-                .pswp__preloader__icn
-                  .pswp__preloader_cut
-                    .pswp__preloader__donut
-            .pswp__share-modal.pswp__share-modal--hidden.pswp__single_tap
-              .pswp__share-tooltip
-            button.pswp_button.pswp__button--arrow--left(title='Previous (arrow left)')
-            button.pswp_button.pswp__button--arrow--right(title='Next (arrow right)')
-            .pswp__caption
-              .pswp__caption__center
-    script.
-      (new PhotoSwipe(document.getElementsByClassName("pswp")[0],
-              PhotoSwipeUI_Default,
-              [
-                {
-                  src: !{JSON.stringify(require("./resource/201406配布ビラ表.png"))},
-                  w: 561,
-                  h: 400,
-                  title: "201406配布ビラ。<a href='./resource/201406配布ビラ表.pdf'>pdf版</a>",
-                }, {
-                  src: !{JSON.stringify(require("./resource/2014年度 6月期表紙.png"))},
-                  w: 561,
-                  h: 400,
-                  title: "2014年度 6月期パンフレット表紙。<a href='./resource/2014年度 6月期表紙.pdf'>pdf版</a>",
-                }, {
-                  src: !{JSON.stringify(require("./resource/201503 アンケート.png"))},
-                  w: 561,
-                  h: 400,
-                  title: "2014年度3月期 アンケート。<a href='./resource/2014年度3月期 アンケート 見やすくした.pdf'>pdf版</a>",
-                }, {
-                  src: !{JSON.stringify(require("./resource/学内周知用ポスター-2014.png"))},
-                  w: 561,
-                  h: 400,
-                  title: "学内周知用ポスター。<a href='./resource/学内周知用ポスター 2014.pdf'>pdf版</a>",
-                }, {
-                  src: !{JSON.stringify(require("./resource/当日用ビラ 2014年度3月期.png"))},
-                  w: 561,
-                  h: 400,
-                  title: "当日用ビラ 2014年度3月期。<a href='./resource/当日用ビラ 2014年度3月期.pdf'>pdf版</a>",
-                },
-              ], {
-                modal: false,
-                closeOnScroll: false,
-                focus: false,
-              })).init();
+    #works.carousel.slide
+      ol.carousel-indicators
+        li.active(data-target='#works', data-slide-to='0')
+        li(data-target='#works', data-slide-to='1')
+        li(data-target='#works', data-slide-to='2')
+        li(data-target='#works', data-slide-to='3')
+        li(data-target='#works', data-slide-to='4')
+      ul.carousel-inner
+        li.carousel-item.active
+          img(src=require("./resource/201406配布ビラ表.png"), alt='2014年度 6月期配布のビラ')
+          p.carousel-caption.d-none.d-md-block 2014年6月配布のビラ。 #[a(href='./resource/201406配布ビラ表.pdf') PDF版]
+        li.carousel-item
+          img(src=require("./resource/2014年度 6月期表紙.png"), alt='2014年度 6月期パンフレット表紙')
+          p.carousel-caption.d-none.d-md-block 2014年度 6月期パンフレット表紙。 #[a(href='./resource/2014年度 6月期表紙.pdf') PDF版]
+        li.carousel-item
+          img(src=require("./resource/201503 アンケート.png"), alt='2014年度 3月期アンケート')
+          p.carousel-caption.d-none.d-md-block 2045年度3月期 アンケート。 #[a(href='./resource/2014年度3月期 アンケート 見やすくした.pdf') PDF版]
+        li.carousel-item
+          img(src=require("./resource/学内周知用ポスター-2014.png"), alt='学内周知用ポスター')
+          p.carousel-caption.d-none.d-md-block 学内周知用ポスター。 #[a(href='./resource/学内周知用ポスター 2014.pdf') PDF版]
+        li.carousel-item
+          img(src=require("./resource/当日用ビラ 2014年度3月期.png"), alt='2014年度3月期 当日用ビラ')
+          p.carousel-caption.d-none.d-md-block 2014年度3月期 当日用ビラ。 #[a(href='./resource/当日用ビラ 2014年度3月期.pdf') PDF版]
+      a.carousel-control-prev(href='#works', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only 前へ
+      a.carousel-control-next(href='#works', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only 次へ
+  section
+    h2 Webサイト制作
+    p
+      | 広報班と東京理科大学のサークル、
+      a(href='https://kagucho.net/') 神楽坂一丁目通信局
+      | は共同でWebサイトを制作しています。Webサイト制作に興味のある方は神楽坂一丁目通信局にも是非お越しください。
 
 prepend sidebar
-  nav.side_nav
-    ul
-      li.top
-        a(href='.') 新歓TOP
-      li
-        a(href='planning_department.html') 企画班
-      li
-        a(href='public_relations_department.html') 広報班
+  ul.layout_sidebar.nav.flex-column.nav-pills(style='margin-bottom: auto; padding: 1rem; position: sticky; top: 1rem')
+    li
+      a.nav-link(href='.') 新歓TOP
+    li
+      a.nav-link(href='planning_department.html') 企画班
+    li
+      a.nav-link.active(href='public_relations_department.html') 広報班
+    li
+      | 最新のイベント情報をチェック!
+      | Twitterでフォローしよう
+      a.twitter-follow-button(data-show-count='false', data-size='large', href='https://twitter.com/_miraiken_')
+        | @_miraiken_ をフォロー

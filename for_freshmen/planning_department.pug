@@ -1,10 +1,11 @@
 extends /layout/index.pug
 
 prepend contentSecurityPolicy
-  - var defaultSrc = ['https://openclipart.org/image/300px/svg_to_png/']
-  - var connectSrc = []
+  - var defaultSrc = ['\'unsafe-inline\'', 'https://*.twimg.com/', 'https://*.twitter.com/']
+  - var imgSrc = ['https://openclipart.org/image/300px/svg_to_png/', 'https://*.twimg.com/', 'https://*.twitter.com/']
 
 append head
+  script(async, src='https://platform.twitter.com/widgets.js')
   title 新入生向けページ | 東京理科大学みらい研究室
 
 prepend header
@@ -36,11 +37,15 @@ block article
         width='150')
 
 prepend sidebar
-  nav.side_nav
-    ul
-      li.top
-        a(href='.') 新歓TOP
-      li
-        a(href='planning_department.html') 企画班
-      li
-        a(href='public_relations_department.html') 広報班
+  ul.layout_sidebar.nav.flex-column.nav-pills(style='margin-bottom: auto; padding: 1rem; position: sticky; top: 1rem')
+    li
+      a.nav-link(href='.') 新歓TOP
+    li
+      a.nav-link.active(href='planning_department.html') 企画班
+    li
+      a.nav-link(href='public_relations_department.html') 広報班
+    li
+      | 最新のイベント情報をチェック!
+      | Twitterでフォローしよう
+      a.twitter-follow-button(data-show-count='false', data-size='large', href='https://twitter.com/_miraiken_')
+        | @_miraiken_ をフォロー

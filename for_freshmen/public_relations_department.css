@@ -1,0 +1,20 @@
+#works {
+  background: #000;
+  text-align: center;
+}
+
+.carousel-caption {
+  background: #0008;
+}
+
+.carousel-indicators li {
+  background: #0008;
+}
+
+.carousel-indicators li.active {
+  background: #000;
+}
+
+.carousel-inner {
+  padding: 0;
+}

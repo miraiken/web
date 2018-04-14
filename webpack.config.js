@@ -70,6 +70,7 @@ for (const name of [
   './event/lecture.css',
   './event/march.css',
   './event/project.css',
+  './for_freshmen/public_relations_department.css',
 ]) {
   entry[name] = name;
 }
