@@ -46,6 +46,7 @@ main > article > section {
 
 .count-particles {
   background: #002;
+  border-radius: 0 0 3px 3px;
   position: absolute;
   top: 48px;
   left: 0;
@@ -74,10 +75,6 @@ main > article > section {
 #stats {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
-}
-
-.count-particles {
-  border-radius: 0 0 3px 3px;
 }
 
 /* other */

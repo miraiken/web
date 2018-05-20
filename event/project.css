@@ -7,6 +7,10 @@ article.project_info div {
   margin: 0 0 18px;
 }
 
+div.project_title h2 {
+  border: 0;
+}
+
 div.project_info_main div.project_title {
   width: 22em;
   margin: 0 0 18px;
@@ -46,10 +50,6 @@ div.project_title_list div.project_title p {
   margin: 5px;
   text-align: right;
   font-size: 15px;
-}
-
-div.project_title h2 {
-  border: 0;
 }
 
 .project_info_detail td {
