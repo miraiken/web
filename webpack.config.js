@@ -162,7 +162,7 @@ module.exports = {
         include: path.join(__dirname, 'raw'),
         loader: 'file-loader?context=raw&name=[path][name].[ext]',
       }, {
-        test: /\.(gif|jpg|pdf|png)$/,
+        test: /\.(gif|jpg|pdf|png|svg)$/,
         exclude: path.join(__dirname, 'raw'),
         loader: 'file-loader',
       }, {
