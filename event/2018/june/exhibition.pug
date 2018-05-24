@@ -22,71 +22,193 @@ block article
   a.btn.btn-lg.btn-primary(href='./', style='margin-bottom: 1rem')
     | イベントホームページ
   h1 企画一覧
-  .card-columns
-    .card
-      .card-body
-        i.material-icons.text-primary(alt='') help_outline
-        ul
-          li.h5 地球をENJOY!
-          li.h5 生き物の秘密を解き明かそう!
-          li.h5 未知との遭遇 #[br] 〜星との出逢い〜
-      .card-footer
-        h2.card-title.h4 宇宙と生き物のフシギ
-    .card
-      .card-body
-        ul
-          li.h5 見る!触る!化学実験
-          li.h5 物理のフシギにふれよう!
-        i.material-icons(alt='', style='color: #c55') touch_app
-      .card-footer
-        h2.card-title.h4 楽しく学ぶ理科
-    .card
-      .card-body
-        i.material-icons(alt='', style='color: #f71') settings
-        ul
-          li.h5 ロボットと触れ合おう!
-          li.h5 Formula Racing
-          li.h5 模型飛行機を作ろう
-      .card-footer
-        h2.card-title.h4 機械について学ぼう
-    .card
-      .card-body
-        ul
-          li.h5 数学を楽しもう!
-          li.h5 さんすうをたのしもう!
-        i.material-icons(alt='', style='color: #26f') trending_up
-      .card-footer
-        h2.card-title.h4 君も さんすうマスター!
-    .card
-      .card-body
-        div
-          i.material-icons(alt='') colorize
-          i.material-icons(alt='', style='color: #a0f') hearing
-        ul
-          li.h5 もくねんさんと手作りノート
-          li.h5 楽しく学ぼう化学の不思議
-          li.h5 身近な化学体験
-          li.h5 音の科学
-      .card-footer
-        h2.card-title.h4 身近にある科学
-  section.clearfix
-    h2 東芝未来科学館による科学体験イベント
-    i.material-icons(alt='', style='font-size: 8rem; color: #6a1b9a; float: right') search
-    p.h5 ラゾーナ川崎プラザ2F ルーファ広場にて開催
-    div(style='display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 40rem')
-      section.alert.alert-info
-        h3 クロマトカラー実験室
-        p 6 月 16 日(土)実施
-      section.alert.alert-warning
-        h3 偏光板のせかい
-        p 6 月 17 日(日)実施
-    p(style='margin-bottom: 0')
-      | 対象年齢 4 歳以上、所要時間 30 分。 作ったものはお持ち帰りできます!
-      | 未就学児は保護者同伴。
-    p 協力: NPO 法人 CANVAS
-  .callout
-    p 企画内容は予告なく変更になる場合がございます。
-    p 製作および実験の企画は、材料が無くなり次第終了とさせていただきます。
-    p 整理券を配布するブースがございます。整理券は両日ともに先着順で、午前と午後の1日2回配布予定です。
-    p 小学生以下は保護者同伴でご参加ください。
-    p 実験体験風景などの写真は、サイエンスフェアの広報活動に使用させていただきます。
+  h2#earth 地球をENJOY! #[small 地球科学研究部]
+  p 鉱物や竜巻の発生させる装置やパワーストーンで作るリング作り、手回し発電機やウラン鉱から出る放射線を見ることなどができます。
+  .section
+    section
+      h6 鉱物を観察しよう #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+    section
+      h6 竜巻と雲の発生と観測方法を学ぼう #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 小学生以上
+    section
+      h6 エメルギーと環境を考えよう #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+    section
+      h6 霧箱装置を観察しよう #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 小学生以上
+    section
+      h6 パワーストーンでリングを作ろう #[span.badge(style='background: #fb0; color: #222') 制作]
+      p 対象: 全年齢
+    section
+      h6 元素単体美術展 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 小学生以上
+  h2#stationery もくねんさんと手作りノート #[small 文具研究同好会]
+  p 木くずの粘土でストラップを作ったり、インクブレンダー体験ができます。研究資料の展示も見てね！
+  .section
+    section
+      h6 おが屑粘土！もくねんさん #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 全年齢
+    section
+      h6 世界に一つのインクを作ろう！ #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 全年齢
+    section
+      h6 何しているの文具研 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+  h2#biology 生き物の秘密を解き明かそう！ #[small II部研究会生物研究部]
+  p 昆虫や、普段見ることのない微生物、化石などを触れながら観察しよう！化石はレプリカも作ることができるよ！
+  .section
+    section
+      h6 化石のレプリカを作ろう #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 小学生以上
+    section
+      h6 生態展示 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+    section
+      h6 顕微鏡で微生物を見てみよう #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+  h2#physics 物理のフシギにふれよう！ #[small 物理研究部]
+  p 身のまわりには物理がいっぱい！さあ、キミもフシギな物理の世界をのぞいてみよう！
+  .section
+    section
+      h6 光の色は何色！？ #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 小学生以上（製作者）
+    section
+      h6 ☆光の万華鏡☆ #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 全年齢
+    section
+      h6 ガウス加速器 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+    section
+      h6 二重振り子 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+
+  h2#aircraft 模型飛行機を作ろう #[small Aircraft Makers]
+  p 人力飛行機はどうやって飛ぶの？模型飛行機を作り、操縦体験、機体を実際に見て知ろう！
+  .section
+    section
+      h6 模型飛行機を作ろう #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 全年齢
+    section
+      h6 人力飛行機を操縦してみよう #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 小学生以上
+    section
+      h6 人力飛行機のことを知ろう #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+  h2#robot ロボットと触れ合おう！ #[small I部無線研究部]
+  p 私たちが制作したロボットの操作体験ができます。二足歩行や多足歩行などたくさんのロボットがあります。
+  .section
+    section
+      h6 第13回　ニソコン #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+    section
+      h6 ロボットに触れ合おう！ #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+    section
+      h6 ROBOT WARS 2018 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+  h2#formula Formula Racing #[small 機械工学研究会]
+  p 自分の力で君だけのレーシングカーを作ってみよう！
+  .section
+    section
+      h6 レーシングカーに乗ってみよう！ #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+    section
+      h6 自分だけのレーシングカーを作ってみよう！ #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 小学生以上
+  h2#chemistry1 見る！触る！化学実験！ #[small I部化学研究部]
+  p 学校では教えてくれない、不思議でマジックみたいな化学を体験してらいます。自作して持ち帰えることのできる実験もあります。
+  .section
+    section
+      h6 錬金術師になろう！ #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 小学生以上
+    section
+      h6 科学捜査班になろう！ #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+    section
+      h6 ダイラタンシー #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 全年齢
+    section
+      h6 不思議な液体 #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 全年齢
+  h2#chemistry2 楽しく学ぼう化学の不思議 #[small II部化学研究部]
+  p 身近なものを使って、匂いを吸い取り別のにおいがする芳香剤や、お風呂に入れる入浴剤、はねさせて遊ぶスーパーボールを作ります
+  .section
+    section
+      h6 不思議な粉を使って作る芳香剤 #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 全年齢
+    section
+      h6 掃除用品で作れる入浴剤 #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 全年齢
+    section
+      h6 簡単に作れるスーパーボール #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 全年齢
+  h2#chemistry_engineering 身近な化学体験 #[small 理工学部化学研究会]
+  p 私たちの身の回りにあるものを使っているものを使って、化学の不思議を体験してみよう！
+  .section
+    section
+      h6 割れない？シャボン玉 #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 全年齢
+    section
+      h6 人工イクラを作る #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 全年齢
+    section
+      h6 スライムを作ってみよう！ #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 全年齢
+  h2#sound 音の科学 #[small サイエンスコミュニケーションサークルchibi lab.]
+  p 声を代表とする「音」についての実験をいくつか用意しました.小さいお子さんでも十分楽しめるように用意してまいりますので是非来てください！
+  .section
+    section
+      h6 なきごえコップを作ってみよう！ #[span.badge(style='background: #fb0; color: #222') 製作]
+      p 対象: 全年齢
+    section
+      h6 音のフシギを体験しよう！ #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+  h2#math1 数学を楽しもう！ #[small I部数学研究部]
+  p ルービックキューブやハノイの塔など数学に関係した様々なゲーム、遊びをやってます。一緒に考えながら数学の世界を楽しく体験しましょう！
+  .section
+    section
+      h6 ルービックキューブ #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+    section
+      h6 ハノイの塔 #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+    section
+      h6 嘘つきあてゲーム #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+    section
+      h6 四色問題 #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 全年齢
+    section
+      h6 一筆書きに挑戦 #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 全年齢
+    section
+      h6 数学豆知識 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+  h2#math2 さんすうをたのしもう！ #[small II部研究会 数学研究部]
+  p 少しでも算数や数学を楽しんでもらおうと100マス計算やパズルなどいろいろな体験を用意しました。これを通して、算数や数学の面白さ、奥深さを学んでみよう！
+  .section
+    section
+      h6 100マス計算 #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+    section
+      h6 マッチ棒パズル #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+    section
+      h6 数理マジック #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+    section
+      h6 数理パズル #[span.badge.text-white(style='background: #1ab;') 実験]
+      p 対象: 小学生以上
+  h2#astronomy 未知との遭遇 〜星との出逢い〜 #[small I部・II部天文研究部×野田天文研究会]
+  p 夜空を見上げると輝く無数の星たち。その1つ1つに名前や物語があります。この機会に宇宙にほんの少し触れて見ませんか。
+  .section
+    section
+      h6 プラネタリウム上映 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+    section
+      h6 写真展示 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢
+    section
+      h6 惑星展示 #[span.badge.text-white(style='background: #07f;') 展示]
+      p 対象: 全年齢

@@ -23,7 +23,7 @@ block article
     div(style='margin: 3rem 0;')
       p.h3 6/16 (土) ・ 17 (日) 10:00 ~ 17:00 (受付終了: 両日ともに16:30)
       p.h3 事前申し込み不要・参加費無料
-    a.btn.btn-lg.btn-primary(href='./exhibition.html', style='margin-bottom: 1rem')
+    a.btn.btn-lg.btn-primary(href='#exhibition', style='margin-bottom: 1rem')
       i.material-icons(alt='', style='vertical-align: sub;')
         | search
       | どんなことをやるんだろう?
@@ -37,8 +37,81 @@ block article
   ul
     li JR 川崎駅西口より徒歩 1 分
     li 京浜急行線京急川崎駅中央口より徒歩 7 分
-  p.alert.alert-warning(style='display: inline-block')
-    | #[b 駐車場はございません]ので、交通機関のご利用をお願いします。
+  .callout
+    p #[b 駐車場はございません]ので、交通機関のご利用をお願いします。
+  h1#exhibition 企画一覧
+  .card-columns
+    .card
+      .card-body
+        i.material-icons.text-primary(alt='') help_outline
+        ul
+          li.h5 地球をENJOY!
+          li.h5 生き物の秘密を解き明かそう!
+          li.h5 未知との遭遇 #[br] 〜星との出逢い〜
+      .card-footer
+        h2.card-title.h4 宇宙と生き物のフシギ
+    .card
+      .card-body
+        ul
+          li.h5 見る!触る!化学実験
+          li.h5 物理のフシギにふれよう!
+        i.material-icons(alt='', style='color: #c55') touch_app
+      .card-footer
+        h2.card-title.h4 楽しく学ぶ理科
+    .card
+      .card-body
+        i.material-icons(alt='', style='color: #f71') settings
+        ul
+          li.h5 ロボットと触れ合おう!
+          li.h5 Formula Racing
+          li.h5 模型飛行機を作ろう
+      .card-footer
+        h2.card-title.h4 機械について学ぼう
+    .card
+      .card-body
+        ul
+          li.h5 数学を楽しもう!
+          li.h5 さんすうをたのしもう!
+        i.material-icons(alt='', style='color: #26f') trending_up
+      .card-footer
+        h2.card-title.h4 君も さんすうマスター!
+    .card
+      .card-body
+        div
+          i.material-icons(alt='') colorize
+          i.material-icons(alt='', style='color: #a0f') hearing
+        ul
+          li.h5 もくねんさんと手作りノート
+          li.h5 楽しく学ぼう化学の不思議
+          li.h5 身近な化学体験
+          li.h5 音の科学
+      .card-footer
+        h2.card-title.h4 身近にある科学
+    a.btn.btn-lg.btn-primary(href='./exhibition.html')
+      i.material-icons(aria-hidden='true', style='vertical-align: sub;')
+        | navigate_next
+      | すべての企画を見る
+  section.clearfix
+    h2 東芝未来科学館による科学体験イベント
+    i.material-icons(alt='', style='font-size: 8rem; color: #6a1b9a; float: right') search
+    p.h5 ラゾーナ川崎プラザ2F ルーファ広場にて開催
+    div(style='display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 40rem')
+      section.alert.alert-info
+        h3 クロマトカラー実験室
+        p 6 月 16 日(土)実施
+      section.alert.alert-warning
+        h3 偏光板のせかい
+        p 6 月 17 日(日)実施
+    p(style='margin-bottom: 0')
+      | 対象年齢 4 歳以上、所要時間 30 分。 作ったものはお持ち帰りできます!
+      | 未就学児は保護者同伴。
+    p 協力: NPO 法人 CANVAS
+  .callout
+    p 企画内容は予告なく変更になる場合がございます。
+    p 製作および実験の企画は、材料が無くなり次第終了とさせていただきます。
+    p 整理券を配布するブースがございます。整理券は両日ともに先着順で、午前と午後の1日2回配布予定です。
+    p 小学生以下は保護者同伴でご参加ください。
+    p 実験体験風景などの写真は、サイエンスフェアの広報活動に使用させていただきます。
   h2 開催
   dl
     dt 主催

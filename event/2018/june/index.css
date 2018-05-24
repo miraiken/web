@@ -1,7 +1,38 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.callout {
+  border: solid #eee 1px;
+  border-left: solid #fa4;
+  border-radius: 0.3rem;
+  margin: 1em;
+}
+
+.callout > p {
+  margin: 0.5rem;
+}
+
 .caption {
   font-size: 1.75rem;
 }
 
 .caption > * {
   margin: 0;
+}
+
+.card-body {
+  display: flex;
+}
+
+.card-title {
+  border: 0;
+  padding-top: 0;
+}
+
+.card-body i {
+  font-size: 3rem;
+  margin: 0.1rem;
 }
