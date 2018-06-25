@@ -1,6 +1,7 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const fs = require('fs');
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function createSpecializedExtractTextPlugin(extension) {
   return new ExtractTextPlugin({
@@ -36,7 +37,7 @@ function omitDummy() {
   });
 }
 
-const extractCSSPlugin = createSpecializedExtractTextPlugin('css');
+// const extractCSSPlugin = createSpecializedExtractTextPlugin('css');
 const extractHTMLPlugin = createSpecializedExtractTextPlugin('html');
 
 const entry = {
@@ -140,10 +141,14 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: extractCSSPlugin.extract([
-          'css-loader',
-          'postcss-loader',
-        ]),
+        // use: extractCSSPlugin.extract([
+        //   'css-loader',
+        //   'postcss-loader',
+        // ]),
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader', 'postcss-loader',
+        ],
       }, {
         test: /\.pug$/,
         exclude: path.join(__dirname, 'common'),
@@ -176,6 +181,14 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     publicPath: '/web/',
   },
-  plugins: [omitDummy, extractCSSPlugin, extractHTMLPlugin],
+  plugins: [
+    omitDummy, extractHTMLPlugin, // extractCSSPlugin,
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
+  ],
   resolve: {alias: {miraiken: __dirname}},
 };
