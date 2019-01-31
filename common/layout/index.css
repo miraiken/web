@@ -1,6 +1,17 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   background: #eee;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
+}
+
+.layout_fill {
+  flex: 1;
 }
 
 .layout_top_captions_subtitle {

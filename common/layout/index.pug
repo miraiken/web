@@ -34,55 +34,56 @@ html(lang='ja')
              integrity='sha384-PDwd/1iyTH6gThCnzKzEc6vzV3VayRq1zU/81BJMAKtzddJPXvNRmKFEx4Tjpfc8',
              src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.js')
   body
-    header
-      p.layout_top_captions_subtitle 東京理科大学サイエンスフェア学生企画
-      h1.layout_top_captions_title
-        img(alt='ロゴ', src=require('miraiken/common/layout/door.jpg'))
-        | みらい研究室実行委員会
-      block header
-        - var active
-        nav.bg-light.border-top.navbar.navbar-expand-lg.navbar-light
-          button.navbar-toggler(aria-controls='layout_header_navbar_collapse', aria-expanded='false', aria-label='目次を開閉する', data-target='#layout_header_navbar_collapse' data-toggle='collapse', type='button')
-            span.navbar-toggler-icon
-          #layout_header_navbar_collapse.collapse.navbar-collapse
-            ul.navbar-nav
-              li.nav-item(class=active === 'home' && 'active')
-                a.nav-link(href='/web/')
-                  div
-                    | ホーム
-                    br
-                    | Home
-              li.nav-item(class=active === 'event' && 'active')
-                a.nav-link(href='/web/event/')
-                  div
-                    | イベント情報
-                    br
-                    | Event
-              li.nav-item(class=active === 'contact' && 'active')
-                a.nav-link(href='/web/contact/')
-                  div
-                    | お問い合わせ
-                    br
-                    | Contact
-              li.nav-item(class=active === 'links' && 'active')
-                a.nav-link(href='/web/links/')
-                  div
-                    | リンク
-                    br
-                    | Links
-              li.nav-item(class=active === 'for_freshmen' && 'active')
-                a.nav-link(href='/web/for_freshmen/')
-                  div
-                    | 新入生向けページ
-                    br
-                    | For Freshmen
-    block eyecatcher
-    .layout_body_wrapper
-      .layout_body
-        main
-          article
-            block article
-        block sidebar
+    div.layout_fill
+      header
+        p.layout_top_captions_subtitle 東京理科大学サイエンスフェア学生企画
+        h1.layout_top_captions_title
+          img(alt='ロゴ', src=require('miraiken/common/layout/door.jpg'))
+          | みらい研究室実行委員会
+        block header
+          - var active
+          nav.bg-light.border-top.navbar.navbar-expand-lg.navbar-light
+            button.navbar-toggler(aria-controls='layout_header_navbar_collapse', aria-expanded='false', aria-label='目次を開閉する', data-target='#layout_header_navbar_collapse' data-toggle='collapse', type='button')
+              span.navbar-toggler-icon
+            #layout_header_navbar_collapse.collapse.navbar-collapse
+              ul.navbar-nav
+                li.nav-item(class=active === 'home' && 'active')
+                  a.nav-link(href='/web/')
+                    div
+                      | ホーム
+                      br
+                      | Home
+                li.nav-item(class=active === 'event' && 'active')
+                  a.nav-link(href='/web/event/')
+                    div
+                      | イベント情報
+                      br
+                      | Event
+                li.nav-item(class=active === 'contact' && 'active')
+                  a.nav-link(href='/web/contact/')
+                    div
+                      | お問い合わせ
+                      br
+                      | Contact
+                li.nav-item(class=active === 'links' && 'active')
+                  a.nav-link(href='/web/links/')
+                    div
+                      | リンク
+                      br
+                      | Links
+                li.nav-item(class=active === 'for_freshmen' && 'active')
+                  a.nav-link(href='/web/for_freshmen/')
+                    div
+                      | 新入生向けページ
+                      br
+                      | For Freshmen
+      block eyecatcher
+      .layout_body_wrapper
+        .layout_body
+          main
+            article
+              block article
+          block sidebar
     footer
       p
         small
