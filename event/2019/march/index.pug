@@ -1,0 +1,99 @@
+extends /layout/index.pug
+
+append head
+  link(rel='stylesheet', href='./index.css')
+  title サイエンスフェア みらい研究室 ～ミライの小箱～ | 東京理科大学みらい研究室
+
+prepend header
+  - var active = 'event'
+
+block article
+  h1.main-p
+    img(alt='サイエンスフェア みらい研究室 ～ミライの小箱～', src=require('./header.gif'))
+  p.h4 私たち，みらい研究室が主催するイベントが3月に開催されることになりました！
+  p.h4 東京理科大学の学生が分かりやすく丁寧に教えます。
+  h2#datetime 日時
+  p.h3(style='text-align: center')
+    | #[time(datetime='2019-03-24+09:00') 2019年3月24日 (日)]
+    | #[time(datetime='10:00+09:00') 午前10時]～#[time(datetime='15:00+09:00') 午後3時]
+  p.h4(style='text-align: center') (#[time(datetime='14:30+09:00') 2時30分]受付終了)
+  p 当日は全てのブースで入場・体験は無料です! #[br] 理科に興味のあるお子さんからその親御さんまで, 皆さんぜひお越しください!!
+  h2 会場
+  p 東京理科大学神楽坂キャンパス6号館2階 (東京都新宿区神楽坂1-3)
+  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0901556022873!2d139.73920931525942!3d35.699398980190026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c5b5bb5cf6b%3A0xd1f5e24e18af51e!2z5p2x5Lqs55CG56eR5aSn5a2mIOelnualveWdguOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1551604108342', width='600', height='450', frameborder='0', allowfullscreen)
+  h3 アクセス
+  p JR中央線, 東京メトロ有楽町線・東西線・南北線・東西線, 都営大江戸線 #[br] 飯田橋駅から徒歩3分 (駐車場・駐輪場はございません。)
+  .photos
+    img(alt='写真', src=require('./photo/0.jpg'))
+    img(alt='写真', src=require('./photo/1.jpg'))
+  p (※写真は過去の活動風景です)
+  h2#exhibitions 企画内容
+  img(alt='見取り図', src=require('./exhibition/map.gif'), style='width: 100%')
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/astronomy.gif'))
+    div
+      h3 ①未知との遭遇～星との出逢い～
+      p (Ⅰ部Ⅱ部天文研究部×東京理科大学野田天文研究会)
+      ol
+        li プラネタリウム上映 (小学生以上対象 整理券必要)
+        li 写真展示
+        li 惑星模型展示
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/geology.gif'))
+    div
+      h3 ②地球をENJOY!
+      p (地球科学研究部)
+      ol
+        li 鉱物を観察しよう
+        li 竜巻と雲を観察しよう
+        li 手回し発電機で電気を作ろう!
+        li 身近に広がる元素の世界
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/aircraft.gif'))
+    div
+      h3 ③You can fly!
+      p (AircraftMakers)
+      ol
+        li 模型飛行機を作ろう
+        li 人力飛行機のことを知ろう
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/optics.gif'))
+    div
+      h3 ④偏光板で遊ぼう
+      p (東京理科大学サイエンスコミュニケーションサークル chibi lab.)
+      ol
+        li 偏光板万華鏡 (小学生以上対象 整理券必要)
+        li 偏光について知ろう
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/chemistry2.gif'))
+    div
+      h3 ⑤楽しく学ぼう化学の不思議
+      p (Ⅱ部化学研究部)
+      ol
+        li スライム
+        li 入浴剤
+        li スーパーボール
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/chemicalengineering.gif'))
+    div
+      h3 ⑥身近な化学体験
+      p (理工学部化学研究会)
+      ol
+        li 割れないシャボン玉?
+        li 人工いくらを作ろう!
+  h2 お問い合わせ
+  p お問い合わせは みらい研究室実行委員会 まで
+  dl
+    dt メールアドレス
+    dd #[a(href='mailto:miraiken@ed.tus.ac.jp') miraiken@ed.tus.ac.jp]
+
+prepend sidebar
+  ul.layout_sidebar.nav.flex-column.nav-pills
+    li
+      a.nav-link.active(href='#') ミライの小箱
+    li
+      a.nav-link(href='#datetime') 日時
+    li
+      a.nav-link(href='#exhibitions') 企画
+    li
+      a.nav-link(href='#contact') お問い合わせ

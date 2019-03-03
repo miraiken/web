@@ -79,6 +79,7 @@ header > .navbar > .navbar-toggler {
 }
 
 .layout_body {
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   margin: -10px;
@@ -104,8 +105,8 @@ main {
 
 .main-h1,
 .main-h2,
-main h1,
-main h2 {
+main h1:not(.main-p),
+main h2:not(.main-p) {
   border-bottom: solid 1px #080;
   border-top: solid 1px #080;
   border-left: solid 10px #080;
@@ -159,10 +160,11 @@ footer a {
 
 footer {
   background: #080;
+  margin: 1rem 0 0;
 }
 
 footer p {
-  margin: 1rem 0 0;
+  margin: 0;
   padding: 8px;
 }
 

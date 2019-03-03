@@ -37,11 +37,8 @@
 }
 
 .event-caption {
-  font-size: 1.75rem;
-}
-
-.event-caption > * {
-  margin: 0;
+  object-fit: contain;
+  width: 105%;
 }
 
 .eyecatcher-caption {
