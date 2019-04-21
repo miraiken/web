@@ -54,6 +54,7 @@ for (const name of [
   './event/2014/event_june/resource/lightbox_plus.js',
   './event/2015/event_june/resource/exhibition.css',
   './event/2015/event_june/resource/science_show.css',
+  './event/2015/event_june/resource/simple_slideshow.js',
   './event/2015/event_march/resource/pseudo_screen_transition.js',
   './event/2016/event_june/resource/css/style.css',
   './event/2016/event_june/resource/js/script.js',
