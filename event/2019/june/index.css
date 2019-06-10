@@ -1,0 +1,40 @@
+article > h1 {
+  text-align: center;
+}
+
+article > h1 > * {
+  object-fit: contain;
+  width: 100%;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}
+
+.exhibition {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exhibition > img {
+  flex-shrink: 0;
+  object-fit: contain;
+  width: 5rem;
+}
+
+.layout_sidebar {
+  padding: 1rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.photos {
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .photos {
+    flex-wrap: wrap;
+  }
+}

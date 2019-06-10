@@ -1,0 +1,184 @@
+extends /layout/index.pug
+
+append head
+  link(rel='stylesheet', href='./index.css')
+  title サイエンスフェア みらい研究室 ～科学へのトビラ～ | 東京理科大学みらい研究室
+
+prepend header
+  - var active = 'event'
+
+block article
+  h1.main-p
+    img(alt='サイエンスフェア みらい研究室 ～科学へのトビラ～', src=require('./header.png'))
+  p.h4 参加費無料 &amp; 事前申し込み不要
+  p.h4 直接会場へお越しください!
+  h2#datetime 日時
+  p
+    div.h3(style='text-align: center')
+      | #[time(datetime='2019-06-22+09:00') 2019年6月22日 (土)]
+      | #[time(datetime='10:00+09:00') 午前10時]～#[time(datetime='15:00+09:00') 午後5時]
+    div.h4(style='text-align: center') (受付終了: #[time(datetime='14:30+09:00') 午後4時30分])
+  p
+    div.h3(style='text-align: center')
+      | #[time(datetime='2019-06-23+09:00') 2019年6月23日 (日)]
+      | #[time(datetime='10:00+09:00') 午前10時]～#[time(datetime='15:00+09:00') 午後4時]
+    div.h4(style='text-align: center') (受付終了: #[time(datetime='14:30+09:00') 午後3時])
+  h2 会場
+  p 東京理科大学 葛飾キャンパス (葛飾区新宿 6-3-1)
+  ul
+    li 図書館 3階
+    li 葛飾区未来わくわく館
+  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.127512784984!2d139.86018317478593!3d35.77224397055512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018857ad443098d%3A0xf79b3de52fef127b!2sTokyo+University+of+Science+Katsushika+Campus!5e0!3m2!1sen!2sjp!4v1560184778276!5m2!1sen!2sjp', width='600', height='450', frameborder='0', allowfullscreen)
+  h3 アクセス
+  p JR常磐線(東京メトロ千代田線) 『金町』駅 #[br] 京成金町線『京成金町』駅から徒歩約8分
+  p ※駐車場はございません。公共交通機関のご利用をお願いいたします。
+  h2#exhibitions 企画紹介
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/11.svg'))
+    div
+      h3 見る ! 触る!化学実験
+      p (I部化学研究部)
+      ol
+        li ダイラタンシー
+        li 振動反応
+        li 発光する液体
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/3.svg'))
+    div
+      h3 地球をENJOY!
+      p (地球科学研究部)
+      ol
+        li 鉱物を観察しよう
+        li 竜巻と雲を観察しよう
+        li 手回し発電機で電気を作ろう!
+        li 身近に広がる元素の世界
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/10.svg'))
+    div
+      h3 楽しく学ぼう化学の不思議
+      p (Ⅱ部化学研究部)
+      ol
+        li 入浴剤
+        li スーパーボール
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/1.svg'))
+    div
+      h3 文具 × 科学=?
+      p (文具研究同好会)
+      ol
+        li おが屑粘土!もくねんさん
+        li 消えるインク!フリクション
+        li 何しているの文具研
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/12.svg'))
+    div
+      h3 身近な化学体験
+      p (理工学部化学研究会)
+      ol
+        li 割れないシャボン玉?
+        li 人工いくらを作ろう!
+        li スライムを作ってみよう!
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/5.svg'))
+    div
+      h3 ココくんの生物探査記
+      p (I部生物研究部)
+      ol
+        li 超密着リカダイアニマルズ
+        li 光触媒で太陽電池を作ろう!! (要整理券)
+        li 薬 (ペニシリン) を作ろう!! (要整理券)
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/4.svg'))
+    div
+      h3 天気と温度
+      p (サイエンスコミュニケーションサークル chibi lab.)
+      ol
+        li 雲を作ろう!
+        li カラフル温度計を作ろう! (要整理券)
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/13.svg'))
+    div
+      h3 生き物の秘密を解き明かそう!
+      p (II部生物研究部)
+      p #[time(datetime='2019-06-23+09:00') ※6/23 (日)] のみ開催
+      ol
+        li 生態展示
+        li 化石のレプリカを作ろう (要整理券)
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/2.svg'))
+    div
+      h3 さんすうをたのしもう!
+      p (I部・II部数学研究部)
+      ol
+        li 100マス計算
+        li マッチ棒パズル
+        li 数理マジック
+        li 数理パズル
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/7.svg'))
+    div
+      h3 模型飛行機を作ろう
+      p (AircraftMakers)
+      ol
+        li 模型飛行機を作ろう
+        li 人力飛行機を操縦してみよう
+        li 人力飛行機のことを知ろう
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/8.svg'))
+    div
+      h3 Formula Racing
+      p (機械工学研究会)
+      ol
+        li レーシングカーに乗ってみよう!
+        li 自分だけのレーシングカーを作ってみよう!
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/9.svg'))
+    div
+      h3 ロボットと触れ合おう!
+      p (I部無線研究部)
+      ol
+        li 第17回ニソコン
+        li ロボットに触れ合おう!
+        li ROBOT WARS 2019
+  .exhibition
+    img(alt='', src=require('./exhibition/icon/6.svg'))
+    div
+      h3 未知との遭遇～星との出逢い～
+      p (Ⅰ部Ⅱ部天文研究部×東京理科大学野田天文研究会)
+      ol
+        li プラネタリウム上映 (要整理券)
+        li 写真展示
+        li 手作りプラネタリウム (要整理券)
+        li 惑星模型展示
+  p ※ 材料が無くなり次第終了となるブースもあります。また企画内容は予定であり、予告なく変更することがあります。
+  p ※ 実験体験風景などの写真は、サイエンスフェアの広報活動に使用させていただきます。ご了承ください。
+  p ※ 混雑時には安全確保のため、入場規制する場合もあります。
+  h3 整理券が必要な企画があります
+  dl
+    dt 配布時間
+    dd 1. #[time(datetime='10:00+09:00') 10時]〜 / 2. #[time(datetime='12:00+09:00') 12時]〜
+    dt 配布場所
+    dd 図書館ホール (図書館3階)
+  p ※整理券は先着順です
+  h2 チラシのダウンロード
+  p このイベントの情報がまとまったチラシをダウンロードできます
+  p(style='text-align: center')
+    a.btn.btn-lg.btn-primary(href='leaflet.pdf') ダウンロード
+  h2#contact お問い合わせ
+  p ※ #[time(datetime='2019-06-21T17:00+09:00') 6月21日 (金) 17時]まで
+  dl
+    dt みらい研究室実行委員会 メールアドレス
+    dd #[a(href='mailto:miraiken@ed.tus.ac.jp') miraiken@ed.tus.ac.jp]
+    dt 東京理科大学広報部広報課 TEL
+    dd #[a(href='tel:+81352288107') 03-5228-8107]
+
+prepend sidebar
+  ul.layout_sidebar.nav.flex-column.nav-pills
+    li
+      a.nav-link.active(href='#') 科学へのトビラ
+    li
+      a.nav-link(href='#datetime') 日時
+    li
+      a.nav-link(href='#exhibitions') 企画
+    li
+      a.nav-link(href='#contact') お問い合わせ
