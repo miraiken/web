@@ -12,15 +12,45 @@ iframe {
   width: 100%;
 }
 
+.callout {
+  border: solid #eee 1px;
+  border-left: solid #fa4 0.3rem;
+  border-radius: 0.3rem;
+  margin: 1em;
+}
+
+.callout > * {
+  margin: 0.5rem;
+}
+
 .exhibition {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 0 1rem 0;
 }
 
 .exhibition > img {
   flex-shrink: 0;
   object-fit: contain;
   width: 5rem;
+  margin: 1rem;
+}
+
+ol.exhibition-body > li {
+  line-height: 2em;
+}
+
+ol.exhibition-body > li > img {
+  height: 2em;
+}
+
+.exhibition-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.worksheet {
+  margin: 0 1rem auto 1rem;
 }
 
 .layout_sidebar {
