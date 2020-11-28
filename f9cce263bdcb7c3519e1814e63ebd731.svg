@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="9.3699999mm"
+   height="11.11mm"
+   viewBox="0 0 9.3699999 11.11"
+   version="1.1"
+   id="svg14785"
+   sodipodi:docname="ticket.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <defs
+     id="defs14779" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-360.30012"
+     inkscape:cy="-215.1523"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata14782">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-84.51738,-243.06405)">
+    <g
+       transform="matrix(0.01,0,0,0.01,-222.54262,198.05405)"
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g11411">
+      <g
+         id="id1193">
+        <rect
+           style="fill:none;stroke:none"
+           class="BoundingBox"
+           x="30706"
+           y="4501"
+           width="937"
+           height="1111"
+           id="rect11404" />
+        <path
+           style="fill:#fff769;stroke:none"
+           inkscape:connector-curvature="0"
+           d="m 31623,5376 -600,216 -298,-855 601,-217 z"
+           id="path11406" />
+        <path
+           style="fill:none;stroke:#8f8d8d;stroke-width:29;stroke-linejoin:miter"
+           inkscape:connector-curvature="0"
+           d="m 31623,5376 -600,216 -298,-855 601,-217 z"
+           id="path11408" />
+      </g>
+    </g>
+    <text
+       style="font-size:0.12px;stroke-width:0.01"
+       y="212.46169"
+       x="-311.94553"
+       class="TextShape"
+       transform="rotate(-19.799995)"
+       id="text11434">
+      <tspan
+         style="font-weight:400;font-size:1.29000008px;font-family:'Noto Sans CJK HK', sans-serif;stroke-width:0.01"
+         class="TextParagraph"
+         font-size="129px"
+         font-weight="400"
+         id="tspan11432">
+        <tspan
+           style="stroke-width:0.01"
+           class="TextPosition"
+           x="-3.4255209"
+           y="263.3317"
+           id="tspan11430">
+          <tspan
+             style="fill:#231f20;stroke:none;stroke-width:0.01"
+             id="tspan11428">せいりけん</tspan>
+        </tspan>
+      </tspan>
+    </text>
+  </g>
+</svg>

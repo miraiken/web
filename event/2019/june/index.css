@@ -1,0 +1,91 @@
+article > h1 {
+  text-align: center;
+}
+
+article > h1 > * {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}
+
+.callout {
+  border: solid #eee 1px;
+  border-left: solid #fa4 4.8px;
+  border-left: solid #fa4 0.3rem;
+  border-radius: 0.3rem;
+  margin: 1em;
+}
+
+.callout > * {
+  margin: 8px;
+  margin: 0.5rem;
+}
+
+.exhibition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 16px 0;
+  margin: 0 0 1rem 0;
+}
+
+.exhibition > img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 80px;
+  width: 5rem;
+  margin: 16px;
+  margin: 1rem;
+}
+
+ol.exhibition-body > li {
+  line-height: 2em;
+}
+
+ol.exhibition-body > li > img {
+  height: 2em;
+}
+
+.exhibition-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.worksheet {
+  margin: 0 16px auto 16px;
+  margin: 0 1rem auto 1rem;
+}
+
+.layout_sidebar {
+  padding: 16px;
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 16px;
+  top: 1rem;
+}
+
+.photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .photos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

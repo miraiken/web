@@ -1,0 +1,29 @@
+main .lecture table {
+  font-size: 14px;
+  line-height: 1.429;
+  border: 1px solid #ccc;
+  width: 80%;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+main .lecture table th,
+main .lecture table td {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+main .lecture table th {
+  background-color: #eee;
+  text-align: left;
+}
+
+main .lecture table td {
+  text-align: center;
+}
+
+main .lecture img {
+  display: block;
+  margin: 0 auto;
+}

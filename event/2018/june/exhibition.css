@@ -1,0 +1,13 @@
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section > * {
+  -webkit-box-flex: 256px;
+      -ms-flex: 256px;
+          flex: 256px;
+}

@@ -1,0 +1,53 @@
+article > h1 {
+  text-align: center;
+}
+
+article > h1 > * {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 105%;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}
+
+.exhibition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.exhibition > img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 80px;
+  width: 5rem;
+}
+
+.layout_sidebar {
+  padding: 16px;
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 16px;
+  top: 1rem;
+}
+
+.photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .photos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

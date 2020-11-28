@@ -1,0 +1,20 @@
+#works {
+  background: #000;
+  text-align: center;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.53333);
+}
+
+.carousel-indicators li {
+  background: rgba(0, 0, 0, 0.53333);
+}
+
+.carousel-indicators li.active {
+  background: #000;
+}
+
+.carousel-inner {
+  padding: 0;
+}
